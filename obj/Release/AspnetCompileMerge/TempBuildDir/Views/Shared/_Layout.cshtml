@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+@{
+    var CmsData = ViewBag.PageData;
+}
+<html>
+<head>
+    <title>MLSI:Top International School in Mumbai, India | IB School Bandra@*@CmsData.MetaTitle*@</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="canonical" href="@CmsData.CanonicalUrl">
+
+    <meta name="keywords" content="@CmsData.MetaKeyword">
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="@CmsData.MetaUrl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@CmsData.MetaTitle" />
+    <meta property="og:description" content="@CmsData.MetaDescription" />
+    <meta property="og:image" content="@CmsData.MetaImagePath" />
+    <meta property="og:author" content="@CmsData.MetaAuthor" />
+
+    <meta name="site_name" content="" />
+    <meta name="url" content="@CmsData.MetaUrl" />
+    <meta name="type" content="website" />
+    <meta name="title" content="@CmsData.MetaTitle" />
+    <meta name="description" content="@CmsData.MetaDescription" />
+    <meta name="image" content="@CmsData.MetaImagePath" />
+    <meta name="author" content="@CmsData.MetaAuthor" />
+
+    <meta name="twitter:site_name" content="" />
+    <meta name="twitter:url" content="@CmsData.MetaUrl" />
+    <meta name="twitter:type" content="website" />
+    <meta name="twitter:title" content="@CmsData.MetaTitle" />
+    <meta name="twitter:description" content="@CmsData.MetaDescription" />
+    <meta name="twitter:image" content="@CmsData.MetaImagePath" />
+    <meta name="twitter:author" content="@CmsData.MetaAuthor" />
+
+    @Styles.Render("~/Content/Styles")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
+    @{Html.RenderPartial("Header");}
+    <main>
+        @RenderBody()
+    </main>
+    @{Html.RenderPartial("Footer");}
+    @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+    @Scripts.Render("~/bundles/Scripts")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

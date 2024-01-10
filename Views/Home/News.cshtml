@@ -1,0 +1,627 @@
+
+@{
+    ViewBag.Title = "News";
+}
+@*<section class="ComingSoon">
+    <h2>Coming Soon...</h2>
+</section>*@
+<div class="InsideBanner">
+    <img src="~/Images/InnsideBanner/InnsideBanner.jpg" alt="" />
+</div>
+<section>
+    <div class="container">
+        <div class="pageheading">
+            <h1>
+                News
+            </h1>
+        </div>
+        <div class="row" ng-cloak id="News" ng-controller="NewsAndEventsCtrl" ng-init="Type='News';GetNewsAndEvents()">
+
+                <div ng-repeat="News in NewsAndEventsData" class="col-lg-4 col-md-6" >
+                    <a href="{{News.LinkUrl}}" target="_blank">
+                        <figure>
+                            <img src="{{News.MainImagePath}}" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                {{News.Title}}
+                            </h4>
+                            <div ng-bind-html="News.Short|trustAsHtml">
+                              </div>
+                            @*<p>{{News.Short}}</p>*@
+                        </div>
+                    </a>
+                </div>
+                @*<div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/school-students-celebrate-raksha-bandhan-with-support-staff/articleshow/70673819.cms" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/08/artical-1.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                School students celebrate Raksha Bandhan with support staff
+                            </h4>
+                            <p>The students of Mount Litera School International celebrated Raksha Bandhan today, in a different way. Since the fetsival is a symbol for protection…</p>
+                        </div>
+                    </a>
+                </div>*@
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.dnaindia.com/mumbai/report-mumbai-sibling-bond-celebrated-with-school-staff-2782171" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/08/artical-2.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mumbai: Sibling bond celebrated with school staff
+                            </h4>
+                            <p>The students of Mount Litera School International celebrated RakshaBandhan on 14th August, Wednesday with the school’s support staff to whom the students fondly address…</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a>
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/06/chess.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mumbai Mayor’s Cup International Chess Tournament at Mount Litera School International
+
+                            </h4>
+                            <p>Glimpses from the 12th Mumbai Mayor’s Cup International Chess Tournament at Mount Litera School International being held at Mount Litera School International, BKC, Mumbai…</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://mumbaimirror.indiatimes.com/mumbai/other/rap-created-by-school-students-urge-voters-to-vote-responsibly-in-the-lok-sabha-elections/articleshow/68995565.cms" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/04/Rap.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Rap created by school students urge voters to vote responsibly in the Lok Sabha elections
+                            </h4>
+                            <p>Students of Mount Litera School International have made a rap to urge voters to vote responsibly in the upcoming elections…</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.educationtimes.com/article/78/20190415201904122008457886a123f62/How-to-choose-the-right-board-of-education.html" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/04/mlsi1.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                How to choose the right board of education
+                            </h4>
+                            <p>
+                                Boards that assess a child not just on bookish knowledge, but also on
+                                extracurricular activities, prepare them to make better education
+                                choices…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.thehindu.com/education/board-basics/article26755214.ece" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/04/kidzee-news.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Board basics
+                            </h4>
+                            <p>
+                                There are no black-and-white answers — each student is unique, and must
+                                opt for institutes and boards that help optimise his/her potential…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.dnaindia.com/mumbai/report-mumbai-mlsi-event-welcomes-parents-to-innovative-world-of-ib-learning-2728114?fbclid=IwAR0FIXIOakvc6dqZMp6VS47MM6CsvLVwxK1OISGw85HxNxnsmsu-j-V3AKA" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/03/IB-learning.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mumbai: MLSI event welcomes parents to innovative world of IB
+                                learning
+                            </h4>
+                            <p>
+                                A large number of parents and students attended a unique event ‘Beyond
+                                Boundaries’ organised by Mumbai’s leading International Baccalaureate ….
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/life-style/parenting/toddler-year-and-beyond/what-is-responsive-parenting-and-how-you-can-raise-confident-kids-with-it/articleshow/67852203.cms" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/02/parenting.jpg" alt="Students build an interesting">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                WHAT is responsive parenting and how you can raise confident kids with
+                                it
+                            </h4>
+                            <p>
+                                When you are a parent, you often face situations that catch you off guard,
+                                which can challenge even the most experienced parents.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.asianage.com/metros/mumbai/100219/school-students-gain-special-insight-into-police-officers-lives.html?fbclid=IwAR0M4yiYkmrEd8Od_lIZX0VEqQA7iluwPIS4ZXTPNv__v7veGnAMjnJzK5o" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/02/students.jpg" alt="Students build an interesting">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                School students gain special insight into police officers’ lives
+                            </h4>
+                            <p>The initiative sought to allow students of all age groups to experience life outside the walls of the school. Apart from visiting the police station,…</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/students-build-an-interesting-installation-at-the-kala-ghoda-festival/articleshow/67831686.cms?fbclid=IwAR3PAasYDMJQ34naG3YDVwLMaAW4VLBoynb1PCNBVtipo_nwZDIfYKpE-qU" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/02/mlsi-news.jpg" alt="Students build an interesting">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Students build an interesting installation at the Kala Ghoda
+                                festival
+                            </h4>
+                            <p>
+                                Multiple schools are participating in the art festival at Kala Ghoda and
+                                this year’s theme for children’s installation is ’20 times…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.educationtimes.com/article/78/2019011420190114163822860de1483ed/Artificial-Intelligence-and-Python-in-school-curriculum-to-make-students-futureready.html" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/01/mlsi-img.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Artificial Intelligence and Python in school curriculum to make
+                                students future-ready
+                            </h4>
+                            <p>
+                                Familiarising students with new technologies will make the teaching-learning
+                                process fruitful, reports Rajlakshmi Ghosh…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.mid-day.com/articles/british-magician-drummond-money-coutts-on-his-love-for-mumbai/404769" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/01/artical-image.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                British magician Drummond Money-Coutts on his love for Mumbai
+                            </h4>
+                            <p>
+                                British magician Drummond Money-Coutts, who was in the city for a talk,
+                                speaks about ditching the royal life to pursue his passion and his love for
+                                Mumbai
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.dnaindia.com/mumbai/report-mumbai-kids-shine-bright-in-first-lego-league-robotics-championship-2708423" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/01/mlsi-news.new_.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mumbai kids shine bright in First Lego League robotics championship
+                            </h4>
+                            <p>
+                                Mount Litera School International, one of the leading IB schools in the city
+                                hosted this year’s First Lego League (FLL), …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//bweducation.businessworld.in/article/Over-100-Students-Of-Mount-Litera-School-International-Perform-The-Epic-Tale-Of-Mahabharta-RETOLD-/07-01-2019-165871/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2019/01/mahabharta-1.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Over 100 Students Of Mount Litera School International Perform The Epic
+                                Tale Of Mahabharta – RETOLD!
+                            </h4>
+                            <p>
+                                Students of Mount Litera School International, one of Mumbai’s leading IB
+                                schools today performed a unique rendition of Mahabharta…..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/coming-together-at-assemblie/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/cap.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Coming together at Assemblies
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/science-competition/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/Science-competition.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Science competition
+                            </h4>
+                            <p>
+                                When our little scientists took over the Inter-school science competition:
+                                “Brainstorming with science”
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/childrens-day-at-mlsi/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/child.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Children’s Day at MLSI
+                            </h4>
+                            <p>Teachers and students of MLSI celebrate the spirit of Children’s Day</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/artificial-intelligence/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/ai-new.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Artificial Intelligence (AI)
+                            </h4>
+                            <p>
+                                Artificial Intelligence (AI) and machine learning expert Jehan Shams shares
+                                his thoughts on AI
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/mars-workshop/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/ai-m.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>MARS workshop</h4>
+                            <p>THE MARS MISSION: Our students get to explore “Life on Mars” in a workshop.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/appointment-of-ms-mona-seervai/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/Mona1.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Appointment of Ms. Mona Seervai
+                            </h4>
+                            <p>Ms. Mona Seervai appointed as the new “Head Of School” at MLSI</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/diwali/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/diwali.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>Diwali</h4>
+                            <p>
+                                MLSI brings in Diwali celebrations with great pomp and show, makes it more
+                                special for grandparents
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//mlsi.in/diwali/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/teacher.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mumbai: Teachers, students shake a leg at Mount Litera School
+                                International
+                            </h4>
+                            <p>
+                                Mount Litera School International, one of the leading IB schools in the
+                                city, celebrated Children’s Day with great fanfare on Wednesday. …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.dnaindia.com/mumbai/report-making-diwali-special-for-grandparents-2682421" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/11/diwali-img-article.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Making Diwali special for grandparents
+                            </h4>
+                            <p>
+                                Students of the Mount Litera School International (MLSI) in Bandra brought
+                                in Diwali in a special way on Saturday, making it a day …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/mumbai-school-kids-pledge-to-have-eco-friendly-and-green-celebrations-this-ganesh-chaturthi/articleshow/65719141.cms" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/09/ganeshchaturthi-m.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Students of MLSI pledge to have eco-friendly Ganesh Chaturthi
+                                celebrations
+                            </h4>
+                            <p>
+                                A unique plantable Ganesha molding workshop to gear up for city’s most
+                                joyful celebration was organised for the students of …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/maria-goretti-cooks-up-a-storm-for-school-kids/articleshow/64220058.cms" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/06/Maria-goretti.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Maria Goretti cooks up a nutritious treat for kids and moms at MLSI
+                            </h4>
+                            <p>
+                                Maria Goretti, known for her cooking skills and who is host of many cookery
+                                shows, was a host at one of Mumbai’s schools to celebrate Mother’s Day with
+                                other moms. …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.dnaindia.com/mumbai/report-workshop-on-healthy-alternatives-to-junk-food-2615132" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/05/mothers-day.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                MLSI Mother’s Day Workshop with Maria Goretti
+                            </h4>
+                            <p>
+                                Mount Litera School International in Bandra Kurla Complex on Friday hosted a
+                                unique event with celebrity chef Maria Goretti on the occasion of Mother’s
+                                Day.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://timesofindia.indiatimes.com/entertainment/events/mumbai/city-sees-an-art-week-fest-conclude-in-a-riot-of-colors/articleshow/63970689.cms" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/05/mlsi_nw1.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                City sees an Art week fest conclude in a riot of colours at MLSI
+                            </h4>
+                            <p>
+                                Hosted by Mount Litera School International (MLSI), Art Week – Meraki
+                                concluded with a grand finale in the presence of celebrated painter and
+                                Padma Shri awardee, Paresh Maity.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.newindianexpress.com/cities/hyderabad/2018/may/02/dont-impose-art-says-paresh-maity-1808946.html" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/06/Paresh-Maity.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Padma Shri Paresh Maity shares his thoughts on the importance of Art in
+                                Child’s development
+                            </h4>
+                            <p>
+                                Art plays an important role in a child’s development and enables children to
+                                develop a sense of aesthetics and beauty from an early age — but it should
+                                not….
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.financialexpress.com/education-2/what-india-needs-to-do-to-create-an-education-system-for-bright-future/1134154/" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/04/mlsi-thumb.png" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mrs Navyata Goenka shares: What India needs to do to create an
+                                education system for a bright future.
+                            </h4>
+                            <p>
+                                With 1.5 million schools and over 260 million enrolments, India has the
+                                world’s largest K12 (primary and secondary) education system. However, with
+                                a …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.dnaindia.com/mumbai/report-ksp-awards-2017-to-celebrate-best-in-parenting-baby-care-fraternity-2596669" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/04/Navyata-n1.jpg" alt="top international school in Mumbai">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Mrs. Navyata Goenka participates in a Panel Discussion at KSP Awards
+                                2017
+                            </h4>
+                            <p>
+                                KidsStopPress, a highly trusted multi-digital channel platform committed to
+                                simplifying parenting, will be hosting …..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://m.timesofindia.com/entertainment/events/mumbai/a-literature-festival-for-kids/articleshow/63068452.cms" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/06/Bookaroo.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Bookaroo- a literature festival for kids at MLSI
+                            </h4>
+                            <p>
+                                In an endeavour to welcome popular children’s authors, Mount Litera School
+                                International (MLSI) hosted the first ever Mumbai edition…..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//zeenews.india.com/india/mount-litera-school-international-recognised-as-emerging-school-at-times-education-icon-awards-2017-2060660.html" target="_blank">
+                        <figure><img src="https://mlsi.in/wp-content/uploads/2019/06/mount-litera-1.jpg" alt=""></figure>
+                        <div class="content">
+                            <h4>
+                                Mount Litera School International recognised as ‘Emerging School’…
+                            </h4>
+                            <p>
+                                Mumbai: One of Mumbai’s leading International Schools, Mount Litera School
+                                International (MLSI) has been awarded…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.dnaindia.com/mumbai/report-when-children-took-over-the-dna-newsroom-2559821" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/06/when-children-took-over-the-DNA.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                When children took over the DNA newsroom…
+                            </h4>
+                            <p>
+                                It was a perfect prelude to Children’s Day at DNA as young talented minds of
+                                Mount Litera School International…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.radioandmusic.com/biz/radio/private-fm-stations/171101-big-fm-encourages-kids-follow-their-passion" target="_blank">
+                        <figure><img src="https://mlsi.in/wp-content/uploads/2019/06/Big-FM-encourages-kids.jpg" alt=""></figure>
+                        <div class="content">
+                            <h4>
+                                Big FM encourages kids to follow their passion with…
+                            </h4>
+                            <p>
+                                MUMBAI: With a refreshingly new concept BIG FM introduces ‘BIG Junior
+                                Rockstars’, a new activity especially targeting…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.newindianexpress.com/pti-news/2017/oct/11/navyata-goenka-honoured-with-the-young-women-achievers-award-1671034.html" target="_blank">
+                        <figure>
+                            <img src="https://mlsi.in/wp-content/uploads/2019/06/navyata-goenka-honoured.jpg" alt="">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Navyata Goenka Honoured With the Young….
+                            </h4>
+                            <p>
+                                at ISDI MUMBAI, October 11, 2017/PRNewswire/ –Ms. Navyata Goenka, Advisor
+                                to Mount Litera School International…
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.asianage.com/sports/in-other-sports/060617/a-chess-tastic-tournament.html" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2017/12/media-ches.jpg" alt="Best IB school in Mumbai">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                A Chess-tastic tournament….
+                            </h4>
+                            <p>
+                                Another surprise in the tournament is the substantial turnout of women
+                                players in the intellectual game….
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.bollywoodhelpline.com/news-gossips/media-buzz/mount-litera-school-international-bandra-celebrates-art-week/22163" target="_blank">
+                        <figure><img src="//mlsi.in/wp-content/uploads/2017/12/media16.jpg" alt="IB school in Mumbai"></figure>
+                        <div class="content">
+                            <h4>
+                                MOUNT LITERA SCHOOL INTERNATIONAL, BANDRA….
+                            </h4>
+                            <p>
+                                Mount Litera School International (MLSI) celebrated ‘Art Week’ wherein
+                                students of various grades gathered….
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="//www.thehindu.com/books/young-bookworm-alert/article22839146.ece" target="_blank">
+                        <figure>
+                            <img src="//mlsi.in/wp-content/uploads/2018/04/Navyata-n3.jpg" alt="international school in mumbai">
+                        </figure>
+                        <div class="content">
+                            <h4>
+                                Young Bookworm alert- Bookaroo at MLSI
+                            </h4>
+                            <p>
+                                The newest event taking place in the city this weekend is actually a
+                                tradition that early readers in New Delhi enjoy every year. Bookaroo…..
+                            </p>
+                        </div>
+                    </a>
+                </div>
+    
+        </div>
+    </div>
+</section>
+

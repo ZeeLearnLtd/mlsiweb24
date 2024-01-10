@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ulhas\OneDrive\Desktop\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/11/2013 05:59:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/11/2013 05:59:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/06/2018 05:40:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/26/2012 01:18:56</publishTime>
+    </File>
+    <File Include="bin/MLSI.dll">
+      <publishTime>07/11/2022 20:22:04</publishTime>
+    </File>
+    <File Include="bin/MLSI.pdb">
+      <publishTime>07/11/2022 20:22:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 14:36:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/28/2016 11:20:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/29/2018 02:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/29/2018 02:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/29/2018 02:31:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/29/2018 02:32:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/29/2018 02:29:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/12/2014 04:56:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/29/2018 02:30:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/29/2018 02:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/29/2018 02:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/29/2018 02:34:24</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/24/2014 03:27:34</publishTime>
+    </File>
+    <File Include="Content/animate.min.css">
+      <publishTime>06/05/2022 14:29:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/05/2022 13:41:08</publishTime>
+    </File>
+    <File Include="Content/font-awesome.min.css">
+      <publishTime>06/05/2022 13:41:08</publishTime>
+    </File>
+    <File Include="Content/jquery.fancybox.3.4.1.min.css">
+      <publishTime>06/05/2022 13:41:08</publishTime>
+    </File>
+    <File Include="Content/mixin.scss">
+      <publishTime>06/05/2022 13:41:08</publishTime>
+    </File>
+    <File Include="Content/owl.carousel.min.css">
+      <publishTime>06/05/2022 13:41:08</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>07/10/2022 01:03:08</publishTime>
+    </File>
+    <File Include="Content/style.min.css">
+      <publishTime>07/10/2022 01:03:08</publishTime>
+    </File>
+    <File Include="Content/style.scss">
+      <publishTime>07/10/2022 01:03:07</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/05/2022 18:50:04</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>06/05/2022 13:42:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>06/05/2022 13:42:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>06/05/2022 13:42:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>06/05/2022 13:42:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>06/05/2022 13:42:26</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/05/2022 13:32:22</publishTime>
+    </File>
+    <File Include="Images/aboutus.jpg">
+      <publishTime>06/05/2022 14:51:44</publishTime>
+    </File>
+    <File Include="Images/Banner/Banner-01.jpg">
+      <publishTime>06/05/2022 14:20:08</publishTime>
+    </File>
+    <File Include="Images/Banner/Banner-02.jpg">
+      <publishTime>06/05/2022 14:46:24</publishTime>
+    </File>
+    <File Include="Images/Bushra-Khan.jpg">
+      <publishTime>07/09/2022 23:37:43</publishTime>
+    </File>
+    <File Include="Images/Dr.-Subhash-Chandra.jpg">
+      <publishTime>07/09/2022 23:07:28</publishTime>
+    </File>
+    <File Include="Images/ib-continuum-logo.png">
+      <publishTime>06/05/2022 14:08:28</publishTime>
+    </File>
+    <File Include="Images/ib-myp.png">
+      <publishTime>07/10/2022 22:08:25</publishTime>
+    </File>
+    <File Include="Images/ib-primary.png">
+      <publishTime>07/10/2022 21:55:58</publishTime>
+    </File>
+    <File Include="Images/Ib_dp.png">
+      <publishTime>07/10/2022 22:22:33</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/Admission_Procedure.jpg">
+      <publishTime>07/10/2022 00:43:14</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/Eligibility.jpg">
+      <publishTime>07/10/2022 00:21:35</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/FAQs.jpg">
+      <publishTime>07/10/2022 00:52:10</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/IB_Diploma_Programme.jpg">
+      <publishTime>07/10/2022 22:21:54</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/InnsideBanner.jpg">
+      <publishTime>07/09/2022 20:58:33</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/Middle_Years_Programme.jpg">
+      <publishTime>07/10/2022 22:06:39</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/Primary_Years_Programme.jpg">
+      <publishTime>07/10/2022 21:54:06</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/the-ib-programmes.jpg">
+      <publishTime>07/10/2022 01:04:24</publishTime>
+    </File>
+    <File Include="Images/InnsideBanner/Why_Choose_MLSI.jpg">
+      <publishTime>07/10/2022 00:17:26</publishTime>
+    </File>
+    <File Include="Images/logo-mlsi.png">
+      <publishTime>06/05/2022 14:08:28</publishTime>
+    </File>
+    <File Include="Images/navyata.jpg">
+      <publishTime>07/09/2022 23:20:24</publishTime>
+    </File>
+    <File Include="Images/Photogallery/Activity.jpg">
+      <publishTime>07/09/2022 21:58:40</publishTime>
+    </File>
+    <File Include="Images/Photogallery/Events.jpg">
+      <publishTime>07/09/2022 21:58:40</publishTime>
+    </File>
+    <File Include="Images/Photogallery/Infrastructure.jpg">
+      <publishTime>07/09/2022 21:58:40</publishTime>
+    </File>
+    <File Include="Images/Priya-Anand.jpg">
+      <publishTime>07/09/2022 23:37:43</publishTime>
+    </File>
+    <File Include="Images/Vishnu-Sharma.jpg">
+      <publishTime>07/09/2022 23:37:43</publishTime>
+    </File>
+    <File Include="Images/Why_Choose_MLSI_1.jpg">
+      <publishTime>07/09/2022 23:53:03</publishTime>
+    </File>
+    <File Include="Images/Why_Choose_MLSI_2.jpg">
+      <publishTime>07/09/2022 23:53:03</publishTime>
+    </File>
+    <File Include="Images/Why_Choose_MLSI_3.jpg">
+      <publishTime>07/09/2022 23:53:03</publishTime>
+    </File>
+    <File Include="Images/Why_Choose_MLSI_4.jpg">
+      <publishTime>07/09/2022 23:53:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/custum.js">
+      <publishTime>07/10/2022 23:16:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.4.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery.fancybox.3.4.1.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/owl.carousel.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>06/05/2022 13:41:44</publishTime>
+    </File>
+    <File Include="Views/Home/Admission_Procedure.cshtml">
+      <publishTime>07/10/2022 00:43:29</publishTime>
+    </File>
+    <File Include="Views/Home/Blog.cshtml">
+      <publishTime>07/10/2022 00:12:45</publishTime>
+    </File>
+    <File Include="Views/Home/Career_Counselling.cshtml">
+      <publishTime>07/10/2022 23:12:34</publishTime>
+    </File>
+    <File Include="Views/Home/Clubs_and_Extra_Curricular_Activities.cshtml">
+      <publishTime>07/10/2022 22:40:35</publishTime>
+    </File>
+    <File Include="Views/Home/Community_Outreach.cshtml">
+      <publishTime>07/10/2022 22:46:50</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>07/10/2022 00:12:52</publishTime>
+    </File>
+    <File Include="Views/Home/Eligibility.cshtml">
+      <publishTime>07/10/2022 00:33:18</publishTime>
+    </File>
+    <File Include="Views/Home/Enquire_Now.cshtml">
+      <publishTime>07/10/2022 00:09:18</publishTime>
+    </File>
+    <File Include="Views/Home/Events.cshtml">
+      <publishTime>07/10/2022 00:12:31</publishTime>
+    </File>
+    <File Include="Views/Home/ExhibitionGallery.cshtml">
+      <publishTime>07/09/2022 22:00:28</publishTime>
+    </File>
+    <File Include="Views/Home/FAQs.cshtml">
+      <publishTime>07/10/2022 00:58:37</publishTime>
+    </File>
+    <File Include="Views/Home/Fees.cshtml">
+      <publishTime>07/10/2022 00:50:59</publishTime>
+    </File>
+    <File Include="Views/Home/IB_Diploma_Programme.cshtml">
+      <publishTime>07/10/2022 22:33:50</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/09/2022 22:48:42</publishTime>
+    </File>
+    <File Include="Views/Home/IndexOLD.cshtml">
+      <publishTime>07/09/2022 20:46:07</publishTime>
+    </File>
+    <File Include="Views/Home/Learning_Spaces.cshtml">
+      <publishTime>07/10/2022 22:49:52</publishTime>
+    </File>
+    <File Include="Views/Home/Message_from_the_Advisor.cshtml">
+      <publishTime>07/10/2022 00:19:10</publishTime>
+    </File>
+    <File Include="Views/Home/Message_from_the_Chairman.cshtml">
+      <publishTime>07/10/2022 00:19:10</publishTime>
+    </File>
+    <File Include="Views/Home/Middle_Years_Programme.cshtml">
+      <publishTime>07/10/2022 22:22:52</publishTime>
+    </File>
+    <File Include="Views/Home/Mission.cshtml">
+      <publishTime>07/10/2022 00:51:17</publishTime>
+    </File>
+    <File Include="Views/Home/News.cshtml">
+      <publishTime>07/10/2022 00:12:14</publishTime>
+    </File>
+    <File Include="Views/Home/ParentSpeak.cshtml">
+      <publishTime>07/09/2022 22:58:16</publishTime>
+    </File>
+    <File Include="Views/Home/Pastoral_Care.cshtml">
+      <publishTime>07/10/2022 22:58:50</publishTime>
+    </File>
+    <File Include="Views/Home/PhotoGallery.cshtml">
+      <publishTime>07/10/2022 00:51:14</publishTime>
+    </File>
+    <File Include="Views/Home/Primary_Years_Programme.cshtml">
+      <publishTime>07/10/2022 22:05:11</publishTime>
+    </File>
+    <File Include="Views/Home/Safety_Health_and_Security.cshtml">
+      <publishTime>07/10/2022 23:03:45</publishTime>
+    </File>
+    <File Include="Views/Home/School_Calendar.cshtml">
+      <publishTime>07/10/2022 23:05:03</publishTime>
+    </File>
+    <File Include="Views/Home/School_Leadership_Team.cshtml">
+      <publishTime>07/10/2022 00:19:10</publishTime>
+    </File>
+    <File Include="Views/Home/Sports_Infrastructure.cshtml">
+      <publishTime>07/10/2022 22:52:24</publishTime>
+    </File>
+    <File Include="Views/Home/The_Arts.cshtml">
+      <publishTime>07/10/2022 22:43:41</publishTime>
+    </File>
+    <File Include="Views/Home/The_IB_Programmes.cshtml">
+      <publishTime>07/10/2022 01:12:43</publishTime>
+    </File>
+    <File Include="Views/Home/The_Management.cshtml">
+      <publishTime>07/10/2022 00:19:10</publishTime>
+    </File>
+    <File Include="Views/Home/Transport.cshtml">
+      <publishTime>07/10/2022 22:56:42</publishTime>
+    </File>
+    <File Include="Views/Home/VideoGallery.cshtml">
+      <publishTime>07/09/2022 22:58:33</publishTime>
+    </File>
+    <File Include="Views/Home/Vision.cshtml">
+      <publishTime>07/10/2022 00:19:10</publishTime>
+    </File>
+    <File Include="Views/Home/Why_Choose_MLSI.cshtml">
+      <publishTime>07/10/2022 00:19:46</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/05/2022 13:32:22</publishTime>
+    </File>
+    <File Include="Views/Shared/Footer.cshtml">
+      <publishTime>06/05/2022 18:40:58</publishTime>
+    </File>
+    <File Include="Views/Shared/Header.cshtml">
+      <publishTime>07/10/2022 00:08:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/09/2022 22:07:37</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/05/2022 13:32:22</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/05/2022 13:32:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/11/2022 20:19:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

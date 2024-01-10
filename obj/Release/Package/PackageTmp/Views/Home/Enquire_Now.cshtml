@@ -1,0 +1,344 @@
+﻿@{
+    ViewBag.Title = "Enquire_Now";
+}
+
+    <div class="InsideBanner">
+        <img src="~/Images/InnsideBanner/Admission/Enquiry-now.jpg" alt="" class="img-fluid" />
+        <div class="EnquiryForm" ng-controller="EnquiryCtrl" ng-init="Enq.Type='P';Enq.Source='Website';SetCaptcha('@ViewBag.CaptchaStr');">
+            <h5 class="header5 text-center mt-0 mb-2">
+                School Admission Enquiry Form
+            </h5>
+            <form name="EnquiryForm" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <input type="text" ng-model="Enq.FirstName" required />
+                            <label>Parent's Name</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <input type="text" ng-model="Enq.ChildName" required />
+                            <label>Student's Name</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <input type="text" ng-model="Enq.Age" minlength="1" maxlength="2" numbers-only required />
+                            <label>Student Age</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <input type="text" ng-model="Enq.Mobile" minlength="10" maxlength="10" numbers-only required>
+                            <label>Mobile No</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <input type="email" ng-model="Enq.Email" required />
+                            <label>Enter a valid email address</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Inputgroup">
+                            <select name="grade" id="grade" type="text" ng-model="Enq.class" required>
+                                <option value="" selected="selected"></option>
+                                <option value="Playgroup">Playgroup</option>
+                                <option value="Nursery">Nursery</option>
+                                <option value="Junior KG">Junior KG</option>
+                                <option value="Senior KG">Senior KG</option>
+                                <option value="Class I">Class I</option>
+                                <option value="Class II">Class II</option>
+                                <option value="Class III">Class III</option>
+                                <option value="Class IV">Class IV</option>
+                                <option value="Class V">Class V</option>
+                                <option value="Class VI">Class VI</option>
+                                <option value="Class VII">Class VII</option>
+                                <option value="Class VII">Class VIII</option>
+                                <option value="Class IX">Class IX</option>
+                                <option value="Class X">Class X</option>
+                                <option value="Class XI">Class XI</option>
+                            </select>
+                            <label>Enrollment In</label>
+                            <span class="inputbar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <span style="background-color: lightgreen; padding: 5px 15px; font-size: 1.1rem; line-height:normal; display: inline-block;">{{CaptchaStr}}</span>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" id="6_letters_code" name="6_letters_code" type="text" ng-model="EnteredCaptcha" />
+                        <span style="color:red" ng-show="CaptchaMsg">Invalid Captcha</span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <input id="chkAgree1" name="chkAgree" type="checkbox" ng-model="chkAgree" ng-change="ChangeClass();" style="width: 18px; height: 18px;" />
+                    <label style="font-weight:normal;"><span class="mandatory">*</span>Would you like to receive updates regarding MLSI.</label>
+                </div>
+                <div class="text-center mt-1">
+                    <input type="button" name="" id="btnSubmit" value="Submit" class="btn btn-first btn-rounded" ng-click="MLSISubmit();" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <section>
+    <div class="container">
+        <div class="row Inn">
+            <div class="col-md-6">
+                <h3 class="header3">Connecting with MLSI</h3>
+                <p>
+                    Parents seeking admission at MLSI for their child can schedule an appointment either by writing to us or by initiating and completing the online, 'Enquiry Form' given on this page.
+                    School tours are also organized by prior appointments only.
+                </p>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h5 class="header5 mb-4">Contact Details for School Admission Enquiry Form.</h5>
+                <div class="social-mail-links">
+                    <p>
+                        <img src="https://mlsi.in/wp-content/uploads/2021/05/contact-30x30.png" alt="" />
+                        Call us @@+91 9930441459 / +91 9769330319
+                    </p>
+                    <p>
+                        <img src="https://mlsi.in/wp-content/uploads/2021/05/email.png" alt="" />
+                        <a style="color: #1c62ad !important;" href="mailto:admission@mlsi.in">admission@mlsi.in</a>
+                    </p>
+
+                    <div class="social-icons-bottom text-left mb-4">
+                        <a href="https://www.facebook.com/MountLiteraSchoolInternational" target="_blank" class="fa fa-facebook"></a>
+                        <a onclick="YoutubeOpen()" class="fa fa-youtube"></a>
+                        @*<a href="https://www.youtube.com/@mountliteraschoolinternati503" target="_blank" class="fa fa-youtube"></a>*@
+                        <a href="https://www.instagram.com/mountliteraschoolinternational/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/company/74805873/admin/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+
+                    @*<p>
+                            <img src="https://mlsi.in/wp-content/uploads/2021/05/tweet.png" alt="" />
+                            Twitter - @@mlsi_school
+                        </p>
+                        <p>
+                            <img src="https://mlsi.in/wp-content/uploads/2021/05/insta.png" alt="" />
+                            Instagram - @@mlsi_school
+                        </p>
+                        <p>
+                            <img src="https://mlsi.in/wp-content/uploads/2021/05/facebook.png" alt="" />
+                            Facebook - @@mountliteraschoolinternational
+                        </p>
+                        <p>
+                            <img src="https://mlsi.in/wp-content/uploads/2021/05/youtube.png" alt="" />
+                            Youtube - youtube.com/mlsi_school
+                        </p>*@
+                </div>
+            </div>
+        </div>
+        @*<div class="row mb-5">
+                 <div class="col-md-6 ConnectingMLSI">
+                     <div class="Inn">
+                         <h3 class="header3">Connecting with MLSI</h3>
+                         <p>
+                             The Admission Team advises that parents seeking School admission
+                             for their child in the school to schedule an appointment either
+                             by writing to us or initiate and complete online, 'Enquiry Form'
+                             given in this page. These tours are organised by prior
+                             appointment only.
+                         </p>
+                         <h5 class="header5 mb-4">Contact Details for School Admission Enquiry Form.</h5>
+                         <div class="social-mail-links">
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/contact-30x30.png" alt="" />
+                                 Call us @@+91 9930441459 / +91 9769330319
+                             </p>
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/email.png" alt="" />
+                                 <a style="color: #1c62ad !important;" href="mailto:admission@mlsi.in">admission@mlsi.in</a>
+                             </p>
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/tweet.png" alt="" />
+                                 Twitter - @@mlsi_school
+                             </p>
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/insta.png" alt="" />
+                                 Instagram - @@mlsi_school
+                             </p>
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/facebook.png" alt="" />
+                                 Facebook - @@mountliteraschoolinternational
+                             </p>
+                             <p>
+                                 <img src="https://mlsi.in/wp-content/uploads/2021/05/youtube.png" alt="" />
+                                 Youtube - youtube.com/mlsi_school
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+                <div class="col-md-6">
+                         <div class="EnquiryForm">
+                             <h4 class="header4 text-center mt-0 mb-4">
+                                 school admission enquiry form
+                             </h4>
+                             <form name="enquiryform" novalidate>
+                                 <div class="inputgroup mt-0">
+                                     <input type="text" ng-model="enq.firstname" required />
+                                     <label>parent's name</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="inputgroup">
+                                     <input type="text" ng-model="enq.childname" required />
+                                     <label>student's name</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="inputgroup">
+                                     <input type="text" ng-model="enq.age" minlength="1" maxlength="2" numbers-only required />
+                                     <label>student age</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="inputgroup">
+                                     <input type="text" ng-model="enq.mobile" minlength="10" maxlength="10" numbers-only required>
+                                     <label>mobile no</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="inputgroup">
+                                     <input type="email" ng-model="enq.email" required />
+                                     <label>enter a valid email address</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="inputgroup">
+                                     <select name="grade" id="grade" type="text" ng-model="enq.class" required>
+                                         <option value="" selected="selected"></option>
+                                         <option value="playgroup">playgroup</option>
+                                         <option value="nursery">nursery</option>
+                                         <option value="junior kg">junior kg</option>
+                                         <option value="senior kg">senior kg</option>
+                                         <option value="class i">class i</option>
+                                         <option value="class ii">class ii</option>
+                                         <option value="class iii">class iii</option>
+                                         <option value="class iv">class iv</option>
+                                         <option value="class v">class v</option>
+                                         <option value="class vi">class vi</option>
+                                         <option value="class vii">class vii</option>
+                                         <option value="class vii">class viii</option>
+                                         <option value="class ix">class ix</option>
+                                         <option value="class x">class x</option>
+                                         <option value="class xi">class xi</option>
+                                     </select>
+                                     <label>enrollment in</label>
+                                     <span class="inputbar"></span>
+                                 </div>
+                                 <div class="row mt-3">
+                                     <div class="col-6 form-group">
+                                         <span style="background-color: lightgreen; padding: 10px 15px; font-size: 1.5rem; display: inline-block;">{{captchastr}}</span>
+                                     </div>
+                                     <div class="col-6 form-group">
+                                         <input class="form-control" id="6_letters_code" name="6_letters_code" type="text" ng-model="enteredcaptcha" />
+                                         <span style="color:red" ng-show="captchamsg">invalid captcha</span>
+                                     </div>
+                                 </div>
+                                 <div class="mt-4">
+                                     <input id="chkagree1" name="chkagree" type="checkbox" ng-model="chkagree" ng-change="changeclass();" style="width: 18px; height: 18px;" />
+                                     <label><span class="mandatory">*</span>would you like to receive updates regarding mlsi.</label>
+                                 </div>
+                                 <div class="text-center mt-4">
+
+                                     <input type="button" name="" id="btnsubmit" value="submit" class="btn btn-lg btn-first btn-rounded" ng-click="mlsisubmit();" />
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+            </div>*@
+        @*  <div>
+                <label class="radiobtn mr-3 mb-0">
+                    <input type="radio" name="MLSI" ng-model="chkAgree" value="Yes" />
+                    <i></i><span>Yes</span>
+                </label>
+                <label class="radiobtn mb-0">
+                    <input type="radio" name="MLSI" ng-model="chkAgree" value="No" />
+                    <i></i><span>No</span>
+                </label>
+            </div>*@
+        @*<button class="btn btn-lg btn-first btn-rounded" ng-click="MLSISubmit();">Submit</button>*@
+    </div>
+    <div class="container">       
+        <div class="InsideBlock" id="">
+            <div class="InsideBlockHeader">
+                Meet our Admissions Team
+            </div>
+            <div class="InsideBlockBody">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="AdmissionsTeamPhoto">
+                            <a href="~/Images/Madhushree-Rathi.jpg" data-fancybox="">
+                                <img src="~/Images/Madhushree-Rathi.jpg" alt="" />
+                            </a>
+                            <h4>
+                                Madhushree Rathi
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="AdmissionsTeamPhoto">
+                            <a href="~/Images/Sheetal-Bathija.jpg" data-fancybox="">
+                                <img src="~/Images/Sheetal-Bathija.jpg" alt="" />
+                            </a>
+                            <h4>
+                                Sheetal Bathija
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style type="text/css">
+    @@media (min-width:992px){
+        .InsideBanner .EnquiryForm {
+            max-width: 500px;
+            position: absolute;
+            top: 15px;right:30px;
+            background: #fff;
+            padding: 10px;
+            border:0;
+        }
+    }
+    .InsideBanner .EnquiryForm .Inputgroup {
+        margin: 20px 0 0;
+    }
+    .InsideBanner .EnquiryForm .Inputgroup > label {
+        font-weight: 400;
+    }
+    .Inn {
+        background: #f5f5f5;
+        margin:0 0 30px;
+        padding:15px; 
+        border-radius:10px;
+    }
+    /*Error Message*/
+    input .ng-dirty.ng-invalid, input.ng-invalid.ng-touched {
+        border-bottom: 1px solid red;
+    }
+
+    select.ng-dirty.ng-invalid,
+    select.ng-invalid.ng-touched {
+        border-bottom: 1px solid red;
+    }
+
+    textarea.ng-dirty.ng-invalid,
+    textarea.ng-invalid.ng-touched {
+        border-bottom: 1px solid red;
+    }
+
+    .error-message {
+        color: red;
+        display: block;
+    }
+    /*End Message*/
+</style>
+

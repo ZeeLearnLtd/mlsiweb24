@@ -1,0 +1,171 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div id="Banners" class="owl-carousel">
+
+    <div class="item">
+        <img src="~/Images/Banner/Banner-02.jpg" class="img-fluid" alt="" />
+        <div class="caption">
+            <div class="container">
+                <p class="" data-animation-in="fadeInUp">
+                    Mount Litera School International (MLSI) is a future-ready IB Continuum School authorized by the International Baccalaureate Organization to offer its Primary Years Programme (PYP),Middle Years Programme (MYP)and theDiploma Programme (DP).Located centrally in Bandra Kurla Complex in Mumbai, MLSI is one of the very few IB Continuum schools in Mumbai. With excellent infrastructure, an internationally acclaimed head of school, IB trained academic team and innovative and holistic teaching methodologies, MLSI stands as a school that delivers best in class learning to its students. We help your child to not only identify but to acquire critical 'life skills' to help them become excellent communicators, creative thinkers, confident risk takers and highly knowledgeable, well balanced citizens.
+                </p>
+                <div class="btns" data-animation-in="fadeInUp">
+                    <a href="@Url.Action("Vision", "Home")" class="btn btn-lg btn-first">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="~/Images/Banner/Banner-01.jpg" class="img-fluid" alt="" />
+    </div>
+</div>
+<section class="aboutus">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <figure class="abtusimg">
+                    <img src="Images/aboutus.jpg" alt="" />
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header section-header-big mb-4">
+                    <h2>
+                        About Us
+                    </h2>
+                </div>
+                <p>
+                    Known as one of the best IB schools in Mumbai, we strive to be the best in teaching and learning. We ensure that all students achieve the highest academic standards possible as we prepare them to take their place as global citizens.
+                </p>
+                <p>
+                    Being one of the top IB schools, we instill a love of learning, integrity, and confidence in our students that helps them to take big strides in the future. An awareness of the needs of others and their responsibilities to them, regardless of class, creed, or culture.
+
+                </p>
+                <div class="btns">
+                    <a href="@Url.Action("Mission", "Home")" class="btn btn-first btn-round btn-lg"><i class="fa fa-pencil"></i><span>More Details</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<a class="OpenAnnouncement CloseAnnouncement OpenTwitterPopup" data-target="#TwitterPopup" rel="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
+<a class="OpenAnnouncement CloseAnnouncement OpenFacebookPopup" data-target="#FacebookPopup" rel="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+<a class="OpenAnnouncement OpenAnnouncementPopup" data-target="#AnnouncementPopup" rel="tooltip" title="Announcement"><i class="fa fa-bullhorn"></i></a>
+
+<div class="rgtpopup Hidergtpopup" id="TwitterPopup">
+    <a class="popupclose">&times;</a>
+    <div class="hdr">Twitter</div>
+    <div class="owl-carousel AnnouncementPopup">        
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
+                <span class="">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Activity.jpg" alt="" />
+                <span>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Events.jpg" alt="" />
+                <span>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rgtpopup Hidergtpopup" id="FacebookPopup">
+    <a class="popupclose">&times;</a>
+    <div class="hdr">Facebook</div>
+    <div class="owl-carousel AnnouncementPopup">        
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
+                <span class="">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Activity.jpg" alt="" />
+                <span>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Events.jpg" alt="" />
+                <span>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rgtpopup" id="AnnouncementPopup">
+    <a class="popupclose">&times;</a>
+    <div class="hdr">Announcement</div>
+    <div class="owl-carousel AnnouncementPopup">
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Activity.jpg" alt="" />
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="~/Images/Photogallery/Events.jpg" alt="" />
+            </a>
+        </div>        
+    </div>
+</div>
+
+<style type="text/css">
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+    }
+
+    .Admissionsopen {
+        display: none;
+    }
+
+    #footer > .container, #footer #copy {
+        display: none !important;
+    }
+
+    #footer {
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.38) !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display:none!important;
+    }
+
+        #footer .social-icons-bottom {
+            margin: 0 !important;
+        }
+</style>
