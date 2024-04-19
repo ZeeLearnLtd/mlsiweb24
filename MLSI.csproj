@@ -161,6 +161,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\mixin.scss" />
     <Content Include="Content\style.scss" />
+    <Content Include="Images\10_years_LOGO_H60.svg" />
+    <Content Include="Images\21st-Feb_IBDP-Admissions_Banner.jpg" />
     <Content Include="Images\aboutus.jpg" />
     <Content Include="Images\Admission_Procedure\Fees_hover.png" />
     <Content Include="Images\Admission_Procedure\Interaction_hover.png" />
@@ -290,6 +292,7 @@
     <Content Include="Images\Photogallery\SAIBSA_Event\4_thumb.jpg" />
     <Content Include="Images\Photogallery\SAIBSA_Event\5.JPG" />
     <Content Include="Images\Photogallery\SAIBSA_Event\5_thumb.jpg" />
+    <Content Include="Images\popup.jpg" />
     <Content Include="Images\Priya-Anand.jpg" />
     <Content Include="Images\Sheetal-Bathija.jpg" />
     <Content Include="Images\support-staff.png" />
@@ -320,7 +323,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Errorold.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
@@ -339,7 +342,6 @@
     </None>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Footer.cshtml" />
-    <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Home\IndexOLD.cshtml" />
     <Content Include="Views\Home\Vision.cshtml" />
     <Content Include="Views\Home\Mission.cshtml" />
@@ -385,6 +387,9 @@
     <Content Include="Views\Home\AboutUs.cshtml" />
     <Content Include="Views\Home\Enquire_Now - Copy.cshtml" />
     <Content Include="Views\Home\MLSIThankYou.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\HeaderN.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

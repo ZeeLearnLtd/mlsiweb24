@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -114,8 +114,9 @@ namespace MLSI.Controllers
         [HttpPost]
         public IHttpActionResult Get_MediaMaster_Web([FromBody] JObject objdata)
         {
-            return JsonText(bl.getdatatablejsondata("Proc_Get_MediaMaster_Web", objdata.ToString(), "connectionstring"));
-        }
+     //  return JsonText(bl.getdatatablejsondata("Proc_Get_MediaMaster_Web", objdata.ToString(), "connectionstring"));
+      return JsonText(bl.getdatatablejsondata("Proc_Get_MediaMaster_Web_mvc", objdata.ToString(), "connectionstring"));
+    }
 
         [Route("SaveComments")]
         [HttpPost]
