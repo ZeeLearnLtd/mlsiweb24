@@ -1,13 +1,37 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Error</title>
+    <style>
+        .error_img{
+            width:100%;
+        }
+        h5 {
+            color: #0B1C42;
+        }
+        .back_btn {
+            background-color: #29417D;
+            color:#FFF;
+            border-radius:50px;
+            padding:7px;
+            font-size:12px;
+        }
+        .back_btn:hover{
+            color: #CCC;
+        }
+        </style>
 </head>
 <body>
     <hgroup>
-        <h1>Error.</h1>
-        <h2>An error occurred while processing your request.</h2>
+        <div class="error_img  py-4">
+            <h5 class="text-center mt-4">Ooops! Something went wrong</h5>
+            <div class="img w-100 d-flex justify-content-center py-2">
+                <img src="~/Images/error_img.png" width="40%">
+            </div>
+            <h6 class="text-center">We can’t find page you are looking for</h6>
+           <div class="w-100 d-flex justify-content-center mt-5"><a href="/home"><button class="btn back_btn">Go To Home Page</button></a></div>
+        </div>
     </hgroup>
 </body>
 </html>
