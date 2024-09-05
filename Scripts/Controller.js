@@ -178,7 +178,6 @@ App.controller('IndexCtrl', function ($scope, $http, $filter, API) {
         API.Post("/WebRoute/GetMediaMaster", objdata).then(function (response) {
             if (!response.data.root.subroot.error) {
                 $scope.NewsAndEventsData = $scope.checkundefined(response.data.root.subroot);
-                
             }
         }, function myError(response) {
         });

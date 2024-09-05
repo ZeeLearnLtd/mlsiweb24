@@ -162,7 +162,7 @@
     <Content Include="Content\mixin.scss" />
     <Content Include="Content\style.scss" />
     <Content Include="Images\10_years_LOGO_H60.svg" />
-    <Content Include="Images\21st-Feb_IBDP-Admissions_Banner.jpg" />
+    <Content Include="Images\404.png" />
     <Content Include="Images\aboutus.jpg" />
     <Content Include="Images\Admission_Procedure\Fees_hover.png" />
     <Content Include="Images\Admission_Procedure\Interaction_hover.png" />
@@ -171,6 +171,7 @@
     <Content Include="Images\Admission_Procedure\Registration_hover.png" />
     <Content Include="Images\Admission_Procedure\Tour_hover.png" />
     <Content Include="Images\Admission_Procedure\welcome-Note_hover.png" />
+    <Content Include="Images\Banner\21st-Feb_IBDP-Admissions_Banner.jpg" />
     <Content Include="Images\Banner\Banner-1.jpg" />
     <Content Include="Images\Banner\Banner-2.jpg" />
     <Content Include="Images\Banner\Banner-3.jpg" />
