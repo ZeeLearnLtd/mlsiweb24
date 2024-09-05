@@ -1,181 +1,188 @@
-﻿@{
-    ViewBag.Title = "Index";
-}
-<div id="Banners" class="owl-carousel">
-    <div class="item">
-        @*<video controls="controls" autoplay muted loop style="width:100%; height:100%;">
-            <source src="~/Images/Banner/banner_video.mp4" type="video/mp4" />
-        </video>*@
-        <iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>
-        <div class="caption">
-            <div class="container">
-                <p class="" data-animation-in="fadeInUp">
-                    Mount Litera School International (MLSI) is a future-ready IB Continuum School
-                    authorized by the International Baccalaureate Organization to offer its Primary Years
-                    Programme (PYP), Middle Years Programme (MYP) and the Diploma Programme
-                    (DP). Located centrally in Bandra Kurla Complex in Mumbai, it is one of the very few
-                    IB Continuum schools in Mumbai.
-                </p>
-                @*<div class="btns" data-animation-in="fadeInUp">
-                    <a href="@Url.Action("Vision", "Home")" class="btn btn-lg btn-first">Read more</a>
-                </div>*@
-            </div>
-        </div>
+@{ ViewBag.Title = "Index"; }
+<div id="Banners" class="owl-carousel" style="height:490px">
+  <div class="item">
+    @*<video controls="controls" autoplay muted loop style="width:100%; height:100%; object-fit:cover;">
+          <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/ZllCelibration/mll_intro.mp4" type="video/mp4" />
+      </video>*@
+    <iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>
+    <div class="caption">
+      <div class="container">
+        <p class="" data-animation-in="fadeInUp">
+          Mount Litera School International (MLSI) is a future-ready IB Continuum School
+          authorized by the International Baccalaureate Organization to offer its Primary Years
+          Programme (PYP), Middle Years Programme (MYP) and the Diploma Programme
+          (DP). Located centrally in Bandra Kurla Complex in Mumbai, it is one of the very few
+          IB Continuum schools in Mumbai.
+        </p>
+        @*<div class="btns" data-animation-in="fadeInUp">
+              <a href="@Url.Action("Vision", "Home")" class="btn btn-lg btn-first">Read more</a>
+          </div>*@
+      </div>
     </div>
-    <div class="item">
-        <img src="~/Images/Banner/Banner-1.jpg" class="img-fluid" alt="" />
-    </div>
-    <div class="item">
-        <img src="~/Images/Banner/Banner-2.jpg" class="img-fluid" alt="" />
-    </div>
-    <div class="item">
-        <img src="~/Images/Banner/Banner-3.jpg" class="img-fluid" alt="" />
-    </div>
-    <div class="item">
-        <img src="~/Images/Banner/Banner-4.jpg" class="img-fluid" alt="" />
-    </div>
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/21st-Feb_IBDP-Admissions_Banner.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/banner1.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/banner2.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/banner3.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/banner4.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/SAT.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
+  <div class="item">
+    <img src="~/Images/Banner/Trinity-Banner_01.jpg" width="100%" class="img-fluid" alt="" />
+  </div>
 </div>
 <section class="aboutus">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <figure class="abtusimg">
-                    <img src="~/Images/aboutus.jpg" alt="" />
-                </figure>
-                <div class="row ExtraCurricular mt-3">
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="~/Images/extra-curricular-activities.png" alt="" class="img-fluid img" />
-                            <img src="~/Images/extra-curricular-activities_hover.png" alt="" class="img-fluid imghover" style="margin-left:26px;"/>
-                        </figure>
-                        <h4>Extra Curricular Activities</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="~/Images/support-staff.png" alt="" class="img-fluid img" />
-                            <img src="~/Images/support-staff_hover.png" alt="" class="img-fluid imghover" style="margin-left:26px;"/>
-                        </figure>
-                        <h4>Support Staff</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="~/Images/Infrastructure.png" alt="" class="img-fluid img" />
-                            <img src="~/Images/Infrastructure_hover.png" alt="" class="img-fluid imghover" style="margin-left:27px;"/>
-                        </figure>
-                        <h4>Infrastructure</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="section-header section-header-big mb-4">
-                    <h2>
-                        About Us
-                    </h2>
-                </div>
-                <p>
-                    Known as one of the best IB schools in Mumbai, we strive to be the best in teaching
-                    and learning. We ensure that all students achieve the highest academic standards
-                    possible as we prepare them to take their place as global citizens.
-                </p>
-                <p>
-                    We instil a love of learning, integrity, and confidence in our students that helps them
-                    to take big strides in the future. An awareness of the needs of others and their
-                    responsibilities to them, regardless of class, creed, or culture.
-                </p>
-                <p class="mb-0">
-                    With excellent infrastructure, an internationally acclaimed head of school, an IB
-                    trained academic team and innovative and holistic teaching methodologies, MLSI
-                    stands as a school that delivers best in class learning to its students. We help your
-                    child to not only identify but to acquire critical and life skills to help them become
-                    excellent communicators, creative thinkers, confident risk takers and highly
-                    knowledgeable, well balanced citizens.
-                </p>
-                @*<div class="btns">
-                    <a href="@Url.Action("Mission", "Home")" class="btn btn-first btn-round btn-lg"><i class="fa fa-pencil"></i><span>More Details</span></a>
-                </div>*@
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <figure class="abtusimg">
+          <img src="~/Images/aboutus.jpg" alt="" />
+        </figure>
+        <div class="row ExtraCurricular mt-3">
+          <div class="col-md-4">
+            <figure>
+              <img src="~/Images/extra-curricular-activities.png" alt="" class="img-fluid img" />
+              <img src="~/Images/extra-curricular-activities_hover.png" alt="" class="img-fluid imghover" style="margin-left:26px;" />
+            </figure>
+            <h4>Extra Curricular Activities</h4>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <img src="~/Images/support-staff.png" alt="" class="img-fluid img" />
+              <img src="~/Images/support-staff_hover.png" alt="" class="img-fluid imghover" style="margin-left:26px;" />
+            </figure>
+            <h4>Support Staff</h4>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <img src="~/Images/Infrastructure.png" alt="" class="img-fluid img" />
+              <img src="~/Images/Infrastructure_hover.png" alt="" class="img-fluid imghover" style="margin-left:27px;" />
+            </figure>
+            <h4>Infrastructure</h4>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="section-header section-header-big mb-4">
+          <h2>
+            About Us
+          </h2>
+        </div>
+        <p>
+          Known as one of the best IB schools in Mumbai, we strive to be the best in teaching
+          and learning. We ensure that all students achieve the highest academic standards
+          possible as we prepare them to take their place as global citizens.
+        </p>
+        <p>
+          We instil a love of learning, integrity, and confidence in our students that helps them
+          to take big strides in the future. An awareness of the needs of others and their
+          responsibilities to them, regardless of class, creed, or culture.
+        </p>
+        <p class="mb-0">
+          With excellent infrastructure, an internationally acclaimed head of school, an IB
+          trained academic team and innovative and holistic teaching methodologies, MLSI
+          stands as a school that delivers best in class learning to its students. We help your
+          child to not only identify but to acquire critical and life skills to help them become
+          excellent communicators, creative thinkers, confident risk takers and highly
+          knowledgeable, well balanced citizens.
+        </p>
+        @*<div class="btns">
+              <a href="@Url.Action("Mission", "Home")" class="btn btn-first btn-round btn-lg"><i class="fa fa-pencil"></i><span>More Details</span></a>
+          </div>*@
+      </div>
     </div>
+  </div>
 </section>
 
 @*<a class="OpenAnnouncement CloseAnnouncement OpenTwitterPopup" data-target="#TwitterPopup" rel="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
-    <a class="OpenAnnouncement CloseAnnouncement OpenFacebookPopup" data-target="#FacebookPopup" rel="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
-    <a class="OpenAnnouncement OpenAnnouncementPopup" data-target="#AnnouncementPopup" rel="tooltip" title="Announcement"><i class="fa fa-bullhorn"></i></a>
+  <a class="OpenAnnouncement CloseAnnouncement OpenFacebookPopup" data-target="#FacebookPopup" rel="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+  <a class="OpenAnnouncement OpenAnnouncementPopup" data-target="#AnnouncementPopup" rel="tooltip" title="Announcement"><i class="fa fa-bullhorn"></i></a>
 
-    <div class="rgtpopup Hidergtpopup" id="TwitterPopup">
-        <a class="popupclose">&times;</a>
-        <div class="hdr">Twitter</div>
-        <div class="owl-carousel AnnouncementPopup">
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
-                    <span class="">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Activity.jpg" alt="" />
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Events.jpg" alt="" />
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="rgtpopup Hidergtpopup" id="FacebookPopup">
-        <a class="popupclose">&times;</a>
-        <div class="hdr">Facebook</div>
-        <div class="owl-carousel AnnouncementPopup">
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
-                    <span class="">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Activity.jpg" alt="" />
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <img src="~/Images/Photogallery/Events.jpg" alt="" />
-                    <span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    *@
+  <div class="rgtpopup Hidergtpopup" id="TwitterPopup">
+      <a class="popupclose">&times;</a>
+      <div class="hdr">Twitter</div>
+      <div class="owl-carousel AnnouncementPopup">
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
+                  <span class="">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Activity.jpg" alt="" />
+                  <span>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Events.jpg" alt="" />
+                  <span>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="rgtpopup Hidergtpopup" id="FacebookPopup">
+      <a class="popupclose">&times;</a>
+      <div class="hdr">Facebook</div>
+      <div class="owl-carousel AnnouncementPopup">
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Infrastructure.jpg" alt="" />
+                  <span class="">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Activity.jpg" alt="" />
+                  <span>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+          <div class="item">
+              <a href="">
+                  <img src="~/Images/Photogallery/Events.jpg" alt="" />
+                  <span>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </span>
+              </a>
+          </div>
+      </div>
+  </div>
+*@
 @*<div class="rgtpopup" id="AnnouncementPopup" ng-controller="NewsAndEventsCtrl" ng-init="Type='Announcement';GetNewsAndEvents()">
-    <a class="popupclose">&times;</a>
-    <div class="hdr">Announcement</div>
-    <div class="owl-carousel AnnouncementPopup">
-        <div class="item" ng-repeat="News in NewsAndEventsData">
-            <a href="">
-                <img src="{{News.MainImagePath}}" alt="" />
-            </a>
-        </div>
-    </div>
-</div>*@
+      <a class="popupclose">&times;</a>
+      <div class="hdr">Announcement</div>
+      <div class="owl-carousel AnnouncementPopup">
+          <div class="item" ng-repeat="News in NewsAndEventsData">
+              <a href="">
+                  <img src="{{News.MainImagePath}}" alt="" />
+              </a>
+          </div>
+      </div>
+  </div>*@
 <style type="text/css">
-    /*#header {
+  /*#header {
         position: fixed;
         top: 0;
         left: 0;
@@ -192,60 +199,65 @@
     html.open-menu #header.is-fixed #ToggleMenu [class*=bar] {
         background-color: #fff;
     }*/
-    .Admissionsopen {
-        /*display: none;*/
-        position: sticky;
-        bottom: 0;
-        z-index: 1;
-    }
+  .Admissionsopen {
+    /*display: none;*/
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
 
 
-    .OpenAnnouncement {
-        width: 50px;
-        height: 60px;
-        right:0!important;
-        bottom:90px;
-        -webkit-transform: translateX(100%)!important;
-        -moz-transform: translateX(100%)!important;
-        -o-transform: translateX(100%)!important;
-        transform: translateX(100%)!important;
-        -webkit-border-radius: 40px 0 0 40px !important;
-        -moz-border-radius: 40px 0 0 40px !important;
-        border-radius: 40px 0 0 40px !important;
-    }
-    .CloseAnnouncement {
-        -webkit-transform: translateX(0%)!important;
-        -moz-transform: translateX(0%)!important;
-        -o-transform: translateX(0%)!important;
-        transform: translateX(0%)!important;
-    }
-    .OpenAnnouncement.OpenTwitterPopup {
-        bottom:209px;
-    }
-    .OpenAnnouncement.OpenFacebookPopup {
-        bottom:150px;
-    }
-    .OpenAnnouncement.OpenAnnouncementPopup {
-        
-    }
-    /*#footer > .container, #footer #copy {
+  .OpenAnnouncement {
+    width: 50px;
+    height: 60px;
+    right: 0 !important;
+    bottom: 90px;
+    -webkit-transform: translateX(100%) !important;
+    -moz-transform: translateX(100%) !important;
+    -o-transform: translateX(100%) !important;
+    transform: translateX(100%) !important;
+    -webkit-border-radius: 40px 0 0 40px !important;
+    -moz-border-radius: 40px 0 0 40px !important;
+    border-radius: 40px 0 0 40px !important;
+  }
+
+  .CloseAnnouncement {
+    -webkit-transform: translateX(0%) !important;
+    -moz-transform: translateX(0%) !important;
+    -o-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+  }
+
+  .OpenAnnouncement.OpenTwitterPopup {
+    bottom: 209px;
+  }
+
+  .OpenAnnouncement.OpenFacebookPopup {
+    bottom: 150px;
+  }
+
+  .OpenAnnouncement.OpenAnnouncementPopup {
+  }
+  /*#footer > .container, #footer #copy {
         display: none !important;
     }*/
-    #footer{
-        padding:0;
-    }
+  #footer {
+    padding: 0;
+  }
+
     #footer > .container {
-        /*padding: 15px;
+      /*padding: 15px;
         background: rgba(0, 0, 0, 0.38) !important;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 100;*/
-        display: none !important;
+      display: none !important;
     }
 
-        #footer .social-icons-bottom {
-            margin: 0 !important;
-        }
+    #footer .social-icons-bottom {
+      margin: 0 !important;
+    }
+
 </style>

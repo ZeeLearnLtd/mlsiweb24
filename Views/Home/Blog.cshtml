@@ -76,82 +76,89 @@
 
 @if (ViewBag.blogtitle != null)
 {
-  <section>
+  <section style="padding:0px !important;">
     <div class="row">
       <div class="col-md-12">
 
-        <div class="pancil_img_content mt-4">
+          <div class="pancil_img_content">
 
-          @foreach (var item in @dt.files)
-          {
-            if (item.type == "OtherFiles")
+            @foreach (var item in @dt.files)
             {
-              <img src=@item.url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item.filename>
-            }
-            else
-            {
-              <img src="" loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item.filename>
-            }
-            @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
-          }
-          <div class="left_div">
-            <div class="title text-left w-100">@dt.MetaTitle</div>
+              if (item.type == "OtherFiles")
+              {
+                <div>
+                  <img src=@item.url loading="lazy" height="500" width="100%" alt=@item.filename>
+                </div>
+              }
+              else
+              {
+              <div class="InsideBanner">
+                <img src="" loading="lazy" class="img-responsive" alt=@item.filename>
+              </div>
+                }
+                @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
+                }
           </div>
-          <div class="education_content mt-4">
-            <div>@dt.MetaKeyword</div>
-            <div>@dt.dateCreated</div>
-          </div>
-          <div class="text_para mt-3">
-            <p>@dt.MetaDescription</p>
-          </div>
-        </div>
+              <div style="width:84%;margin-left:10%;">
+                <div class="left_div">
+                  <h3 class="title text-left w-100 mt-5">@dt.MetaTitle</h3>
+                </div>
+                <div class="education_content mt-4">
+                  <div>@dt.MetaKeyword</div>
+                  <h6><i class="fa fa-calendar"></i>@dt.dateCreated</h6>
+                </div>
+                <div class="text_para mt-3">
+                  <p>@dt.MetaDescription</p>
+                </div>
+                <div class="text_para mt-3">
+                  @*<p [innerHTML]="blogdetails.long1"></p>*@
+                  <p>
+                    @Html.Raw(@dt.LongDescription)
+                    @*@(new HtmlString(data.long1.ToString()))*@
+                  </p>
+                </div>
+              </div>
 
-        <div class="text_para mt-3">
-          @*<p [innerHTML]="blogdetails.long1"></p>*@
-          <p>
-            @Html.Raw(@dt.LongDescription)
-            @*@(new HtmlString(data.long1.ToString()))*@
-          </p>
-        </div>
-
-      </div>
+            </div>
     </div>
-    <section id="blog">
+    <section id="blog ">
       <div class="mainDiv6">
         <div class="blogsContent">
-          <div class="ball_pen_box">
+          @*<div class="ball_pen_box">
             <div class="bluePencil">
               <img src="~/Images/microsite/partner_kidzee/img/blue_pancile.png" width="65px" height="95px" alt="">
             </div>
             <div class="faqBall">
               <img src="~/Images/microsite/partner_kidzee/img/orange_ball.png" width="95px" height="95px" alt="">
             </div>
-          </div>
-          <section>
+          </div>*@
+          <section style="width:84%;margin:8% 0 2% 10%;">
             <div class="blogsDiv">
-              <div class="title text-center border-around">Blogs</div>
-              <div class="row mt-5 ">
+              <h2 class="title text-center border-around">Blogs</h2>
+              <div class="row mt-5">
                 @foreach (var blog in dt?.blog)
                 {
-                <div class="col-4 card">
-                  <div>@blog.FromDate</div>
-                  @if (blog.files != null)
-                  {
-                    foreach (var item1 in blog.files)
+                <div class="col-4 card" style="border:none;">
+                  <div><i class="fa fa-calendar"></i>@blog.FromDate</div>
+                  <div style="height:43%">
+                    @if (blog.files != null)
                     {
-                      if (item1.type == "Logo")
+                      foreach (var item1 in blog.files)
                       {
-                        <img src=@item1.url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
+                        if (item1.type == "Logo")
+                        {
+                          <img src=@item1.url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
+                        }
+                        else
+                        {
+                          <img src="" loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
+                        }
+                        @*<img src=@blog.files[0].url loading="lazy" class="img" alt=@blog.files[0].filename>*@
                       }
-                      else
-                      {
-                        <img src="" loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
-                      }
-                      @*<img src=@blog.files[0].url loading="lazy" class="img" alt=@blog.files[0].filename>*@
                     }
-                  }
-                  <div>@blog.Title</div>
-                  <div>@blog.Short</div>
+                  </div>
+                  <h4>@blog.Title</h4>
+                  @*<div>@blog.Short</div>*@
                   <a href="/blog/@blog.slug">Read More</a>
                 </div>
                 }

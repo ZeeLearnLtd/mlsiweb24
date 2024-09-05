@@ -89,8 +89,28 @@
       }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-2P14570M6R');</script>
+  <!-- Google Tag Manager -->
+  <script>
+  (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGDJNLK"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="popup-overlay">
     <div class="popup">
       <img src="~/Images/popup.jpg" width="100%" />
@@ -109,17 +129,17 @@
   @RenderSection("scripts", required: false)
   <script>
     $(document).ready(function () {
-            if (!localStorage.getItem('popupPreviouslyShown') || false) {
-                setTimeout(function () {
-                    $('.popup-overlay').fadeIn();
-                    localStorage.setItem('popupPreviouslyShown', true);
-                }, 3000);
-            }
-        });
+      if (!localStorage.getItem('popupPreviouslyShown') || false) {
+        setTimeout(function () {
+          $('.popup-overlay').fadeIn();
+          localStorage.setItem('popupPreviouslyShown', true);
+        }, 3000);
+      }
+    });
 
-        $('.close-btn').click(function () {
-            $('.popup-overlay').fadeOut();
-        });
+    $('.close-btn').click(function () {
+      $('.popup-overlay').fadeOut();
+    });
   </script>
 </body>
 </html>
