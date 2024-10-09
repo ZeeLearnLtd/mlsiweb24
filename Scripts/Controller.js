@@ -1,4 +1,4 @@
-﻿App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
+App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
     $scope.Enq = {};
     $scope.Enq.utm_medium = getQueryStringValue('utm_medium');
     $scope.Enq.utm_source = getQueryStringValue('utm_source');
@@ -178,7 +178,6 @@ App.controller('IndexCtrl', function ($scope, $http, $filter, API) {
         API.Post("/WebRoute/GetMediaMaster", objdata).then(function (response) {
             if (!response.data.root.subroot.error) {
                 $scope.NewsAndEventsData = $scope.checkundefined(response.data.root.subroot);
-                
             }
         }, function myError(response) {
         });
@@ -251,7 +250,15 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.checkundefined = function (obj) {
         return API.Setnullarray(obj);
     }
+  $scope.getjson = function (data) {
+    if (data) {
+      return JSON.parse(data)
+    }
+    else {
+      return [];
+    }
 
+  }
     $scope.GetNewsAndEvents = function () {
        // console.log("hi called");
         $scope.NewsAndEventsData = [];

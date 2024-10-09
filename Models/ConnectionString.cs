@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace MLSI.Models
 {
@@ -15,20 +15,24 @@ namespace MLSI.Models
 
             if (connstr == "connectionstring")
             {
-                //strUserId = "sa";
-                //strPassword = "idawebsite";
-                //strServerName = @"Itserver";
-                //strDBName = "db_CMS";
+        //strUserId = "sa";
+        //strPassword = "idawebsite";
+        //strServerName = @"Itserver";
+        //strDBName = "db_CMS";
 
-                //strUserId = "cms";
-                //strPassword = "P@ssw0rd_15684";
-                //strServerName = @"103.241.181.144,8181";
+        //strUserId = "cms";
+        //strPassword = "P@ssw0rd_15684";
+        //strServerName = @"103.241.181.144,8181";
 
-                strUserId = "prdzllbiz";
-                strPassword = "a@cA1!7";
-                strServerName = @"103.11.155.121";
+        //strUserId = "prdzllbiz";
+        //strPassword = "a@cA1!7";
+        //strServerName = @"10.112.0.105,14343";
 
-                strDBName = "db_CMS";
+        strUserId = "padmin";
+        strPassword = "dgft@5379";
+        strServerName = @"103.11.155.109,14343";
+
+        strDBName = "db_CMS";
             }
             else if (connstr == "connectionstring1")
             {

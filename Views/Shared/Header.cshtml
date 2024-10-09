@@ -1,159 +1,200 @@
 <div class="topbar d-none">
-    <div class="container">
-        <div class="top-left">
-            @*<ul>
-                <li>
-                    <i class="fa fa-phone"></i> Emergency Line : <a href="tel:0123654789">+91(22) 0123654789</a>
-                </li>
-                <li>
-                    <i class="fa fa-map-marker"></i> Location: Country India
-                </li>
-                <li>
-                    <i class="fa fa-clock-o"></i> Mon-Fri : 9.00am To 6.00pm
-                </li>
-            </ul>*@
-        </div>
-        <div class="top-right">
-            <ul>
-                <li class="sn"><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li class="sn"><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li class="sn"><a href=""><i class="fa fa-instagram"></i></a></li>
-                <li class="sn"><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="@Url.Action("Upcoming-Events", "Home")">Upcoming Events</a></li>
-                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">
-                    <a href="@Url.Action("Contact", "Home")">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="top-left">
+      @*<ul>
+            <li>
+                <i class="fa fa-phone"></i> Emergency Line : <a href="tel:0123654789">+91(22) 0123654789</a>
+            </li>
+            <li>
+                <i class="fa fa-map-marker"></i> Location: Country India
+            </li>
+            <li>
+                <i class="fa fa-clock-o"></i> Mon-Fri : 9.00am To 6.00pm
+            </li>
+        </ul>*@
     </div>
+    <div class="top-right">
+      <ul>
+        <li class="sn"><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li class="sn"><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="sn"><a href=""><i class="fa fa-instagram"></i></a></li>
+        <li class="sn"><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="@Url.Action("Upcoming-Events", "Home")">Upcoming Events</a></li>
+        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">
+          <a href="@Url.Action("Contact", "Home")">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <header id="header">
-    <div id="overlay"></div>
-    <div class="container">
-        <div class="topmenu d-flex align-items-center justify-content-between">
-            <a id="ToggleMenu">
-                <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span>
+  <div id="overlay"></div>
+  <div class="container">
+    <div class="topmenu d-flex align-items-center justify-content-between">
+      <a id="ToggleMenu">
+        <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span>
+      </a>
+      <aside class="header-logo">
+        <a href="/home" class="logo">
+          <img src="~/Images/logo-mlsi.png" alt="" />
+          <img src="~/Images/ib-continuum-logo.png" alt="" />
+          <img src="~/Images/10_years_LOGO_H60.svg" alt="" />
+        </a>
+      </aside>
+      <div class="d-flex">
+        <a href="/enquire_now" class="d-none d-lg-block btn" style="background: #ffa500; color: #fff; border-radius: 30px;">Admissions Open 2024-25</a>
+        <a href="/enquire_now" class="d-none d-lg-block btn year_btn" style="background: #ffa500; color: #fff; border-radius: 30px;">Admissions Open 2025-26</a>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <nav id="TopNavBar">
+      @*<aside class="header-logo mb-4">
+            <a href="@Url.Action("Index", "Home")" class="logo">
+                <img src="~/Images/logo-mlsi.png" />
+                <img src="~/Images/ib-continuum-logo.png" />
             </a>
-            <aside class="header-logo">                
-                <a href="@Url.Action("Index", "Home")" class="logo">
-                    <img src="~/Images/logo-mlsi.png" alt="" />
-                    <img src="~/Images/ib-continuum-logo.png" alt="" />
-                </a>
-            </aside>
-            <div>
-                <a href="@Url.Action("Enquire_Now", "Home")" class="d-none d-lg-block btn" style="background: #ffa500; color: #fff; border-radius: 30px;">Admissions Open 2024-25</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <nav id="TopNavBar">
-            @*<aside class="header-logo mb-4">
-                    <a href="@Url.Action("Index", "Home")" class="logo">
-                        <img src="~/Images/logo-mlsi.png" />
-                        <img src="~/Images/ib-continuum-logo.png" />
-                    </a>
-                </aside>
-                <div class="clearfix"></div>*@
-            <ul class="clearfix FirstLevel">
-                <li>
-                    <a href="@Url.Action("Mission", "Home")">About Us</a>
-                    <ul>
-                        <li><a href="@Url.Action("Mission", "Home")">Mission Statement</a></li>
-                        <li><a href="@Url.Action("Vision", "Home")">Our Vision</a></li>
-                        <li><a href="@Url.Action("Message_from_the_Chairman", "Home")">Message from the Chairman</a></li>
-                        <li><a href="@Url.Action("Message_from_the_Advisor", "Home")">Message from the Advisor</a></li>
-                        <li><a href="@Url.Action("School_Leadership_Team", "Home")">School Leadership Team</a></li>
-                        @*<li><a href="@Url.Action("The_Management", "Home")">The Management</a></li>*@
-                    </ul>
-                </li>
-                <li>
-                    <a >Programmes</a>
-                    <ul>
-                        <li>
-                            <a href="@Url.Action("The_IB_Programmes", "Home")">The IB Programmes</a>
-                            <ul>
-                                <li><a href="@Url.Action("Primary_Years_Programme", "Home")">Primary Years Programme (PYP)</a></li>
-                                <li><a href="@Url.Action("Middle_Years_Programme", "Home")">Middle Years Programme (MYP)</a></li>
-                                <li><a href="@Url.Action("IB_Diploma_Programme", "Home")">Diploma Programme (DP)</a></li>
-                            </ul>
-                        </li>
+        </aside>
+        <div class="clearfix"></div>*@
+      <ul class="clearfix FirstLevel">
+        <li>
+          <a href="/mission">About Us</a>
+          <ul>
+            <li><a href="/mission">Mission Statement</a></li>
+            <li><a href="/vision">Our Vision</a></li>
+            @*<li><a href="/message_from_the_chairman">Message from the Chairman</a></li>*@
+            <li><a href="/message_from_the_advisor">Message from the Advisor</a></li>
+            <li><a href="/school_leadership_team">School Leadership Team</a></li>
+            @*<li><a href="@Url.Action("The_Management", "Home")">The Management</a></li>*@
+          </ul>
+        </li>
+        <li>
+          <a>Programmes</a>
+          <ul>
+            <li>
+              <a href="/ib_programmes">The IB Programmes</a>
+              <ul>
+                <li><a href="/ib_programmes/primary_years_programme">Primary Years Programme (PYP)</a></li>
+                <li><a href="/ib_programmes/middle_years_programme">Middle Years Programme (MYP)</a></li>
+                <li><a href="/ib_programmes/ib_diploma_programme">Diploma Programme (DP)</a></li>
+              </ul>
+            </li>
 
-                    </ul>
-                </li>
-                <li>
-                    <a>Admissions</a>
-                    <ul>
-                        <li><a href="@Url.Action("Why_Choose_MLSI", "Home")">Why choose MLSI</a></li>
-                        <li><a href="@Url.Action("Eligibility", "Home")">Eligibility</a></li>
-                        <li><a href="@Url.Action("Enquire_Now", "Home")">Enquire Now</a></li>
-                        <li><a href="@Url.Action("Admission_Procedure", "Home")">Admission Procedure</a></li>
-                        <li><a href="@Url.Action("Fees", "Home")">Fees</a></li>
-                        <li><a href="@Url.Action("FAQs", "Home")">FAQs</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="@Url.Action("Learning_at_MLSI", "Home")">Learning at MLSI</a>
-                    <ul>
-                        <li><a href="@Url.Action("Clubs_and_Extra_Curricular_Activities", "Home")">Clubs and Extra Curricular Activities</a></li>
-                        <li><a href="@Url.Action("The_Arts", "Home")">The Arts</a></li>
-                        @*<li><a href="@Url.Action("Community_Outreach", "Home")">Community Outreach</a></li>*@
-                    </ul>
-                </li>
-                <li>
-                    <a>Student life</a>
-                    <ul>
-                        <li>
-                            <a href="">Facilities</a>
-                            <ul>
-                                <li><a href="@Url.Action("Learning_Spaces", "Home")">Learning Spaces</a></li>
-                                <li><a href="@Url.Action("Sports_Infrastructure", "Home")">Sports Infrastructure</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="@Url.Action("Transport", "Home")">Transport</a></li>
-                        <li><a href="@Url.Action("Pastoral_Care", "Home")">Pastoral Care</a></li>
-                        <li><a href="@Url.Action("Safety_Health_and_Security", "Home")">Safety, Health and Security</a></li>
-                        <li><a href="@Url.Action("School_Calendar", "Home")">School Calendar</a></li>
-                        <li><a href="@Url.Action("Career_Counselling", "Home")">Career Counselling</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="@Url.Action("MLSIFaculty", "Home")">MLSI Faculty</a>
-                </li>
-                <li>
-                    <a>Gallery</a>
-                    <ul>
-                        <li><a href="@Url.Action("PhotoGallery", "Home")">Photo Gallery</a></li>
-                        <li><a href="@Url.Action("VideoGallery", "Home")">Video Gallery</a></li>
-                        <li><a href="@Url.Action("CASGallery", "Home")">CAS Gallery</a></li>
-                    </ul>
-                </li>
-                @*<li><a href="@Url.Action("Events", "Home")">Events</a></li>*@
-                <li>
-                    <a>Testimonials</a>
-                    <ul>
-                        <li>
-                            <a href="@Url.Action("ParentSpeak", "Home")">Parents</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("StudentsSpeak", "Home")">Students</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Media</a>
-                    <ul>
-                        <li><a href="@Url.Action("News", "Home")">News</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Admissions</a>
+          <ul>
+            <li><a href="/why_choose_mlsi">Why choose MLSI</a></li>
+            <li><a href="/eligibility">Eligibility</a></li>
+            <li><a href="/enquire_now">Enquire Now</a></li>
+            <li><a href="/admission_procedure">Admission Procedure</a></li>
+            <li><a href="/fees">Fees</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/learning_at_mlsi">Learning at MLSI</a>
+          <ul>
+            <li><a href="/clubs_and_extra_curricular_activities">Clubs and Extra Curricular Activities</a></li>
+            <li><a href="/the_arts">The Arts</a></li>
+            @*<li><a href="@Url.Action("Community_Outreach", "Home")">Community Outreach</a></li>*@
+          </ul>
+        </li>
+        <li>
+          <a>Student life</a>
+          <ul>
+            <li>
+              <a href="">Facilities</a>
+              <ul>
+                <li><a href="/facilities/learning_spaces">Learning Spaces</a></li>
+                <li><a href="/facilities/sports_infrastructure">Sports Infrastructure</a></li>
+              </ul>
+            </li>
+            <li><a href="/transport">Transport</a></li>
+            <li><a href="/pastoral_care">Pastoral Care</a></li>
+            <li><a href="/safety_health_and_security">Safety, Health and Security</a></li>
+            <li><a href="/school_calendar">School Calendar</a></li>
+            <li><a href="/career_counselling">Career Counselling</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/mlsifaculty">MLSI Faculty</a>
+        </li>
+        <li>
+          <a>Gallery</a>
+          <ul>
+            <li><a href="/photogallery">Photo Gallery</a></li>
+            <li><a href="/videogallery">Video Gallery</a></li>
+            <li><a href="/casgallery">CAS Gallery</a></li>
+          </ul>
+        </li>
+        @*<li><a href="@Url.Action("Events", "Home")">Events</a></li>*@
+        <li>
+          <a>Testimonials</a>
+          <ul>
+            <li>
+              <a href="/parentspeak">Parents</a>
+            </li>
+            <li>
+              <a href="/studentsspeak">Students</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>Media</a>
+          <ul>
+            <li><a href="/news">News</a></li>
 
-                        <li><a href="@Url.Action("Blog", "Home")">Blog</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="@Url.Action("Contact", "Home")">Contact</a>
-                </li>
-            </ul>
-        </nav>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="link_text">
+      <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+        <a href="https://mlsi.in/enquire_now" target="_blank">
+          Admission is Open for Academic Year 2024 - 2025. <span class="link">"Click Here"</span>
+        </a>
+        &nbsp;  &nbsp;
+        <a href="https://mlsi.in/enquire_now" target="_blank">
+          Admission is Open for Academic Year 2025 - 2026. <span class="link">"Click Here"</span>
+        </a>
+      </marquee>
+
     </div>
+  </div>
 </header>
+<style>
+  .year_btn{
+    margin-left:15px;
+  }
+  .link_text {
+    width: 100%;
+    background-color: #223871;
+    color: #FFF;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .link_text a {
+      color: #FFF;
+    }
+
+  .link {
+    color: rgb(193 199 207);
+  }
+</style>
+
+

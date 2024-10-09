@@ -1,55 +1,145 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 @{
     var CmsData = ViewBag.PageData;
 }
 <html>
 <head>
-    <title>MLSI:Top International School in Mumbai, India | IB School Bandra@*@CmsData.MetaTitle*@</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>@CmsData.MetaTitle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="canonical" href="@CmsData.CanonicalUrl">
+  <link rel="canonical" href="@CmsData.CanonicalUrl">
 
-    <meta name="keywords" content="@CmsData.MetaKeyword">
-    <meta property="og:site_name" content="" />
-    <meta property="og:url" content="@CmsData.MetaUrl" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="@CmsData.MetaTitle" />
-    <meta property="og:description" content="@CmsData.MetaDescription" />
-    <meta property="og:image" content="@CmsData.MetaImagePath" />
-    <meta property="og:author" content="@CmsData.MetaAuthor" />
+  <meta name="keywords" content="@CmsData.MetaKeyword">
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="@CmsData.MetaUrl" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="@CmsData.MetaTitle" />
+  <meta property="og:description" content="@CmsData.MetaDescription" />
+  <meta property="og:image" content="@CmsData.MetaImagePath" />
+  <meta property="og:author" content="@CmsData.MetaAuthor" />
 
-    <meta name="site_name" content="" />
-    <meta name="url" content="@CmsData.MetaUrl" />
-    <meta name="type" content="website" />
-    <meta name="title" content="@CmsData.MetaTitle" />
-    <meta name="description" content="@CmsData.MetaDescription" />
-    <meta name="image" content="@CmsData.MetaImagePath" />
-    <meta name="author" content="@CmsData.MetaAuthor" />
+  <meta name="site_name" content="" />
+  <meta name="url" content="@CmsData.MetaUrl" />
+  <meta name="type" content="website" />
+  <meta name="title" content="@CmsData.MetaTitle" />
+  <meta name="description" content="@CmsData.MetaDescription" />
+  <meta name="image" content="@CmsData.MetaImagePath" />
+  <meta name="author" content="@CmsData.MetaAuthor" />
 
-    <meta name="twitter:site_name" content="" />
-    <meta name="twitter:url" content="@CmsData.MetaUrl" />
-    <meta name="twitter:type" content="website" />
-    <meta name="twitter:title" content="@CmsData.MetaTitle" />
-    <meta name="twitter:description" content="@CmsData.MetaDescription" />
-    <meta name="twitter:image" content="@CmsData.MetaImagePath" />
-    <meta name="twitter:author" content="@CmsData.MetaAuthor" />
+  <meta name="twitter:site_name" content="" />
+  <meta name="twitter:url" content="@CmsData.MetaUrl" />
+  <meta name="twitter:type" content="website" />
+  <meta name="twitter:title" content="@CmsData.MetaTitle" />
+  <meta name="twitter:description" content="@CmsData.MetaDescription" />
+  <meta name="twitter:image" content="@CmsData.MetaImagePath" />
+  <meta name="twitter:author" content="@CmsData.MetaAuthor" />
 
-    @Styles.Render("~/Content/Styles")
-    @Scripts.Render("~/bundles/modernizr")
+  @Styles.Render("~/Content/Styles")
+  @Scripts.Render("~/bundles/modernizr")
+  <style>
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+      .popup img {
+        max-width: 85%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+    .close-btn {
+      position: absolute;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 30px;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @@media only screen and (max-width: 600px) {
+      .popup img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-2P14570M6R');</script>
+  <!-- Google Tag Manager -->
+  <script>
+  (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
-    @{Html.RenderPartial("Header");}
-    <main>
-        @RenderBody()
-    </main>
-    @{Html.RenderPartial("Footer");}
-    @*<footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>*@
-    @Scripts.Render("~/bundles/Scripts")
-    @RenderSection("scripts", required: false)
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGDJNLK"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="popup-overlay">
+    <div class="popup">
+      <img src="~/Images/popup.jpg" width="100%" />
+      <button class="close-btn">&times;</button>
+    </div>
+  </div>
+  @{Html.RenderPartial("Header");}
+  <main>
+    @RenderBody()
+  </main>
+  @{Html.RenderPartial("Footer");}
+  @*<footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>*@
+  @Scripts.Render("~/bundles/Scripts")
+  @RenderSection("scripts", required: false)
+  <script>
+    $(document).ready(function () {
+      if (!localStorage.getItem('popupPreviouslyShown') || false) {
+        setTimeout(function () {
+          $('.popup-overlay').fadeIn();
+          localStorage.setItem('popupPreviouslyShown', true);
+        }, 3000);
+      }
+    });
 
+    $('.close-btn').click(function () {
+      $('.popup-overlay').fadeOut();
+    });
+  </script>
 </body>
 </html>
