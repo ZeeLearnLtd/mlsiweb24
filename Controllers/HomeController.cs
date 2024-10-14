@@ -359,7 +359,19 @@ namespace MLSI.Controllers
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Events()
+
+
+        //public ActionResult MainAward(string str)
+        //{
+        //    PagesData pd = new PagesData();
+        //    string PgAction = "MainAward";
+        //    CmsPageData PageObj = new CmsPageData();
+        //    PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+        //    ViewBag.PageData = PageObj;
+        //    return View();
+        //}
+
+        public ActionResult Events()
     {
       PagesData pd = new PagesData();
       string PgAction = "Events";
@@ -389,7 +401,31 @@ namespace MLSI.Controllers
       }           
       return View();
     }
-    public ActionResult Contact()
+
+
+        public ActionResult Award(string str)
+        {
+            PagesData pd = new PagesData();
+            if (str == null)
+            {
+                CmsPageData PageObj = new CmsPageData();
+                string PgAction = "Award";
+                PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+                ViewBag.PageData = PageObj;
+                ViewBag.blogtitle = null;
+            }
+            else
+            {
+                blogPageData blogdata = new blogPageData();
+                string PgAction = str;
+                blogdata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "'}");
+                ViewBag.PageData = blogdata;
+                ViewBag.blogtitle = str;
+            }
+            return View();
+        }
+
+        public ActionResult Contact()
     {
       PagesData pd = new PagesData();
       string PgAction = "Contact";

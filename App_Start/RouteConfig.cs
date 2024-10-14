@@ -182,7 +182,17 @@ namespace MLSI
             url: "blog",
             defaults: new { controller = "Home", action = "Blog", id = UrlParameter.Optional }
         );
-      routes.MapRoute(
+       routes.MapRoute(
+           name: "award",
+           url: "award",
+           defaults: new { controller = "Home", action = "Award", id = UrlParameter.Optional }
+       );
+            routes.MapRoute(
+          name: "award/mainaward",
+          url: "award/mainaward",
+          defaults: new { controller = "Home", action = "MainAward", id = UrlParameter.Optional }
+      );
+            routes.MapRoute(
           name: "contact",
           url: "contact",
           defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
