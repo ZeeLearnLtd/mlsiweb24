@@ -171,6 +171,11 @@
     <Content Include="Images\Admission_Procedure\Registration_hover.png" />
     <Content Include="Images\Admission_Procedure\Tour_hover.png" />
     <Content Include="Images\Admission_Procedure\welcome-Note_hover.png" />
+    <Content Include="Images\award\award_banner.png" />
+    <Content Include="Images\award\award_sub_banner.png" />
+    <Content Include="Images\award\cr_1.png" />
+    <Content Include="Images\award\cr_2.png" />
+    <Content Include="Images\award\cr_3.png" />
     <Content Include="Images\Banner\21st-Feb_IBDP-Admissions_Banner.jpg" />
     <Content Include="Images\Banner\Banner-1.jpg" />
     <Content Include="Images\Banner\Banner-2.jpg" />
@@ -391,6 +396,8 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\HeaderN.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\Award.cshtml" />
+    <Content Include="Views\Home\MainAward.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
