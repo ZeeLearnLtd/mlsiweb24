@@ -402,8 +402,7 @@ namespace MLSI.Controllers
       return View();
     }
 
-
-        public ActionResult Award(string str)
+    public ActionResult Award(string str)
         {
             PagesData pd = new PagesData();
             if (str == null)
@@ -412,15 +411,15 @@ namespace MLSI.Controllers
                 string PgAction = "Award";
                 PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
                 ViewBag.PageData = PageObj;
-                ViewBag.blogtitle = null;
+                ViewBag.Awardtitle = null;
             }
             else
             {
-                blogPageData blogdata = new blogPageData();
+                blogPageData Awarddata = new blogPageData();
                 string PgAction = str;
-                blogdata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "'}");
-                ViewBag.PageData = blogdata;
-                ViewBag.blogtitle = str;
+                Awarddata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'Award'}");
+                ViewBag.PageData = Awarddata;
+                ViewBag.Awardtitle = str;
             }
             return View();
         }

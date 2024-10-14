@@ -187,10 +187,10 @@ namespace MLSI
            url: "award",
            defaults: new { controller = "Home", action = "Award", id = UrlParameter.Optional }
        );
-            routes.MapRoute(
-          name: "award/mainaward",
-          url: "award/mainaward",
-          defaults: new { controller = "Home", action = "MainAward", id = UrlParameter.Optional }
+       routes.MapRoute(
+          name: "awardRoute",
+          url: "award/{str}",
+          defaults: new { controller = "Home", action = "Award", str = UrlParameter.Optional }
       );
             routes.MapRoute(
           name: "contact",
