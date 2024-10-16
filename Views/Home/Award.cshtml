@@ -202,18 +202,13 @@
 
           @foreach (var item in @dt.files)
           {
-            if (item.type == "OtherFiles")
+            if (item.type == "Logo")
             {
               <div>
                 <img src=@item.url loading="lazy" height="500" width="100%" alt=@item.filename>
               </div>
             }
-            else
-            {
-              <div class="InsideBanner">
-                <img src="" loading="lazy" class="img-responsive" alt=@item.filename>
-              </div>
-            }
+           
             @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
           }
         </div>
@@ -221,6 +216,20 @@
           <div class="left_div">
             <h3 class="title text-left w-100 mt-5">@dt.MetaTitle</h3>
           </div>
+          <ul class="list-group list-group-horizontal">
+            @foreach (var item in @dt.files)
+            {
+              if (item.type == "OtherFiles")
+              {
+            <li class="list-group-item">
+              <img src=@item.url loading="lazy" height="500" width="100%" alt=@item.filename>
+            </li>
+              }
+
+              @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
+            }
+          </ul>
+          
           <div class="education_content mt-4">
             <div>@dt.MetaKeyword</div>
             <h6><i class="fa fa-calendar"></i>@dt.dateCreated</h6>
