@@ -113,10 +113,10 @@
     color: #223871;
   }
 
-  .card_info {
-    padding: 0px 10px
+    .card_info {
+        padding: 0px 10px;
+        height: 120px;
   }
-
   .aard_img {
     border-radius: 10px 10px 0px 0px;
   }
@@ -170,8 +170,8 @@
             <h1>Award</h1>
           </div>
 
-          <div class="row" ng-repeat="award in NewsAndEventsData">
-            <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-3" ng-repeat="award in NewsAndEventsData">
               <div class="card">
                 <div class="award_content" ng-repeat="dt in getjson(award.allfiles)">
                   <img src="{{dt.url}}" height="150px" width="100%" alt="{{dt.filename}}" />
