@@ -4,83 +4,6 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
   var dt = ViewBag.PageData;
 }
-@*<html>
-  <head>
-      <style>
-          dl, ol, ul {
-              margin-top: 0;
-              margin-bottom: 0rem;
-              padding: 0 17px;
-              color: #4B4B4B !important;
-              font-weight: 500;
-              font-size: 14px;
-          }
-
-          .card_info p {
-              margin-bottom: 0;
-              color: #4B4B4B !important;
-              font-weight: 500;
-              font-size: 14px;
-          }
-
-          .award_content {
-              color: #4B4B4B !important;
-          }
-
-          .card {
-              background-color: #F5F5F5;
-              border-radius: 10px 10px 10px 10px;
-          }
-
-          h1 {
-              font-size: 1rem;
-              font-weight: 600;
-              color: #223871;
-          }
-
-          .card_info {
-              padding: 0px 10px
-          }
-
-          .aard_img {
-              border-radius: 10px 10px 0px 0px;
-          }
-
-          .readmore_btn {
-              background: #29417D;
-              width: 60%;
-              margin: auto;
-              border-radius: 50px;
-              color: #FFF;
-              font-size: 13px;
-              height: 28px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              cursor: pointer;
-          }
-
-              .readmore_btn:hover {
-                  color: #FFF;
-                  cursor: pointer;
-              }
-
-          @@media only screen and (max-width: 600px) {
-              h1 {
-                  font-size: 1.6rem;
-              }
-
-              .award_content p {
-                  font-weight: 600;
-                  margin-bottom: 0;
-                  color: #4B4B4B !important;
-                  padding-left: 20px;
-                  color: #223871;
-              }
-          }
-      </style>
-  </head>
-  <body>*@
 <style>
   dl, ol, ul {
     margin-top: 0;
@@ -139,7 +62,13 @@
       color: #FFF;
       cursor: pointer;
     }
-
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: #fff;
+         border:none !important; 
+    }
   @@media only screen and (max-width: 600px) {
     h1 {
       font-size: 1.6rem;
@@ -222,7 +151,7 @@
               if (item.type == "OtherFiles")
               {
             <li class="list-group-item">
-              <img src=@item.url loading="lazy" height="500" width="100%" alt=@item.filename>
+              <img src=@item.url loading="lazy" height="auto" width="100%" alt=@item.filename>
             </li>
               }
 
