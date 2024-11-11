@@ -102,7 +102,7 @@
           <div class="row">
             <div class="col-md-3" ng-repeat="award in NewsAndEventsData">
               <div class="card">
-                <div class="award_content" ng-repeat="dt in award.allfiles">
+                <div class="award_content" ng-repeat="dt in getjson(award.allfiles)">
                   <img src="{{dt.url}}" height="150px" width="100%" alt="{{dt.filename}}" />
                   @*<img src="~/Images/award/award_sub_banner.png" width="100%" height="130px" class="aard_img">*@
                 </div>

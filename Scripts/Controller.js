@@ -250,7 +250,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.checkundefined = function (obj) {
         return API.Setnullarray(obj);
     }
-  $scope.getjson = function (data) {
+  $scope.getjson = function (data) {    
     if (data) {
       return JSON.parse(data)
     }
@@ -259,6 +259,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     }
 
   }
+  
     $scope.GetNewsAndEvents = function () {
        // console.log("hi called");
         $scope.NewsAndEventsData = [];
@@ -266,12 +267,17 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
             var objdata = { "Type": $scope.Type, "ProjectId": ProjectId, "TagName": $scope.TagName, "Date": $scope.PubDate };
             API.Post("/WebRoute/Get_MediaMaster_Web", objdata).then(function (response) {
                 if (response.data.length > 0) {
-                    console.log(response.data);
                     $scope.NewsAndEventsData = $scope.checkundefined(response.data);
-
+                  if ($scope.NewsAndEventsData[0].allfiles) {
+                      $scope.NewsAndEventsData.forEach(function (item) {
+                        if (item.allfiles) {
+                          item.allfiles= JSON.parse(item.allfiles)
+                        }
+                      });
+                    }
                 }
             }, function myError(response) {
-            });
+           });
         }
          
     };

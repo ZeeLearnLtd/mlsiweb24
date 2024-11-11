@@ -21,7 +21,7 @@
         <div class="col-md-8 col-lg-8">
           <div class="events-blogs-box" ng-repeat="News in NewsAndEventsData">
             <div class="img" >
-              <figure class="image" ng-repeat="dt in getjson(News.allfiles)">
+              <figure class="image" ng-repeat="dt in News.allfiles">
                 <a href="">
                   @*<img src="{{News.MainImagePath}}" alt="" />*@
                   <img src="{{dt.url}}" alt="{{dt.filename}}"/>

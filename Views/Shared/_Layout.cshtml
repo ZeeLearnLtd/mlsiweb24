@@ -35,7 +35,16 @@
   <meta name="twitter:description" content="@CmsData.MetaDescription" />
   <meta name="twitter:image" content="@CmsData.MetaImagePath" />
   <meta name="twitter:author" content="@CmsData.MetaAuthor" />
+  @*<meta http-equiv="Content-Security-Policy" content="
 
+    default-src 'self';
+    script-src 'self' https://static.zohocdn.com https://js.zohostatic.in https://js.zohocdn.com https://cdnjs.cloudflare.com  https://code.jquery.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://salesiq.zohopublic.in https://www.google-analytics.com/analytics.js https://googleads.g.doubleclick.net https://connect.facebook.net 'unsafe-inline';
+    style-src 'self' https://css.zohostatic.in https://css.zohocdn.com https://www.googletagmanager.com https://www.google-analytics.com https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline';
+    img-src 'self' data: https://www.financialexpress.com https://www.radioandmusic.com https://www.thehindu.com https://th-i.thgim.com https://www.dnaindia.com https://images.mid-day.com https://media.assettype.com https://static.toiimg.com https://i.ytimg.com https://mlsi.in https://img.youtube.com https://s3.ap-southeast-1.amazonaws.com https://english.cdn.zeenews.com https://static.businessworld.in https://cdn.dnaindia.com https://cms.mteducare.com https://www.google.com https://www.google.co.in https://www.kidzee.com  https://www.kidzee.com https://www.facebook.com https://www.googleadservices.com https://zeecms.s3.ap-south-1.amazonaws.com https://css.zohocdn.com https://in2-files.zohopublic.in;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://css.zohocdn.com;
+    connect-src 'self' https://stats.g.doubleclick.net https://www.google.com/ccm/collect https://globalapi.zeelearn.com https://www.google.co.in https://cmsapi.zeelearn.com wss://vts.zohopublic.in https://salesiq.zohopublic.in https://www.kidzee.com  https://analytics.google.com https://www.google-analytics.com/;
+    frame-src 'self' https://www.google.com https://www.youtube.com/ https://td.doubleclick.net https://www.googletagmanager.com;
+">*@
   @Styles.Render("~/Content/Styles")
   @Scripts.Render("~/bundles/modernizr")
   <style>
@@ -49,7 +58,17 @@
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 999;
     }
-
+    #back-top {
+      position: fixed;
+      bottom: 12px;
+      left: 20px !important;
+      z-index: 1;
+      cursor: pointer;
+      background-color: #223871;
+      color: #fff;
+      width: 55px;
+      height: 55px;
+    }
     .popup {
       position: absolute;
       top: 50%;
@@ -80,6 +99,16 @@
       align-items: center;
     }
 
+    .zsiq_custommain siq_bR {
+      width: 80px !important;
+      height: 80px !important;
+    }
+    .zsiq_custommain img {
+      max-height:80px !important;
+      max-width:80px !important;
+      height: auto;
+      width: auto;
+    }
     @@media only screen and (max-width: 600px) {
       .popup img {
         max-width: 100%;
@@ -89,12 +118,13 @@
       }
     }
   </style>
+  <script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-2P14570M6R');</script>
   <!-- Google Tag Manager -->
   <script>
-  (function (w, d, s, l, i) {
+    (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
