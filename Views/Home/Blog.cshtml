@@ -11,8 +11,11 @@
     <img src="~/Images/InnsideBanner/InnsideBanner.jpg" alt="" class="img-fluid" />
   </div>
   <section>
+   
     <div class="container" ng-controller="NewsAndEventsCtrl" ng-init="Type='Blog';GetNewsAndEvents()">
+      <h1>IB School Blogs</h1>
       <div class="pageheading">
+
         <h1>
           Blog
         </h1>
@@ -20,11 +23,11 @@
       <div class="row">
         <div class="col-md-8 col-lg-8">
           <div class="events-blogs-box" ng-repeat="News in NewsAndEventsData">
-            <div class="img" >
+            <div class="img">
               <figure class="image" ng-repeat="dt in News.allfiles">
                 <a href="">
                   @*<img src="{{News.MainImagePath}}" alt="" />*@
-                  <img src="{{dt.url}}" alt="{{dt.filename}}"/>
+                  <img src="{{dt.url}}" alt="{{dt.filename}}" />
                 </a>
               </figure>
             </div>
@@ -44,8 +47,8 @@
               </p>
               <div class="link">
                 @*<a data-fancybox="Videogallery" href="#divblog{{Id}}" data-transition-effect="tube">
-                      <i class="fa fa-arrow-right"></i><span>Read More</span>
-                  </a>*@
+                  <i class="fa fa-arrow-right"></i><span>Read More</span>
+              </a>*@
                 <a href="/blog/{{News.LinkUrl}}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
               </div>
               <div id="divblog{{Id}}" style="display:none">

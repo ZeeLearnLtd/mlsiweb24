@@ -22,7 +22,7 @@
                       @*<figure>
                         <img src="{{News.MainImagePath}}" alt="">
                         </figure>*@
-                    <figure ng-repeat="dt in getjson(News.allfiles)">
+                    <figure ng-repeat="dt in News.allfiles">
                       <img src="{{dt.url}}" alt="{{dt.filename}}">
                     </figure>
                     <div class="content">

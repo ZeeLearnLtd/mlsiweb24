@@ -21,10 +21,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:49</publishTime>
     </File>
     <File Include="bin/MLSI.dll">
-      <publishTime>10/17/2024 12:16:26</publishTime>
+      <publishTime>11/15/2024 10:32:09</publishTime>
     </File>
     <File Include="bin/MLSI.pdb">
-      <publishTime>10/17/2024 12:16:26</publishTime>
+      <publishTime>11/15/2024 10:32:09</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>01/12/2024 12:01:50</publishTime>
@@ -162,7 +162,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:19</publishTime>
     </File>
     <File Include="Content/style.min.css">
-      <publishTime>10/14/2024 15:30:35</publishTime>
+      <publishTime>11/11/2024 16:29:17</publishTime>
     </File>
     <File Include="Content/style.scss">
       <publishTime>10/14/2024 15:30:35</publishTime>
@@ -255,7 +255,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/14/2024 15:30:35</publishTime>
     </File>
     <File Include="Images/Banner/21st-Feb_IBDP-Admissions_Banner.jpg">
-      <publishTime>03/13/2024 16:12:45</publishTime>
+      <publishTime>10/21/2024 18:19:50</publishTime>
     </File>
     <File Include="Images/Banner/Banner-01.jpg">
       <publishTime>06/05/2022 14:20:07</publishTime>
@@ -623,6 +623,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Images/Vishnu-Sharma.jpg">
       <publishTime>01/12/2024 12:01:25</publishTime>
     </File>
+    <File Include="Images/WhatsApp.jpg">
+      <publishTime>11/08/2024 18:29:24</publishTime>
+    </File>
     <File Include="Images/Why_Choose_MLSI_1.jpg">
       <publishTime>01/12/2024 12:01:25</publishTime>
     </File>
@@ -645,7 +648,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:30</publishTime>
     </File>
     <File Include="Scripts/Controller.js">
-      <publishTime>08/13/2024 14:51:28</publishTime>
+      <publishTime>10/22/2024 14:50:08</publishTime>
     </File>
     <File Include="Scripts/custum.js">
       <publishTime>01/12/2024 12:01:30</publishTime>
@@ -678,19 +681,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Award.cshtml">
-      <publishTime>10/17/2024 11:43:53</publishTime>
+      <publishTime>11/14/2024 18:06:21</publishTime>
     </File>
     <File Include="Views/Home/Blog.cshtml">
-      <publishTime>09/04/2024 15:03:56</publishTime>
+      <publishTime>11/14/2024 17:57:07</publishTime>
     </File>
     <File Include="Views/Home/Career_Counselling.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:28:46</publishTime>
     </File>
     <File Include="Views/Home/CASGallery.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Clubs_and_Extra_Curricular_Activities.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:28:48</publishTime>
     </File>
     <File Include="Views/Home/Community_Outreach.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -717,7 +720,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Fees.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:28:50</publishTime>
     </File>
     <File Include="Views/Home/IB_Diploma_Programme.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -726,7 +729,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/29/2024 12:19:25</publishTime>
+      <publishTime>11/14/2024 17:28:54</publishTime>
     </File>
     <File Include="Views/Home/IndexOLD.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -735,7 +738,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Learning_Spaces.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:28:55</publishTime>
     </File>
     <File Include="Views/Home/MainAward.cshtml">
       <publishTime>10/14/2024 15:30:35</publishTime>
@@ -753,19 +756,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/07/2024 18:15:47</publishTime>
     </File>
     <File Include="Views/Home/MLSIFaculty.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:28:57</publishTime>
     </File>
     <File Include="Views/Home/MLSIThankYou.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/News.cshtml">
-      <publishTime>08/16/2024 14:04:29</publishTime>
+      <publishTime>10/22/2024 14:48:42</publishTime>
     </File>
     <File Include="Views/Home/ParentSpeak.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Pastoral_Care.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:29:00</publishTime>
     </File>
     <File Include="Views/Home/PhotoGallery.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -789,7 +792,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/Sports_Infrastructure.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:29:02</publishTime>
     </File>
     <File Include="Views/Home/StudentsSpeak.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -798,7 +801,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/The_IB_Programmes.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 17:29:04</publishTime>
     </File>
     <File Include="Views/Home/The_Management.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -807,7 +810,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Home/VideoGallery.cshtml">
-      <publishTime>01/12/2024 12:01:31</publishTime>
+      <publishTime>11/14/2024 18:01:49</publishTime>
     </File>
     <File Include="Views/Home/Vision.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
@@ -816,13 +819,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>08/21/2024 12:20:03</publishTime>
+      <publishTime>09/05/2024 16:46:03</publishTime>
     </File>
     <File Include="Views/Shared/Errorold.cshtml">
       <publishTime>01/12/2024 12:01:31</publishTime>
     </File>
     <File Include="Views/Shared/Footer.cshtml">
-      <publishTime>10/10/2024 16:41:39</publishTime>
+      <publishTime>11/11/2024 16:43:12</publishTime>
     </File>
     <File Include="Views/Shared/Header.cshtml">
       <publishTime>10/14/2024 15:30:35</publishTime>
@@ -831,7 +834,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/14/2024 15:30:35</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>09/30/2024 16:03:19</publishTime>
+      <publishTime>11/11/2024 16:38:18</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>01/12/2024 12:01:31</publishTime>
