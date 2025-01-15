@@ -5823,10 +5823,10 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
-    .InsideBanner .container .Topic a p {
-        font-size: .70rem !important;
-        font-weight: 500;
-    }
+  .InsideBanner .container .Topic a p {
+    font-size: .70rem !important;
+    font-weight: 500;
+  }
     #Banners .item .caption p {
         color: #fff;
         font-size: 0.90rem;

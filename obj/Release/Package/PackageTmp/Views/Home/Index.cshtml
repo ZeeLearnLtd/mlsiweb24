@@ -1,5 +1,5 @@
 @{ ViewBag.Title = "Index"; }
-<div id="Banners" class="owl-carousel" style="height:490px">
+<div id="Banners" class="owl-carousel main_banner_content">
   <div class="item">
     @*<video controls="controls" autoplay muted loop style="width:100%; height:100%; object-fit:cover;">
           <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/ZllCelibration/mll_intro.mp4" type="video/mp4" />
@@ -7,7 +7,7 @@
     <iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>
     <div class="caption">
       <div class="container">
-        <p class="" data-animation-in="fadeInUp">
+        <p class="video_text_content" data-animation-in="fadeInUp">
           Mount Litera School International (MLSI) is a future-ready IB Continuum School
           authorized by the International Baccalaureate Organization to offer its Primary Years
           Programme (PYP), Middle Years Programme (MYP) and the Diploma Programme
@@ -277,5 +277,31 @@
     z-index: 99;
     cursor:pointer;
   }
+
+
+
+.video_text_content {
+  display: block;
+}
+
+.main_banner_content {
+  height: 490px;
+}
+
+@@media only screen and (max-width: 600px) {
+
+  .main_banner_content {
+    height: 200px;
+  }
+
+  #Banners .item {
+    height: 140px;
+  }
+
+  .video_text_content{
+      display:none;
+  }
+}
+
 
 </style>

@@ -28,12 +28,18 @@ namespace MLSI.Models
         //strPassword = "a@cA1!7";
         //strServerName = @"10.112.0.105,14343";
 
-        strUserId = "padmin";
-        strPassword = "dgft@5379";
-        strServerName = @"103.11.155.109,14343";
+        //strUserId = "padmin";
+        //strPassword = "dgft@5379";
+        //strServerName = @"103.11.155.109,14343";
+
+        //strDBName = "db_CMS";
+        strUserId = "prodbIzftgD5379";
+        strPassword = "zygft@7389";
+        //strServerName = @"103.11.155.105,14343";
+        strServerName = @"10.112.0.105,14343";//"103.11.155.110,14343";
 
         strDBName = "db_CMS";
-            }
+      }
             else if (connstr == "connectionstring1")
             {
                 //strUserId = "prdzllbiz";
