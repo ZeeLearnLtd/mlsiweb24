@@ -4,7 +4,49 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
   var dt = ViewBag.PageData;
 }
-
+<style>
+    .card_title {
+        font-weight: 500;
+        overflow-y: auto;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-height: 1.5;
+    }
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+        padding: 10px;
+        height: 340px;
+    }
+    .read_more {
+        color: #08498f;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: right;
+        margin-top: 12px;
+    }
+    img{
+        object-fit:cover;
+    }
+    .date_content{
+        font-size:12px;
+        font-weight:500;
+        text-align:right;
+    }
+    </style>
 @if (ViewBag.blogtitle == null)
 {
   <div class="InsideBanner">
@@ -49,7 +91,7 @@
                 @*<a data-fancybox="Videogallery" href="#divblog{{Id}}" data-transition-effect="tube">
                   <i class="fa fa-arrow-right"></i><span>Read More</span>
               </a>*@
-                <a href="/blog/{{News.LinkUrl}}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                <a class="read_more" href="/blog/{{News.LinkUrl}}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
               </div>
               <div id="divblog{{Id}}" style="display:none">
                 <div ng-bind-html="News.Long|trustAsHtml">
@@ -141,30 +183,33 @@
               <div class="row mt-5">
                 @foreach (var blog in dt?.blog)
                 {
-                <div class="col-4 card" style="border:none;">
-                  <div><i class="fa fa-calendar"></i>@blog.FromDate</div>
-                  <div style="height:43%">
-                    @if (blog.files != null)
-                    {
-                      foreach (var item1 in blog.files)
-                      {
-                        if (item1.type == "Logo")
-                        {
-                          <img src=@item1.url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
-                        }
-                        else
-                        {
-                          <img src="" loading="lazy" width="100%" height="100%" class="img-responsive" alt=@item1.filename>
-                        }
-                        @*<img src=@blog.files[0].url loading="lazy" class="img" alt=@blog.files[0].filename>*@
-                      }
-                    }
-                  </div>
-                  <h4>@blog.Title</h4>
-                  @*<div>@blog.Short</div>*@
-                  <a href="/blog/@blog.slug">Read More</a>
+                <div class="col-4" style="border:none;">
+                    <div class="card">
+                        <div class="date_content"><i class="fa fa-calendar mx-1"></i>@blog.FromDate</div>
+                        <div style="height:43%">
+                            @if (blog.files != null)
+                            {
+                                foreach (var item1 in blog.files)
+                                {
+                                    if (item1.type == "Logo")
+                                    {
+                                        <img src=@item1.url loading="lazy" width="100%" height="140px" class="img-responsive" alt=@item1.filename>
+                                    }
+                                    else
+                                    {
+                                        <img src="" loading="lazy" width="100%" height="140px" class="img-responsive" alt=@item1.filename>
+                                    }
+                                    @*<img src=@blog.files[0].url loading="lazy" class="img" alt=@blog.files[0].filename>*@
+                                }
+                            }
+                        </div>
+                        <h5 class="mt-2">@blog.Title</h5>
+                        <div class="card_title">@blog.Short</div>
+                        <a class="read_more" href="/blog/@blog.slug">Read More</a>
+                    </div>
                 </div>
                 }
+             
               </div>
             </div>
           </section>
