@@ -19,19 +19,15 @@
 
                 <div ng-repeat="News in NewsAndEventsData" class="col-lg-4 col-md-6" >
                   <a href="{{News.LinkUrl}}" target="_blank">
-                      @*<figure>
-                        <img src="{{News.MainImagePath}}" alt="">
-                        </figure>*@
+                      
                     <figure ng-repeat="dt in getjson(News.allfiles)">
                       <img src="{{dt.url}}" alt="{{dt.filename}}">
                     </figure>
                     <div class="content">
                       <h4>
                         {{News.Title}}
-                      </h4>
-                      <div ng-bind-html="News.Short|trustAsHtml">
-                      </div>
-                      @*<p>{{News.Short}}</p>*@
+                      </h4>                   
+                      <p>{{News.Short}}</p>
                     </div>
                   </a>
                 </div>
@@ -47,8 +43,8 @@
                             <p>The students of Mount Litera School International celebrated Raksha Bandhan today, in a different way. Since the fetsival is a symbol for protection…</p>
                         </div>
                     </a>
-                </div>*@
-                @*<div class="col-lg-4 col-md-6">
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <a href="https://www.dnaindia.com/mumbai/report-mumbai-sibling-bond-celebrated-with-school-staff-2782171" target="_blank">
                         <figure>
                             <img src="https://mlsi.in/wp-content/uploads/2019/08/artical-2.jpg" alt="">

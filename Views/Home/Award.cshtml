@@ -38,8 +38,7 @@
 
     .card_info {
         padding: 0px 10px;
-        height: 220px;
-        overflow-y:auto;
+        height: 120px;
   }
   .aard_img {
     border-radius: 10px 10px 0px 0px;
@@ -101,7 +100,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-4" ng-repeat="award in NewsAndEventsData">
+            <div class="col-md-3" ng-repeat="award in NewsAndEventsData">
               <div class="card">
                 <div class="award_content" ng-repeat="dt in award.allfiles">
                   <img src="{{dt.url}}" height="150px" width="100%" alt="{{dt.filename}}" />
@@ -109,7 +108,7 @@
                 </div>
                 <div class="card_info">
                   <h1 class="mt-3">{{award.Title}}</h1>
-                  <p>{{award.Short | limitTo:200 }}</p>
+                  <p>{{award.Short | limitTo:50 }}</p>
 
                 </div>
                 <a href="/award/{{award.LinkUrl}}"><button class="btn readmore_btn my-3">Read More</button></a>

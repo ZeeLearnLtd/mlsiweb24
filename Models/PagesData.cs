@@ -52,8 +52,8 @@ namespace MLSI.Models
       blogPageData blogPageData2 = new blogPageData();
       if (val != null)
       {
-        blogPageData2.Name = ((val[0]["MetaUrl"] == null) ? "" : val[0]["MetaUrl"]);
-        blogPageData2.Description = ((val[0]["MetaDescription"] == null) ? "" : val[0]["MetaDescription"]);
+        blogPageData2.Name = ((val[0]["Title"] == null) ? "" : val[0]["Title"]);
+        blogPageData2.Description = ((val[0]["Short"] == null) ? "" : val[0]["Short"]);
         blogPageData2.LongDescription = ((val[0]["long1"] == null) ? "" : val[0]["long1"]);
         blogPageData2.PageUrl = ((val[0]["PageUrl"] == null) ? "" : val[0]["PageUrl"]);
         blogPageData2.MainImage = ((val[0]["MetaImageurl"] == null) ? "" : val[0]["MetaImageurl"]);
