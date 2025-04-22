@@ -556,6 +556,7 @@ D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.csproj.CopyComplete
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.dll
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.pdb
+<<<<<<< HEAD
 D:\projects\mlsiweb24\bin\MLSI.dll.config
 D:\projects\mlsiweb24\bin\MLSI.dll
 D:\projects\mlsiweb24\bin\MLSI.pdb
@@ -680,3 +681,67 @@ D:\Projects\MLSI\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
 D:\Projects\MLSI\obj\Debug\MLSI.csproj.Up2Date
 D:\Projects\MLSI\obj\Debug\MLSI.dll
 D:\Projects\MLSI\obj\Debug\MLSI.pdb
+=======
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll.config
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.pdb
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\csc.exe
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\csc.exe.config
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\csc.rsp
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\csi.exe
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\csi.rsp
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.AppContext.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.Collections.Immutable.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\vbc.exe
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\vbc.exe.config
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\vbc.rsp
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe.config
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Antlr3.Runtime.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Microsoft.Web.Infrastructure.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Newtonsoft.Json.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Net.Http.Formatting.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Helpers.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Http.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Http.WebHost.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Mvc.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Optimization.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Razor.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.Deployment.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.Razor.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\WebGrease.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Helpers.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Mvc.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Optimization.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Razor.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.Deployment.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.WebPages.Razor.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Newtonsoft.Json.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Antlr3.Runtime.pdb
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Net.Http.Formatting.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Http.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\System.Web.Http.WebHost.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.AssemblyReference.cache
+D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
+D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.Up2Date
+D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.dll
+D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.pdb
+>>>>>>> origin/dev
