@@ -5821,12 +5821,29 @@ td {
     overflow-y:scroll !important;
     overflow-x:hidden !important;
 }
+.video_text_content {
+    display:block;
+}
+.main_banner_content {
+    height: 490px;
+}
 
 @media only screen and (max-width: 600px) {
-  .InsideBanner .container .Topic a p {
-    font-size: .70rem !important;
-    font-weight: 500;
-  }
+    .main_banner_content{
+   height:200px;
+    }
+    #Banners .item {
+        height: 140px;
+    }
+
+    .video_text_content{
+        display:none
+    }
+
+    .InsideBanner .container .Topic a p {
+        font-size: .70rem !important;
+        font-weight: 500;
+    }
     #Banners .item .caption p {
         color: #fff;
         font-size: 0.90rem;
