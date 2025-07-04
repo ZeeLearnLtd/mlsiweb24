@@ -36,12 +36,10 @@
     color: #223871;
   }
 
-  .card_info {
-    padding: 0px 10px;
-    height: 220px;
-    overflow-y: auto;
+    .card_info {
+        padding: 0px 10px;
+        height: 120px;
   }
-
   .aard_img {
     border-radius: 10px 10px 0px 0px;
   }
@@ -64,15 +62,13 @@
       color: #FFF;
       cursor: pointer;
     }
-
-  .list-group-item {
-    position: relative;
-    display: block;
-    padding: .75rem 1.25rem;
-    background-color: #fff;
-    border: none !important;
-  }
-
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: #fff;
+         border:none !important; 
+    }
   @@media only screen and (max-width: 600px) {
     h1 {
       font-size: 1.6rem;
@@ -90,132 +86,40 @@
 
 @if (ViewBag.Awardtitle == null)
 {
-  @*<section style="padding: 0px 0;">
-      <div class="main_div">
-        <div class="main_banner">
-          <img src="~/Images/award/award_banner.png" width="100%">
-        </div>
-        <div class="container my-5" ng-controller="NewsAndEventsCtrl" ng-init="Type='Award';GetNewsAndEvents()">
+  <section style="padding: 0px 0;">
+    <div class="main_div">
+      <div class="main_banner">
+        <img src="~/Images/award/award_banner.png" width="100%">
+      </div>
+      <div class="container my-5" ng-controller="NewsAndEventsCtrl" ng-init="Type='Award';GetNewsAndEvents()">
 
-          <div class="main_award_content">
+        <div class="main_award_content">
 
-            <div class="pageheading">
-              <h1>Award</h1>
-            </div>
+          <div class="pageheading">
+            <h1>Award</h1>
+          </div>
 
-            <div class="row">
-              <div class="col-md-4" ng-repeat="award in NewsAndEventsData">
-                <div class="card">
-                  <div class="award_content" ng-repeat="dt in award.allfiles">
-                    <img src="{{dt.url}}" height="150px" width="100%" alt="{{dt.filename}}" />
-                    <img src="~/Images/award/award_sub_banner.png" width="100%" height="130px" class="aard_img">
-                  </div>
-                  <div class="card_info">
-                    <h1 class="mt-3">{{award.Title}}</h1>
-                    <p>{{award.Short | limitTo:200 }}</p>
-
-                  </div>
-                  <a href="/award/{{award.LinkUrl}}"><button class="btn readmore_btn my-3">Read More</button></a>
+          <div class="row">
+            <div class="col-md-3" ng-repeat="award in NewsAndEventsData">
+              <div class="card">
+                <div class="award_content" ng-repeat="dt in award.allfiles">
+                  <img src="{{dt.url}}" height="150px" width="100%" alt="{{dt.filename}}" />
+                  @*<img src="~/Images/award/award_sub_banner.png" width="100%" height="130px" class="aard_img">*@
                 </div>
+                <div class="card_info">
+                  <h1 class="mt-3">{{award.Title}}</h1>
+                  <p>{{award.Short | limitTo:50 }}</p>
+
+                </div>
+                <a href="/award/{{award.LinkUrl}}"><button class="btn readmore_btn my-3">Read More</button></a>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
-    </section>*@
-  <div class="full_content my-5">
-    <div class="award_content">
-      <div class="pageheading">
-        <h1>Award</h1>
-      </div>
-      <img src="~/Images/award/award_sub_banner.png" width="100%" class="aard_img">
     </div>
-    <h1 class="mt-5">Apple Distinguished Schools recognition</h1>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <img src="~/Images/award/cr_1.png" width="100%">
-      </div>
-      <div class="col-md-4">
-        <img src="~/Images/award/cr_2.png" width="100%">
-      </div>
-      <div class="col-md-4">
-        <img src="~/Images/award/cr_3.png" width="100%">
-      </div>
-    </div>
-    <div class="award_content">
-      <p>1. Introduction Section:</p>
-      <ul>
-        <li>Heading: “What is an Apple Distinguished School?”</li>
-        <li>
-          Content: A brief explanation of the Apple Distinguished School program, what it recognizes (innovation, leadership, and educational excellence), and why it’s
-          important in the context of 21st-century learning.
-        </li>
-      </ul>
-      <p>Achievement Announcement Section:</p>
-      <ul>
-        <li>Heading:</li>
-      </ul>
-      <p>“MLSI’s Journey to Becoming an Apple Distinguished School”</p>
-      <ul>
-        <li>Content</li>
-      </ul>
-      <p>
-        Detailed content about how Apple technology is integrated into MLSI’s learning environments. Discuss the impact on students’ learning experiences,
-        collaborative projects, creative expression, and problem-solving.
-      </p>
-      <ul>
-        <li>Add Bullet Points or Highlights:</li>
-      </ul>
-      <p>4. Recognition Section:</p>
-      <ul>
-        <li>Heading:</li>
-      </ul>
-      <p>“What It Means to Be an Apple Distinguished School”</p>
-
-      <ul>
-        <li>Content:</li>
-      </ul>
-      <p>
-        Discuss the benefits of being an Apple Distinguished School, the ongoing commitment to innovation in education, and what this recognition means for
-        MLSI’s future.
-      </p>
-      <ul>
-        <li>CTA:</li>
-      </ul>
-      <p>“Discover More About MLSI’s Technology-Driven Programs“</p>
-
-      <p>5. Future Vision Section:</p>
-      <ul>
-        <li>Heading:</li>
-      </ul>
-      <p>“Looking Ahead: Continuing Innovation at MLSI”</p>
-
-      <ul>
-        <li>Content:</li>
-      </ul>
-      <p>
-        A forward-looking statement about how MLSI will continue to lead in educational technology innovation, including future plans, ongoing teacher training,
-        and how the school will evolve its curriculum.
-      </p>
-
-      <p>6. Conclusion:</p>
-      <ul>
-        <li>Heading:</li>
-      </ul>
-      <p>“Join MLSI’s Technological Journey”</p>
-
-      <ul>
-        <li>Content:</li>
-      </ul>
-      <p>Invite prospective students and parents to learn more about the school and its forward-thinking approach. Include a CTA like “Explore Admissions” or “Visit Our Campus.”</p>
-
-      <ul>
-        <li>CTA:</li>
-      </ul>
-      <p>Buttons for “Explore Admissions” and “Contact Us”</p>
-    </div>
-  </div>
+  </section>
 }
 @if (ViewBag.Awardtitle != null)
 {
@@ -233,7 +137,7 @@
                 <img src=@item.url loading="lazy" height="500" width="100%" alt=@item.filename>
               </div>
             }
-
+           
             @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
           }
         </div>
@@ -246,15 +150,15 @@
             {
               if (item.type == "OtherFiles")
               {
-                <li class="list-group-item">
-                  <img src=@item.url loading="lazy" height="auto" width="100%" alt=@item.filename>
-                </li>
+            <li class="list-group-item">
+              <img src=@item.url loading="lazy" height="auto" width="100%" alt=@item.filename>
+            </li>
               }
 
               @*<img src=@dt.files[1].url loading="lazy" width="100%" height="100%" class="img-responsive" alt=@dt.files[1].filename>*@
             }
           </ul>
-
+          
           <div class="education_content mt-4">
             <div>@dt.MetaKeyword</div>
             <h6><i class="fa fa-calendar"></i>@dt.dateCreated</h6>
@@ -273,102 +177,102 @@
 
       </div>
     </div>
-
+   
   </section>
 }
 
-<div class="full_content my-5">
-  <div class="award_content">
-    <div class="pageheading">
-      <h1>Award</h1>
-    </div>
-    <img src="~/Images/award/award_sub_banner.png" width="100%" class="aard_img">
-  </div>
-  <h1 class="mt-5">Apple Distinguished Schools recognition</h1>
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <img src="~/Images/award/cr_1.png" width="100%">
-    </div>
-    <div class="col-md-4">
-      <img src="~/Images/award/cr_2.png" width="100%">
-    </div>
-    <div class="col-md-4">
-      <img src="~/Images/award/cr_3.png" width="100%">
-    </div>
-  </div>
-  <div class="award_content">
-    <p>1. Introduction Section:</p>
-    <ul>
-      <li>Heading: “What is an Apple Distinguished School?”</li>
-      <li>
-        Content: A brief explanation of the Apple Distinguished School program, what it recognizes (innovation, leadership, and educational excellence), and why it’s
-        important in the context of 21st-century learning.
-      </li>
-    </ul>
-    <p>Achievement Announcement Section:</p>
-    <ul>
-      <li>Heading:</li>
-    </ul>
-    <p>“MLSI’s Journey to Becoming an Apple Distinguished School”</p>
-    <ul>
-      <li>Content</li>
-    </ul>
-    <p>
-      Detailed content about how Apple technology is integrated into MLSI’s learning environments. Discuss the impact on students’ learning experiences,
-      collaborative projects, creative expression, and problem-solving.
-    </p>
-    <ul>
-      <li>Add Bullet Points or Highlights:</li>
-    </ul>
-    <p>4. Recognition Section:</p>
-    <ul>
-      <li>Heading:</li>
-    </ul>
-    <p>“What It Means to Be an Apple Distinguished School”</p>
+@*<div class="full_content my-5">
+      <div class="award_content">
+          <div class="pageheading">
+              <h1>Award</h1>
+          </div>
+          <img src="~/Images/award/award_sub_banner.png" width="100%" class="aard_img">
+      </div>
+      <h1 class="mt-5">Apple Distinguished Schools recognition</h1>
+      <div class="row mt-4">
+          <div class="col-md-4">
+              <img src="~/Images/award/cr_1.png" width="100%">
+          </div>
+          <div class="col-md-4">
+              <img src="~/Images/award/cr_2.png" width="100%">
+          </div>
+          <div class="col-md-4">
+              <img src="~/Images/award/cr_3.png" width="100%">
+          </div>
+      </div>
+      <div class="award_content">
+          <p>1. Introduction Section:</p>
+          <ul>
+              <li>Heading: “What is an Apple Distinguished School?”</li>
+              <li>
+                  Content: A brief explanation of the Apple Distinguished School program, what it recognizes (innovation, leadership, and educational excellence), and why it’s
+                  important in the context of 21st-century learning.
+              </li>
+          </ul>
+          <p>Achievement Announcement Section:</p>
+          <ul>
+              <li>Heading:</li>
+          </ul>
+          <p>“MLSI’s Journey to Becoming an Apple Distinguished School”</p>
+          <ul>
+              <li>Content</li>
+          </ul>
+          <p>
+              Detailed content about how Apple technology is integrated into MLSI’s learning environments. Discuss the impact on students’ learning experiences,
+              collaborative projects, creative expression, and problem-solving.
+          </p>
+          <ul>
+              <li>Add Bullet Points or Highlights:</li>
+          </ul>
+          <p>4. Recognition Section:</p>
+          <ul>
+              <li>Heading:</li>
+          </ul>
+          <p>“What It Means to Be an Apple Distinguished School”</p>
 
-    <ul>
-      <li>Content:</li>
-    </ul>
-    <p>
-      Discuss the benefits of being an Apple Distinguished School, the ongoing commitment to innovation in education, and what this recognition means for
-      MLSI’s future.
-    </p>
-    <ul>
-      <li>CTA:</li>
-    </ul>
-    <p>“Discover More About MLSI’s Technology-Driven Programs“</p>
+          <ul>
+              <li>Content:</li>
+          </ul>
+          <p>
+              Discuss the benefits of being an Apple Distinguished School, the ongoing commitment to innovation in education, and what this recognition means for
+              MLSI’s future.
+          </p>
+          <ul>
+              <li>CTA:</li>
+          </ul>
+          <p>“Discover More About MLSI’s Technology-Driven Programs“</p>
 
-    <p>5. Future Vision Section:</p>
-    <ul>
-      <li>Heading:</li>
-    </ul>
-    <p>“Looking Ahead: Continuing Innovation at MLSI”</p>
+          <p>5. Future Vision Section:</p>
+          <ul>
+              <li>Heading:</li>
+          </ul>
+          <p>“Looking Ahead: Continuing Innovation at MLSI”</p>
 
-    <ul>
-      <li>Content:</li>
-    </ul>
-    <p>
-      A forward-looking statement about how MLSI will continue to lead in educational technology innovation, including future plans, ongoing teacher training,
-      and how the school will evolve its curriculum.
-    </p>
+          <ul>
+              <li>Content:</li>
+          </ul>
+          <p>
+              A forward-looking statement about how MLSI will continue to lead in educational technology innovation, including future plans, ongoing teacher training,
+              and how the school will evolve its curriculum.
+          </p>
 
-    <p>6. Conclusion:</p>
-    <ul>
-      <li>Heading:</li>
-    </ul>
-    <p>“Join MLSI’s Technological Journey”</p>
+          <p>6. Conclusion:</p>
+          <ul>
+              <li>Heading:</li>
+          </ul>
+          <p>“Join MLSI’s Technological Journey”</p>
 
-    <ul>
-      <li>Content:</li>
-    </ul>
-    <p>Invite prospective students and parents to learn more about the school and its forward-thinking approach. Include a CTA like “Explore Admissions” or “Visit Our Campus.”</p>
+          <ul>
+              <li>Content:</li>
+          </ul>
+          <p>Invite prospective students and parents to learn more about the school and its forward-thinking approach. Include a CTA like “Explore Admissions” or “Visit Our Campus.”</p>
 
-    <ul>
-      <li>CTA:</li>
-    </ul>
-    <p>Buttons for “Explore Admissions” and “Contact Us”</p>
-  </div>
-</div>
+          <ul>
+              <li>CTA:</li>
+          </ul>
+          <p>Buttons for “Explore Admissions” and “Contact Us”</p>
+      </div>
+  </div>*@
 
 
 

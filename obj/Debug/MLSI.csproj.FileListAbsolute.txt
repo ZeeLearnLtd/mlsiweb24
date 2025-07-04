@@ -494,68 +494,6 @@ C:\Users\kishor.dalvi\Desktop\mlsi-web30-11\obj\Debug\MLSI.csproj.CoreCompileInp
 C:\Users\kishor.dalvi\Desktop\mlsi-web30-11\obj\Debug\MLSI.csproj.CopyComplete
 C:\Users\kishor.dalvi\Desktop\mlsi-web30-11\obj\Debug\MLSI.dll
 C:\Users\kishor.dalvi\Desktop\mlsi-web30-11\obj\Debug\MLSI.pdb
-D:\projects\mlsiweb24\bin\MLSI.dll.config
-D:\projects\mlsiweb24\bin\MLSI.dll
-D:\projects\mlsiweb24\bin\MLSI.pdb
-D:\projects\mlsiweb24\bin\roslyn\csc.exe
-D:\projects\mlsiweb24\bin\roslyn\csc.exe.config
-D:\projects\mlsiweb24\bin\roslyn\csc.rsp
-D:\projects\mlsiweb24\bin\roslyn\csi.exe
-D:\projects\mlsiweb24\bin\roslyn\csi.rsp
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\projects\mlsiweb24\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\projects\mlsiweb24\bin\roslyn\System.AppContext.dll
-D:\projects\mlsiweb24\bin\roslyn\System.Collections.Immutable.dll
-D:\projects\mlsiweb24\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.dll
-D:\projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\projects\mlsiweb24\bin\roslyn\System.Reflection.Metadata.dll
-D:\projects\mlsiweb24\bin\roslyn\vbc.exe
-D:\projects\mlsiweb24\bin\roslyn\vbc.exe.config
-D:\projects\mlsiweb24\bin\roslyn\vbc.rsp
-D:\projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe
-D:\projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe.config
-D:\projects\mlsiweb24\bin\Antlr3.Runtime.dll
-D:\projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\projects\mlsiweb24\bin\Microsoft.Web.Infrastructure.dll
-D:\projects\mlsiweb24\bin\Newtonsoft.Json.dll
-D:\projects\mlsiweb24\bin\System.Net.Http.Formatting.dll
-D:\projects\mlsiweb24\bin\System.Web.Helpers.dll
-D:\projects\mlsiweb24\bin\System.Web.Http.dll
-D:\projects\mlsiweb24\bin\System.Web.Http.WebHost.dll
-D:\projects\mlsiweb24\bin\System.Web.Mvc.dll
-D:\projects\mlsiweb24\bin\System.Web.Optimization.dll
-D:\projects\mlsiweb24\bin\System.Web.Razor.dll
-D:\projects\mlsiweb24\bin\System.Web.WebPages.Deployment.dll
-D:\projects\mlsiweb24\bin\System.Web.WebPages.dll
-D:\projects\mlsiweb24\bin\System.Web.WebPages.Razor.dll
-D:\projects\mlsiweb24\bin\WebGrease.dll
-D:\projects\mlsiweb24\bin\System.Web.Helpers.xml
-D:\projects\mlsiweb24\bin\System.Web.Mvc.xml
-D:\projects\mlsiweb24\bin\System.Web.Optimization.xml
-D:\projects\mlsiweb24\bin\System.Web.Razor.xml
-D:\projects\mlsiweb24\bin\System.Web.WebPages.xml
-D:\projects\mlsiweb24\bin\System.Web.WebPages.Deployment.xml
-D:\projects\mlsiweb24\bin\System.Web.WebPages.Razor.xml
-D:\projects\mlsiweb24\bin\Newtonsoft.Json.xml
-D:\projects\mlsiweb24\bin\Antlr3.Runtime.pdb
-D:\projects\mlsiweb24\bin\System.Net.Http.Formatting.xml
-D:\projects\mlsiweb24\bin\System.Web.Http.xml
-D:\projects\mlsiweb24\bin\System.Web.Http.WebHost.xml
-D:\projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.AssemblyReference.cache
-D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
-D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.CopyComplete
-D:\projects\mlsiweb24\obj\Debug\MLSI.dll
-D:\projects\mlsiweb24\obj\Debug\MLSI.pdb
 D:\Mohit Varade\MLSIGIT\bin\MLSI.dll.config
 D:\Mohit Varade\MLSIGIT\bin\MLSI.dll
 D:\Mohit Varade\MLSIGIT\bin\MLSI.pdb
@@ -618,6 +556,132 @@ D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.csproj.CopyComplete
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.dll
 D:\Mohit Varade\MLSIGIT\obj\Debug\MLSI.pdb
+<<<<<<< HEAD
+D:\projects\mlsiweb24\bin\MLSI.dll.config
+D:\projects\mlsiweb24\bin\MLSI.dll
+D:\projects\mlsiweb24\bin\MLSI.pdb
+D:\projects\mlsiweb24\bin\roslyn\csc.exe
+D:\projects\mlsiweb24\bin\roslyn\csc.exe.config
+D:\projects\mlsiweb24\bin\roslyn\csc.rsp
+D:\projects\mlsiweb24\bin\roslyn\csi.exe
+D:\projects\mlsiweb24\bin\roslyn\csi.rsp
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\projects\mlsiweb24\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\projects\mlsiweb24\bin\roslyn\System.AppContext.dll
+D:\projects\mlsiweb24\bin\roslyn\System.Collections.Immutable.dll
+D:\projects\mlsiweb24\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.dll
+D:\projects\mlsiweb24\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\projects\mlsiweb24\bin\roslyn\System.Reflection.Metadata.dll
+D:\projects\mlsiweb24\bin\roslyn\vbc.exe
+D:\projects\mlsiweb24\bin\roslyn\vbc.exe.config
+D:\projects\mlsiweb24\bin\roslyn\vbc.rsp
+D:\projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe
+D:\projects\mlsiweb24\bin\roslyn\VBCSCompiler.exe.config
+D:\projects\mlsiweb24\bin\Antlr3.Runtime.dll
+D:\projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\projects\mlsiweb24\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\mlsiweb24\bin\Newtonsoft.Json.dll
+D:\projects\mlsiweb24\bin\System.Net.Http.Formatting.dll
+D:\projects\mlsiweb24\bin\System.Web.Helpers.dll
+D:\projects\mlsiweb24\bin\System.Web.Http.dll
+D:\projects\mlsiweb24\bin\System.Web.Http.WebHost.dll
+D:\projects\mlsiweb24\bin\System.Web.Mvc.dll
+D:\projects\mlsiweb24\bin\System.Web.Optimization.dll
+D:\projects\mlsiweb24\bin\System.Web.Razor.dll
+D:\projects\mlsiweb24\bin\System.Web.WebPages.Deployment.dll
+D:\projects\mlsiweb24\bin\System.Web.WebPages.dll
+D:\projects\mlsiweb24\bin\System.Web.WebPages.Razor.dll
+D:\projects\mlsiweb24\bin\WebGrease.dll
+D:\projects\mlsiweb24\bin\System.Web.Helpers.xml
+D:\projects\mlsiweb24\bin\System.Web.Mvc.xml
+D:\projects\mlsiweb24\bin\System.Web.Optimization.xml
+D:\projects\mlsiweb24\bin\System.Web.Razor.xml
+D:\projects\mlsiweb24\bin\System.Web.WebPages.xml
+D:\projects\mlsiweb24\bin\System.Web.WebPages.Deployment.xml
+D:\projects\mlsiweb24\bin\System.Web.WebPages.Razor.xml
+D:\projects\mlsiweb24\bin\Newtonsoft.Json.xml
+D:\projects\mlsiweb24\bin\Antlr3.Runtime.pdb
+D:\projects\mlsiweb24\bin\System.Net.Http.Formatting.xml
+D:\projects\mlsiweb24\bin\System.Web.Http.xml
+D:\projects\mlsiweb24\bin\System.Web.Http.WebHost.xml
+D:\projects\mlsiweb24\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.AssemblyReference.cache
+D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
+D:\projects\mlsiweb24\obj\Debug\MLSI.csproj.CopyComplete
+D:\projects\mlsiweb24\obj\Debug\MLSI.dll
+D:\projects\mlsiweb24\obj\Debug\MLSI.pdb
+D:\Projects\MLSI\bin\MLSI.dll.config
+D:\Projects\MLSI\bin\MLSI.dll
+D:\Projects\MLSI\bin\MLSI.pdb
+D:\Projects\MLSI\bin\roslyn\csc.exe
+D:\Projects\MLSI\bin\roslyn\csc.exe.config
+D:\Projects\MLSI\bin\roslyn\csc.rsp
+D:\Projects\MLSI\bin\roslyn\csi.exe
+D:\Projects\MLSI\bin\roslyn\csi.rsp
+D:\Projects\MLSI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\MLSI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\MLSI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\MLSI\bin\roslyn\System.AppContext.dll
+D:\Projects\MLSI\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\MLSI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\MLSI\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\MLSI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\MLSI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\MLSI\bin\roslyn\vbc.exe
+D:\Projects\MLSI\bin\roslyn\vbc.exe.config
+D:\Projects\MLSI\bin\roslyn\vbc.rsp
+D:\Projects\MLSI\bin\roslyn\VBCSCompiler.exe
+D:\Projects\MLSI\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\MLSI\bin\Antlr3.Runtime.dll
+D:\Projects\MLSI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\MLSI\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\MLSI\bin\Newtonsoft.Json.dll
+D:\Projects\MLSI\bin\System.Net.Http.Formatting.dll
+D:\Projects\MLSI\bin\System.Web.Helpers.dll
+D:\Projects\MLSI\bin\System.Web.Http.dll
+D:\Projects\MLSI\bin\System.Web.Http.WebHost.dll
+D:\Projects\MLSI\bin\System.Web.Mvc.dll
+D:\Projects\MLSI\bin\System.Web.Optimization.dll
+D:\Projects\MLSI\bin\System.Web.Razor.dll
+D:\Projects\MLSI\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\MLSI\bin\System.Web.WebPages.dll
+D:\Projects\MLSI\bin\System.Web.WebPages.Razor.dll
+D:\Projects\MLSI\bin\WebGrease.dll
+D:\Projects\MLSI\bin\System.Web.Helpers.xml
+D:\Projects\MLSI\bin\System.Web.Mvc.xml
+D:\Projects\MLSI\bin\System.Web.Optimization.xml
+D:\Projects\MLSI\bin\System.Web.Razor.xml
+D:\Projects\MLSI\bin\System.Web.WebPages.xml
+D:\Projects\MLSI\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\MLSI\bin\System.Web.WebPages.Razor.xml
+D:\Projects\MLSI\bin\Newtonsoft.Json.xml
+D:\Projects\MLSI\bin\Antlr3.Runtime.pdb
+D:\Projects\MLSI\bin\System.Net.Http.Formatting.xml
+D:\Projects\MLSI\bin\System.Web.Http.xml
+D:\Projects\MLSI\bin\System.Web.Http.WebHost.xml
+D:\Projects\MLSI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\MLSI\obj\Debug\MLSI.csproj.AssemblyReference.cache
+D:\Projects\MLSI\obj\Debug\MLSI.csproj.CoreCompileInputs.cache
+D:\Projects\MLSI\obj\Debug\MLSI.csproj.Up2Date
+D:\Projects\MLSI\obj\Debug\MLSI.dll
+D:\Projects\MLSI\obj\Debug\MLSI.pdb
+=======
 D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll.config
 D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll
 D:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.pdb
@@ -680,6 +744,7 @@ D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInput
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.Up2Date
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.dll
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.pdb
+<<<<<<< HEAD
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll.config
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.pdb
@@ -742,3 +807,6 @@ E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInput
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.Up2Date
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.dll
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.pdb
+=======
+>>>>>>> origin/dev
+>>>>>>> 18d556f0a4239ed020f5db024098cd6be2a3749b
