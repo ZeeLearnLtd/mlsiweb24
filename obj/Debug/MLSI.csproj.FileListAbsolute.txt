@@ -744,7 +744,6 @@ D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInput
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.Up2Date
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.dll
 D:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.pdb
-<<<<<<< HEAD
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll.config
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.dll
 E:\Kishor\Projects\Git Projects\mlsiweb24\bin\MLSI.pdb
@@ -807,6 +806,5 @@ E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.CoreCompileInput
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.csproj.Up2Date
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.dll
 E:\Kishor\Projects\Git Projects\mlsiweb24\obj\Debug\MLSI.pdb
-=======
 >>>>>>> origin/dev
 >>>>>>> 18d556f0a4239ed020f5db024098cd6be2a3749b
