@@ -73,6 +73,7 @@
 
         .popup {
             position: absolute;
+            width:40%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -83,7 +84,7 @@
         }
 
             .popup img {
-                max-width: 85%;
+                max-width:100%;
                 height: auto;
                 display: block;
                 margin: 0 auto;
@@ -163,10 +164,10 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div class="popup-overlay">
-    <div class="popup">
-      <img src="~/Images/popup.jpg" width="100%" />
-      <button class="close-btn">&times;</button>
-    </div>
+      <div class="popup">
+          <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
+          <button class="close-btn">&times;</button>
+      </div>
   </div>
   @{Html.RenderPartial("Header");}
   <main>
@@ -178,9 +179,9 @@
     </footer>*@
   @Scripts.Render("~/bundles/Scripts")
   @RenderSection("scripts", required: false)
-  <script>
-    $(document).ready(function () {
-      if (!localStorage.getItem('popupPreviouslyShown') || false) {
+  @*<script>
+      $(document).ready(function () {
+          if (!localStorage.getItem('popupPreviouslyShown') || false) {
         setTimeout(function () {
           $('.popup-overlay').fadeIn();
           localStorage.setItem('popupPreviouslyShown', true);
@@ -191,6 +192,6 @@
     $('.close-btn').click(function () {
       $('.popup-overlay').fadeOut();
     });
-  </script>
+  </script>*@
 </body>
 </html>
