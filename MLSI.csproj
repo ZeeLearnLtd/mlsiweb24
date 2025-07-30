@@ -183,6 +183,7 @@
     <Content Include="Images\Banner\Banner-4.jpg" />
     <Content Include="Images\Banner\banner_video.mp4" />
     <Content Include="Images\Banner\DP-school-popup.jpg" />
+    <Content Include="Images\Banner\ib-school-results 2025_webpage.jpg" />
     <Content Include="Images\Banner\prereciver.jpg" />
     <Content Include="Images\Bushra-Khan.jpg" />
     <Content Include="Images\dp_model_en.png" />
@@ -237,6 +238,9 @@
     <Content Include="Images\InnsideBanner\Student_Life\career-counselling.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Facilities.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Learning-Space.jpg" />
+    <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender-old.jpg" />
+    <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender.jpg" />
+    <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender25-26.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Pastoral-Care.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Safety-Health-and-Security.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\School-Calendar.jpg" />
