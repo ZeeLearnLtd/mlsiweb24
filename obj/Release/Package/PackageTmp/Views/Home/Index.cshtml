@@ -1,4 +1,41 @@
 @{ ViewBag.Title = "Index"; }
+<style>
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
+/*        height:500px;*/
+        z-index: 10;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .video_content_img {
+        height: 450px;
+    }
+    .aboutus .abtusimg:nth-child(1) {
+        margin-right: 0px !important;
+    }
+
+    @@media only screen and (max-width: 600px) {
+    .video_content_img {
+        height: auto !important;
+    }
+                       }
+</style>
+<div class="video_content_img">
 <div id="Banners" class="owl-carousel main_banner_content">
     <div class="item">
         @*<video controls="controls" autoplay muted loop style="width:100%; height:100%; object-fit:cover;">
@@ -7,10 +44,21 @@
         </video>*@
         @*<iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>*@
         @*<iframe src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" frameborder="0"></iframe>*@
-        <video autoplay muted loop controls width="100%">
+
+        @*<video autoplay muted loop controls width="100%">
             <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video>*@
+
+        <div class="video-wrapper">
+            <!-- Loader shown initially -->
+            <div id="video-loader" class="loader"></div>
+            <!-- Video -->
+            <video id="myVideo" autoplay muted loop controls>
+                <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
         <div class="caption">
             <div class="container">
@@ -31,13 +79,13 @@
         <img src="~/Images/Banner/21st-Feb_IBDP-Admissions_Banner.jpg" width="100%" class="img-fluid" alt="" />
     </div>
     <div class="item">
-        <img src="~/Images/Banner/banner1.jpg" width="100%" class="img-fluid" alt="" />
+        <img src="~/Images/Banner/prereciver.jpg" width="100%" class="img-fluid" alt="" />
     </div>
     <div class="item">
         <img src="~/Images/Banner/banner2.jpg" width="100%" class="img-fluid" alt="" />
     </div>
     <div class="item">
-        <img src="~/Images/Banner/banner3.jpg" width="100%" class="img-fluid" alt="" />
+        <img src="~/Images/Banner/ib-school-results-2025_webpage.jpg" width="100%" class="img-fluid" alt="" />
     </div>
     <div class="item">
         <img src="~/Images/Banner/banner4.jpg" width="100%" class="img-fluid" alt="" />
@@ -52,12 +100,14 @@
         <img src="~/Images/Banner/dist_school.jpg" width="100%" height="490px" class="img-fluid" alt="" />
     </div>
 </div>
+</div>
+
 <section class="aboutus">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <figure class="abtusimg">
-                    <img src="~/Images/aboutus.jpg" alt="" />
+                    <img src="~/Images/MLSI_Building.jpeg" alt="" />
                 </figure>
                 <div class="row ExtraCurricular mt-3">
                     <div class="col-md-4">
@@ -119,16 +169,30 @@
           <img src="~/Images/WhatsApp.jpg" width="100%">
             </a>
         </div>*@
-    <div class="popup-overlay">
+    @*<div class="popup-overlay">
         <div class="popup">
             <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
             <button class="close-btn">&times;</button>
         </div>
-    </div>
+    </div>*@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
+    const video = document.getElementById("myVideo");
+    const loader = document.getElementById("video-loader");
+
+    video.addEventListener("canplaythrough", function () {
+        // Hide loader when video is ready
+        loader.style.display = "none";
+    });
+
+    video.addEventListener("error", function () {
+        loader.innerText = "Error loading video.";
+    });
+</script>
+@*<script>
     $(document).ready(function () {
         console.log('CALL PPUP')
         if (!localStorage.getItem('popupPreviouslyShown') || true) {
@@ -142,7 +206,7 @@
     $('.close-btn').click(function () {
         $('.popup-overlay').fadeOut();
     });
-</script>
+</script>*@
 @*<a class="OpenAnnouncement CloseAnnouncement OpenTwitterPopup" data-target="#TwitterPopup" rel="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
     <a class="OpenAnnouncement CloseAnnouncement OpenFacebookPopup" data-target="#FacebookPopup" rel="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
     <a class="OpenAnnouncement OpenAnnouncementPopup" data-target="#AnnouncementPopup" rel="tooltip" title="Announcement"><i class="fa fa-bullhorn"></i></a>
@@ -314,8 +378,62 @@
         display: block;
     }
 
-    .main_banner_content {
+/*    .main_banner_content {
         height: 490px;
+    }*/
+
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    #back-top {
+        position: fixed;
+        bottom: 12px;
+        left: 20px !important;
+        z-index: 1;
+        cursor: pointer;
+        background-color: #223871;
+        color: #fff;
+        width: 55px;
+        height: 55px;
+    }
+
+    .popup {
+        position: absolute;
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+        .popup img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+    .close-btn {
+        position: absolute;
+        right: 0;
+        background: none;
+        border: none;
+        font-size: 30px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .popup-overlay {

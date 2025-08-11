@@ -201,7 +201,17 @@ namespace MLSI.Controllers
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Clubs_and_Extra_Curricular_Activities()
+
+        public ActionResult Career_programme()
+        {
+            PagesData pd = new PagesData();
+            string PgAction = "Career_programme";
+            CmsPageData PageObj = new CmsPageData();
+            PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+            ViewBag.PageData = PageObj;
+            return View();
+        }
+        public ActionResult Clubs_and_Extra_Curricular_Activities()
     {
       PagesData pd = new PagesData();
       string PgAction = "Clubs_and_Extra_Curricular_Activities";
