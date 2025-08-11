@@ -61,7 +61,13 @@ namespace MLSI
               defaults: new { controller = "Home", action = "IB_Diploma_Programme", id = UrlParameter.Optional }
           );
 
-      routes.MapRoute(
+            routes.MapRoute(
+             name: "ib_programmes/career_programme",
+             url: "ib_programmes/career_programme",
+             defaults: new { controller = "Home", action = "Career_Programme", id = UrlParameter.Optional }
+         );
+
+            routes.MapRoute(
               name: "why_choose_mlsi",
               url: "why_choose_mlsi",
               defaults: new { controller = "Home", action = "Why_Choose_MLSI", id = UrlParameter.Optional }

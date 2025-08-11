@@ -183,9 +183,11 @@
     <Content Include="Images\Banner\Banner-4.jpg" />
     <Content Include="Images\Banner\banner_video.mp4" />
     <Content Include="Images\Banner\DP-school-popup.jpg" />
-    <Content Include="Images\Banner\ib-school-results 2025_webpage.jpg" />
+    <Content Include="Images\Banner\ib-school-results-2025_webpage.jpg" />
+    <Content Include="Images\Banner\Mask-group-banner.png" />
     <Content Include="Images\Banner\prereciver.jpg" />
     <Content Include="Images\Bushra-Khan.jpg" />
+    <Content Include="Images\career_related.png" />
     <Content Include="Images\dp_model_en.png" />
     <Content Include="Images\dp_programme_logo_en.png" />
     <Content Include="Images\Dr.-Subhash-Chandra.jpg" />
@@ -204,6 +206,7 @@
     <Content Include="Images\Admission_Procedure\Registration.png" />
     <Content Include="Images\Admission_Procedure\Tour.png" />
     <Content Include="Images\Admission_Procedure\welcome-Note.png" />
+    <Content Include="Images\ig-carrer.png" />
     <Content Include="Images\Infrastructure.png" />
     <Content Include="Images\InnsideBanner\AboutUs\Message_from_the_Advisor.jpg" />
     <Content Include="Images\InnsideBanner\AboutUs\Message_from_the_Chairman.jpg" />
@@ -239,7 +242,6 @@
     <Content Include="Images\InnsideBanner\Student_Life\Facilities.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Learning-Space.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender-old.jpg" />
-    <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\MLSIcalender25-26.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Pastoral-Care.jpg" />
     <Content Include="Images\InnsideBanner\Student_Life\Safety-Health-and-Security.jpg" />
@@ -249,6 +251,7 @@
     <Content Include="Images\InnsideBanner\the-ib-programmes.jpg" />
     <Content Include="Images\logo-mlsi.png" />
     <Content Include="Images\Madhushree-Rathi.jpg" />
+    <Content Include="Images\MLSI_Building.JPEG" />
     <Content Include="Images\MLSI_Daycarecreative.jpg" />
     <Content Include="Images\navyata.jpg" />
     <Content Include="Images\Photogallery\Activity.jpg" />
@@ -408,6 +411,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Award.cshtml" />
     <Content Include="Views\Home\MainAward.cshtml" />
+    <Content Include="Views\Home\Career_programme.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

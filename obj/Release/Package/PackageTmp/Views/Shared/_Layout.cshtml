@@ -73,6 +73,7 @@
 
         .popup {
             position: absolute;
+            width:40%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -83,7 +84,7 @@
         }
 
             .popup img {
-                max-width: 85%;
+                max-width:100%;
                 height: auto;
                 display: block;
                 margin: 0 auto;
@@ -133,12 +134,16 @@
                 id="aisensy-wa-widget"
                 widget-id="gHTPFI">
         </script>*@
-    <script type="text/javascript"
+
+
+    @*
+        latest code
+        <script type="text/javascript"
             src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
             id="aisensy-wa-widget"
             widget-id="aaa0e4">
 
-    </script>
+    </script>*@
     <script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
@@ -163,10 +168,10 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div class="popup-overlay">
-    <div class="popup">
-      <img src="~/Images/popup.jpg" width="100%" />
-      <button class="close-btn">&times;</button>
-    </div>
+      <div class="popup">
+          <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
+          <button class="close-btn">&times;</button>
+      </div>
   </div>
   @{Html.RenderPartial("Header");}
   <main>
@@ -178,9 +183,9 @@
     </footer>*@
   @Scripts.Render("~/bundles/Scripts")
   @RenderSection("scripts", required: false)
-  <script>
-    $(document).ready(function () {
-      if (!localStorage.getItem('popupPreviouslyShown') || false) {
+  @*<script>
+      $(document).ready(function () {
+          if (!localStorage.getItem('popupPreviouslyShown') || false) {
         setTimeout(function () {
           $('.popup-overlay').fadeIn();
           localStorage.setItem('popupPreviouslyShown', true);
@@ -191,6 +196,6 @@
     $('.close-btn').click(function () {
       $('.popup-overlay').fadeOut();
     });
-  </script>
+  </script>*@
 </body>
 </html>
