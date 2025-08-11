@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\projects\MLSIRelease18.02</_PublishTargetUrl>
-    <History>True|2025-05-21T09:50:01.6810600Z||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
+    <History>True|2025-08-08T05:37:08.9826290Z||;True|2025-05-21T15:20:01.6810600+05:30||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -22,10 +22,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:17</publishTime>
     </File>
     <File Include="bin/MLSI.dll">
-      <publishTime>05/21/2025 15:19:59</publishTime>
+      <publishTime>08/08/2025 11:07:06</publishTime>
     </File>
     <File Include="bin/MLSI.pdb">
-      <publishTime>05/21/2025 15:19:59</publishTime>
+      <publishTime>08/08/2025 11:07:06</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/14/2025 18:25:19</publishTime>
@@ -278,6 +278,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Images/Banner/banner_video.mp4">
       <publishTime>04/14/2025 18:22:52</publishTime>
+    </File>
+    <File Include="Images/Banner/DP-school-popup.jpg">
+      <publishTime>07/11/2025 17:56:22</publishTime>
     </File>
     <File Include="Images/Bushra-Khan.jpg">
       <publishTime>04/14/2025 18:22:41</publishTime>
@@ -733,13 +736,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/IB_Diploma_Programme.cshtml">
-      <publishTime>04/14/2025 18:25:24</publishTime>
+      <publishTime>07/04/2025 12:36:33</publishTime>
     </File>
     <File Include="Views/Home/Index - Copy.cshtml">
       <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>04/14/2025 18:25:24</publishTime>
+      <publishTime>07/11/2025 17:56:22</publishTime>
     </File>
     <File Include="Views/Home/IndexOLD.cshtml">
       <publishTime>04/14/2025 18:25:24</publishTime>
@@ -835,16 +838,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:26</publishTime>
     </File>
     <File Include="Views/Shared/Footer.cshtml">
-      <publishTime>04/14/2025 18:25:26</publishTime>
+      <publishTime>07/11/2025 17:51:19</publishTime>
     </File>
     <File Include="Views/Shared/Header.cshtml">
-      <publishTime>04/22/2025 18:17:24</publishTime>
+      <publishTime>07/11/2025 17:19:18</publishTime>
     </File>
     <File Include="Views/Shared/HeaderN.cshtml">
       <publishTime>04/14/2025 18:25:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/22/2025 18:31:14</publishTime>
+      <publishTime>07/11/2025 17:57:50</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>04/14/2025 18:25:22</publishTime>
