@@ -58,6 +58,7 @@ namespace MLSI.Controllers
                         d.campaign = objres["utm_compaign"].ToString();
                         d.medium = objres["utm_medium"].ToString();
                         d.parentname = objres["FirstName"].ToString();
+                        //d.Country_Code = objres["Country_Code"].ToString();
                         //p.BPM360 = b3;
                         p.data = d;
                         System.Net.ServicePointManager.SecurityProtocol =

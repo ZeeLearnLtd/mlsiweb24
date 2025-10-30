@@ -29,6 +29,7 @@ namespace MLSI.Models
         public string campaign { get; set; }
         public string medium { get; set; }
         public string gcl_id { get; set; }
+        //public string Country_Code { get; set; }
     }
 
     public class Bpmmain
