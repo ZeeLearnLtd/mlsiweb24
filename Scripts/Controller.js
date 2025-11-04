@@ -211,8 +211,6 @@ App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
 
 
 
-
-
     $scope.GetCountry = function () {
         $scope.CountryData = [];
         var objdata = {};
@@ -454,15 +452,36 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.checkundefined = function (obj) {
         return API.Setnullarray(obj);
     }
-  $scope.getjson = function (data) {    
-    if (data) {
-      return JSON.parse(data)
-    }
-    else {
-      return [];
+
+    $scope.isExternalUrl = function (url) {        
+        return /^https?:\/\//i.test(url);
+    };
+
+    $scope.getnewsurl = function (url) {
+        if (isExternalUrl(url)) {
+            return url;
+        }
+        else {
+            return 'news/' + url;
+        }
     }
 
-  }
+  $scope.getjson = function (data) {    
+      if (!data) return [];
+
+      // Only parse if it's a JSON string
+      if (typeof data === 'string') {
+          try {
+              return JSON.parse(data);
+          } catch (e) {
+              console.error('Invalid JSON:', data, e);
+              return [];
+          }
+      }
+
+      // If it's already an object, just return it
+      return data;
+  };
   
     $scope.GetNewsAndEvents = function () {
        // console.log("hi called");

@@ -209,8 +209,13 @@ namespace MLSI
           url: "Blog/{location}",
           defaults: new { controller = "Home", action = "Blog", location = UrlParameter.Optional }
        );
+      routes.MapRoute(
+          name: "newsRoute",
+          url: "News/{newsslug}",
+          defaults: new { controller = "Home", action = "News", location = UrlParameter.Optional }
+       );
 
-    routes.MapRoute(
+            routes.MapRoute(
                name: "Default",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
