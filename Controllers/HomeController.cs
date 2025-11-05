@@ -407,7 +407,7 @@ namespace MLSI.Controllers
     {
             PagesData pd = new PagesData();
           
-            if (newsslug == null)
+            if (newsslug == null) 
             {
                 string PgAction = "News";
                 CmsPageData PageObj = new CmsPageData();
