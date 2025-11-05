@@ -25,6 +25,7 @@
           </div>
         </div>
         <div class="col-md-6">
+
           <div class="Inputgroup">
             <input type="text" ng-model="Enq.Age" minlength="1" maxlength="2" numbers-only required />
             <label>Student Age</label>
@@ -32,11 +33,35 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="Inputgroup">
-            <input type="text" ng-model="Enq.Mobile" minlength="10" maxlength="10" numbers-only required>
-            <label>Mobile No</label>
-            <span class="inputbar"></span>
-          </div>
+            @*<div class="col-md-12">
+                <label>Country</label>
+
+
+                <input type="text"
+                         class="form-control mb-1"
+                         placeholder="Search country..."
+                         ng-model="countrySearch"
+                         ng-change="filterCountries()" />
+
+
+                <select class="form-control"
+                        ng-model="selectedCountry"
+                        ng-options="country as (country.name + ' (' + country.dialCode + ')') for country in filteredCountries"
+                        ng-change="onCountryChange()">
+                </select>
+            </div>*@
+
+            @* <div class="Inputgroup">
+                <span class="input-group-text">{{ selectedCountry.dialCode }}</span><input type="text" ng-model="Enq.Mobile" minlength="10" maxlength="10" numbers-only required>
+                <label>Mobile No</label>
+                <span class="inputbar"></span>
+            </div> *@
+
+            <div class="Inputgroup">
+                <input type="text" ng-model="Enq.Mobile" minlength="10" maxlength="10" numbers-only required>
+                <label>Mobile No</label>
+                <span class="inputbar"></span>
+            </div>
         </div>
         <div class="col-md-6">
           <div class="Inputgroup">

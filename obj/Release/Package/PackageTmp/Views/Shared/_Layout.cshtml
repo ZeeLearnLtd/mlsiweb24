@@ -73,7 +73,7 @@
 
         .popup {
             position: absolute;
-            width:40%;
+            width: 40%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -84,7 +84,7 @@
         }
 
             .popup img {
-                max-width:100%;
+                max-width: 100%;
                 height: auto;
                 display: block;
                 margin: 0 auto;
@@ -101,8 +101,17 @@
             justify-content: center;
             align-items: center;
         }
-
-        .zsiq_custommain siq_bR {
+        .df-btn-text {
+            position: fixed;
+            bottom: 2rem;
+            right: 3rem !important;
+            left:auto !important;
+        }
+        .df-btn-content {
+            position: relative !important;
+            bottom: 4rem !important;
+        }
+/*        .zsiq_custommain siq_bR {
             width: 80px !important;
             height: 80px !important;
         }
@@ -112,7 +121,7 @@
             max-width: 80px !important;
             height: auto;
             width: auto;
-        }
+        }*/
 
         @@media only screen and (max-width: 600px) {
             .popup img {
@@ -124,11 +133,11 @@
         }
     </style>
     @*<script type="text/javascript"
-            src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
-            id="aisensy-wa-widget"
-            widget-id="a5SZ1y">
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="a5SZ1y">
 
-    </script>*@
+        </script>*@
     @*<script type="text/javascript"
                 src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
                 id="aisensy-wa-widget"
@@ -137,14 +146,32 @@
 
 
     @*
-        latest code
-        <script type="text/javascript"
-            src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-            id="aisensy-wa-widget"
-            widget-id="aaa0e4">
+            latest code
+            <script type="text/javascript"
+                src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+                id="aisensy-wa-widget"
+                widget-id="aaa0e4">
 
-    </script>*@
-    <script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
+        </script>*@
+    @*<script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaaj2r">
+        </script>*@
+    @*<script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaak4j">
+        </script>*@
+    <script type="text/javascript"
+            src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+            id="aisensy-wa-widget"
+            widget-id="aaakrs">
+    </script>
+
+
+
+    @*<script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>*@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-2P14570M6R');</script>
@@ -159,6 +186,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
     <!-- End Google Tag Manager -->
+
 </head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
   <!-- Google Tag Manager (noscript) -->
@@ -167,12 +195,12 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="popup-overlay">
+  @*<div class="popup-overlay">
       <div class="popup">
           <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
           <button class="close-btn">&times;</button>
       </div>
-  </div>
+  </div>*@
   @{Html.RenderPartial("Header");}
   <main>
     @RenderBody()

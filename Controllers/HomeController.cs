@@ -360,15 +360,7 @@ namespace MLSI.Controllers
       return View();
     }
 
-    public ActionResult News()
-    {
-      PagesData pd = new PagesData();
-      string PgAction = "News";
-      CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
-      ViewBag.PageData = PageObj;
-      return View();
-    }
+    
 
 
         //public ActionResult MainAward(string str)
@@ -411,8 +403,30 @@ namespace MLSI.Controllers
       }           
       return View();
     }
+    public ActionResult News(string newsslug)
+    {
+            PagesData pd = new PagesData();
+          
+            if (newsslug == null) 
+            {
+                string PgAction = "News";
+                CmsPageData PageObj = new CmsPageData();
+                PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+                ViewBag.PageData = PageObj;
+                ViewBag.blogtitle = null;
+            }
+            else
+            {
+                blogPageData blogdata = new blogPageData();
+                string PgAction = newsslug;
+                blogdata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'news'}");
+                ViewBag.PageData = blogdata;
+                ViewBag.blogtitle = newsslug;
+            }
+            return View();
+        }
 
-    public ActionResult Award(string str)
+        public ActionResult Award(string str)
         {
             PagesData pd = new PagesData();
             if (str == null)
