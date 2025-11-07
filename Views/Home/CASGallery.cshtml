@@ -5,52 +5,52 @@
 <!--<section class="ComingSoon">-->
   @*<h2>Coming Soon...</h2>*@
 <!--</section>-->
-<div id="" class="">
-  <div class="nav-tabs-left">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link waves-effect active" data-toggle="tab" href="#CasGallery">CasGallery</a>
-      </li>
-    </ul>
-    <div class="nav-tabs-left-container">
-      <div class="tab-content Gallery">
-        <div class="tab-pane fade show active" id="CasGallery">
-          <div class="row">
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery1.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery1.jpeg" class="img-fluid" alt="" />
-              </a>
+<style>
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gallery-thumb {
+        width: 23%; /* roughly 4 per row with small gaps */
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
+        /*        height:500px;*/
+        z-index: 10;
+    }
+</style>
+<div id="" class="" ng-cloak id="CASGallery" ng-controller="NewsAndEventsCtrl" ng-init="Type='CASGallery';GetNewsAndEvents()">
+    <div class="nav-tabs-left">
+        <ul class="nav nav-tabs">
+            <li class="nav-item" ng-repeat="category in categoryNames">
+                <a class="nav-link waves-effect" ng-class="{'active': selectedCategory === category}" data-toggle="tab" ng-click="oncategoryselection(category)">{{category}}</a>
+            </li>
+        </ul>
+        <div class="loader" ng-if="loading"></div>
+        <div class="nav-tabs-left-container">
+            <div class="tab-content Gallery">
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-3" ng-repeat="photo in filteredData">
+                        <div ng-repeat="dat in photo.allfiles">
+                            <a href="{{dat.url}}" data-fancybox="{{photo.categoryName}}" data-transition-effect="tube">
+                                <img ng-src="{{dat.url}}" class="img-fluid rounded shadow-sm mb-2" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery2.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery2.jpeg" height="190" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery3.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery3.jpeg" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery4.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery4.jpeg" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery5.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery5.jpeg" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="~/Images/CASGallery/CASGallery6.jpeg" data-fancybox="CasGallery" data-transition-effect="tube">
-                <img src="~/Images/CASGallery/CASGallery6.jpeg" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <!--<div id="PhotoGallery">
