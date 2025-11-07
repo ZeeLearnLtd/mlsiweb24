@@ -424,6 +424,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.TagName = '';
     $scope.PubDate = '';
     $scope.FullContent = true;
+    $scope.loading = false;
     $scope.GetNewsAndEventsDetails = function (id) {
         $scope.NewsAndEventsData = [];
         var objdata = { "Id": id};
@@ -442,6 +443,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
         }, function myError(response) {
         });
     };
+    
     $scope.trustedHtml = function (data) {
         return $sce.trustAsHtml(data);
     }
@@ -486,9 +488,12 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.GetNewsAndEvents = function () {
        // console.log("hi called");
         $scope.NewsAndEventsData = [];
+        
         if ($scope.Type != '') {
+            $scope.loading = true;
             var objdata = { "Type": $scope.Type, "ProjectId": ProjectId, "TagName": $scope.TagName, "Date": $scope.PubDate };
             API.Post("/WebRoute/Get_MediaMaster_Web", objdata).then(function (response) {
+                $scope.loading = false;
                 if (response.data.length > 0) {
                     $scope.NewsAndEventsData = $scope.checkundefined(response.data);
                   if ($scope.NewsAndEventsData[0].allfiles) {
@@ -498,12 +503,126 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
                         }
                       });
                     }
+                    if ($scope.Type == 'PhotoGallery' || $scope.Type == 'CASGallery') {
+                        $scope.categoryNames = $scope.NewsAndEventsData.map(function (cat) {
+                            if (cat.categoryName) {
+                                return cat.categoryName;
+                            }                            
+                        }).filter(function (value, index, self) {
+                            return value && self.indexOf(value) === index; // remove undefined/null/empty and keep distinct
+                        });
+                        
+                        $scope.oncategoryselection();
+                    }
+                    if ($scope.Type == 'VideoGallery') {
+                        $scope.videodata($scope.NewsAndEventsData);
+                    }
                 }
             }, function myError(response) {
            });
         }
          
     };
+
+    $scope.videodata = function (videos) {
+        const grouped = {};
+        videos.forEach(video => {
+            const cat = video.categoryName || ''; // empty string for no category
+            if (!grouped[cat]) grouped[cat] = [];
+            grouped[cat].push(video);
+        });
+
+        // Save grouped data to scope
+        $scope.groupedVideos = grouped;
+
+        // Get distinct categories in order: blank first
+        const categories = Object.keys(grouped).sort((a, b) => {
+            if (a === '') return -1; // blank category first
+            if (b === '') return 1;
+            return a.localeCompare(b); // alphabetical
+        });
+        $scope.Videoscategories = categories;
+    }
+
+    $scope.groupPhotosByYear = function (allfiles) {
+        const grouped = {};
+        allfiles.forEach(file => {
+            if (file.FromDate) {
+                const startYear = new Date(file.FromDate).getFullYear();
+                const endYear = startYear + 1;
+                const yearLabel = `${startYear}-${endYear.toString().slice(-2)}`;
+                if (!grouped[yearLabel]) grouped[yearLabel] = [];
+                grouped[yearLabel].push(file);
+            } else {
+                if (!grouped['No Date']) grouped['No Date'] = [];
+                grouped['No Date'].push(file);
+            }
+        });
+
+        return Object.keys(grouped)
+            .sort((a, b) => {
+                if (a === 'No Date') return 1;
+                if (b === 'No Date') return -1;
+                return parseInt(b.split('-')[0]) - parseInt(a.split('-')[0]);
+            })
+            .map(yearLabel => ({ yearLabel: yearLabel, files: grouped[yearLabel] }));
+    };
+    // Prepare grouped data
+    $scope.allowedCategories = [
+        'Childrens Day Celebration','Investiture Ceremony','Halloween Celebration','First Day of School'
+    ];
+
+    $scope.oncategoryselection = function (categoryname) {
+        if (!categoryname) {
+            $scope.selectedCategory = $scope.categoryNames[0];
+        } else {
+            $scope.selectedCategory = categoryname;
+        }
+
+        $scope.filteredData = $scope.NewsAndEventsData.filter(function (item) {           
+            return item.categoryName === $scope.selectedCategory;
+        });
+        const itemsWithDate = $scope.filteredData.filter(item => item.FromDate);
+
+        // Parse allfiles for each item
+        $scope.filteredData.forEach(item => {
+            if (item.allfiles && typeof item.allfiles === 'string') {
+                item.allfiles = JSON.parse(item.allfiles);
+            }
+        });
+
+        // Group all items with FromDate by year
+        if (itemsWithDate.length > 0) {
+            // Flatten all files
+            let allFiles = [];
+            itemsWithDate.forEach(item => {
+                // Parse allfiles if it's a JSON string
+                if (typeof item.allfiles === 'string') {
+                    try {
+                        item.allfiles = JSON.parse(item.allfiles);
+                    } catch (e) {
+                        console.error('Failed to parse allfiles for item:', item, e);
+                        item.allfiles = [];
+                    }
+                }
+
+                // Ensure allfiles is an array before looping
+                if (Array.isArray(item.allfiles)) {
+                    item.allfiles.forEach(f => {
+                        f.FromDate = item.FromDate || null;
+                        f.categoryName = item.categoryName || '';
+                        allFiles.push(f);
+                    });
+                } else {
+                    console.warn('Skipping item with invalid allfiles:', item);
+                }
+            });
+            $scope.groupedFilesByYear = $scope.groupPhotosByYear(allFiles);
+        } else {
+            $scope.groupedFilesByYear = null;
+        }
+       
+    }
 
     $scope.GetTagCount = function () {
         $scope.TagCountData = [];
