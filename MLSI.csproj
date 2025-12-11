@@ -417,6 +417,9 @@
     <Content Include="Views\Home\CASGallery - Copy.cshtml" />
     <Content Include="Views\Home\VideoGallery - Copy.cshtml" />
     <Content Include="Views\Home\PhotoGalleryold.cshtml" />
+    <Content Include="Views\Home\ParentSpeak - Copy.cshtml" />
+    <Content Include="Views\Home\News_old.cshtml" />
+    <Content Include="Views\Home\StudentsSpeak - Copy.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

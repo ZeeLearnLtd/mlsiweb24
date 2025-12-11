@@ -6,116 +6,28 @@
 <section>
     
     <div class="container" ng-cloak id="VideoGallery" ng-controller="NewsAndEventsCtrl" ng-init="Type='VideoGallery';GetNewsAndEvents()">
-        <h1>IB School Video gallery</h1>
-        @*<div class="row">
-            <div class="col-12">
-                <h4 class="text-center" style="text-decoration:underline">Sports Day</h4>
-            </div>
-            <div class="col-md-6" ng-repeat="video in NewsAndEventsData">
-                <h5>{{ video.Title }}</h5>
-                <a data-fancybox="Videogallery"
-                   href="https://www.youtube.com/embed/{{ video.LinkUrl }}?autoplay=1&rel=0"
-                   data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img ng-src="https://img.youtube.com/vi/{{ video.LinkUrl }}/hqdefault.jpg"
-                         alt="{{ video.title }}" />
-                </a>
-            </div>
-        </div>*@
+        <h1>IB School Video gallery</h1>       
     <div ng-repeat="category in Videoscategories">
-
-        <!-- Category heading -->
+        
         <div class="col-12" ng-if="category">
             <h4 class="text-center" style="text-decoration:underline">{{ category }}</h4>
         </div>
-        @*<div class="col-12" ng-if="!category">
-            <h4 class="text-center" style="text-decoration:underline">Uncategorized</h4>
-        </div>*@
         <div class="row">
-            <!-- Videos under this category -->
+            
             <div class="col-md-6" ng-repeat="video in groupedVideos[category]">
                 <h5>{{ video.Title }}</h5>
                 <a data-fancybox="Videogallery"
                    href="https://www.youtube.com/embed/{{ video.LinkUrl }}?autoplay=1&rel=0"
                    data-transition-effect="tube">
+
                     <i class="fa fa-play"></i>
                     <img ng-src="https://img.youtube.com/vi/{{ video.LinkUrl }}/hqdefault.jpg"
                          alt="{{ video.Title }}" />
+
                 </a>
             </div>
         </div>
         </div>
-        @*<div class="row">
-            <div class="col-md-6">
-                <h5> Rhapsody 2023 </h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/cXpJr-Ya7E8?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/Rhapsody_2023.JPG" alt="" />
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h4> First Day Of school 2023 </h4>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/-qpZTWOKyf0?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/First_Day_Of_school_2023.JPG" alt="" />
-                </a>
-            </div>
-
-            <div class="col-12">
-                <h4 class="text-center" style="text-decoration:underline">Graduation Ceremony </h4>
-            </div>
-
-            <div class="col-md-6 mt-3">
-                <h5>  DP Class of 2023  </h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/vbho_7XJ1SM?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/DP_Class_of_2023.JPG" alt="" />
-                </a>
-            </div>
-            <div class="col-md-6 mt-3">
-                <h5>PYP 5 Class of 2023 </h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/3pGTHxJJv3U?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/PYP_5_ClassOf_2023.JPG" alt="" />
-                </a>
-            </div>
-
-            <div class="col-md-6 mt-3">
-                <h5> EY Class of 2023 </h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/gWIY4wdevTk?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/EY_Classof_2023.JPG" alt="" />
-                </a>
-            </div>
-            <div class="col-md-6 mt-3">
-
-            </div>
-            <div class="col-12">
-                <h4 class="text-center" style="text-decoration:underline">Sports Day</h4>
-            </div>
-
-            <div class="col-md-6 mt-3">
-                <h5> DP, MYP & PYP 5 Sport Day 2023 </h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/3MDJanL5E9U?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/DP_MYP_PYP_5_SportDay_2023.JPG" alt="" />
-                </a>
-            </div>
-            <div class="col-md-6 mt-3">
-                <h5> Playgroup - EY 2 Sports Day 2023</h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/2_mnKLfQ9yY?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/Playgroup_EY2_Sports_Day_2023.JPG" alt="" />
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h5> EY 3 & PYP 1 to PYP 4 Sports Day 2023</h5>
-                <a data-fancybox="Videogallery" href="https://www.youtube.com/embed/5EbmAJN3XEg?autoplay=1&amp;rel=0" data-transition-effect="tube">
-                    <i class="fa fa-play"></i>
-                    <img src="~/Images/youTube_img/PYP_4_SportsDay_2023.JPG" alt="" />
-                </a>
-            </div>
-
-        </div>*@
+        
     </div>
 </section>
