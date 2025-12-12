@@ -2381,7 +2381,7 @@ fieldset {
     padding: 0;
 }
 
-.Index .social-icons-bottom {
+/*.Index .social-icons-bottom {
     position: fixed;
     right: 0;
     top: 50%;
@@ -2393,7 +2393,7 @@ fieldset {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+}*/
 
     .Index .social-icons-bottom a + a {
         margin-top: 5px;
