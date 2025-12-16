@@ -403,11 +403,11 @@ namespace MLSI.Controllers
       }           
       return View();
     }
-    public ActionResult News(string newsslug)
-    {
+        public ActionResult News(string newsslug)
+        {
             PagesData pd = new PagesData();
-          
-            if (newsslug == null) 
+
+            if (newsslug == null)
             {
                 string PgAction = "News";
                 CmsPageData PageObj = new CmsPageData();
