@@ -23,7 +23,7 @@
             <div class="row" ng-cloak id="News" ng-controller="NewsAndEventsCtrl" ng-init="Type='News';GetNewsAndEvents()">
 
                 <div ng-repeat="News in NewsAndEventsData" class="col-lg-4 col-md-6">
-                    <a href="{{isExternalUrl(News.LinkUrl) ? News.LinkUrl : '/news/'+ News.LinkUrl}}"
+                    <a href="{{isExternalUrl(News.LinkUrl) ? News.LinkUrl : '/news-events/'+ News.LinkUrl}}"
                        ng-attr-target="{{ isExternalUrl(News.LinkUrl) ? '_blank' : '_self' }}"
                         ng-attr-rel="{{ isExternalUrl(News.LinkUrl) ? 'noopener noreferrer' : '' }}">
                         @*<figure>
