@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\projects\MLSIRelease18.02</_PublishTargetUrl>
-    <History>True|2025-12-16T10:56:38.2713986Z||;True|2025-12-16T15:07:02.5160572+05:30||;True|2025-12-16T15:00:59.5622127+05:30||;False|2025-12-16T14:59:25.1891943+05:30||;False|2025-12-12T14:42:32.5943440+05:30||;True|2025-11-05T10:55:39.6388066+05:30||;True|2025-11-04T17:44:13.9554954+05:30||;True|2025-11-04T17:43:58.8852600+05:30||;True|2025-11-04T17:43:07.1764682+05:30||;False|2025-08-08T11:11:10.4221796+05:30||;False|2025-08-08T11:06:36.4254209+05:30||;False|2025-08-08T11:00:02.9537395+05:30||;True|2025-05-21T15:20:01.6810600+05:30||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
+    <History>True|2025-12-18T07:09:38.0281622Z||;True|2025-12-18T12:39:22.9556199+05:30||;True|2025-12-18T11:27:55.4039131+05:30||;True|2025-12-18T11:27:20.9485424+05:30||;True|2025-12-16T16:26:38.2713986+05:30||;True|2025-12-16T15:07:02.5160572+05:30||;True|2025-12-16T15:00:59.5622127+05:30||;False|2025-12-16T14:59:25.1891943+05:30||;False|2025-12-12T14:42:32.5943440+05:30||;True|2025-11-05T10:55:39.6388066+05:30||;True|2025-11-04T17:44:13.9554954+05:30||;True|2025-11-04T17:43:58.8852600+05:30||;True|2025-11-04T17:43:07.1764682+05:30||;False|2025-08-08T11:11:10.4221796+05:30||;False|2025-08-08T11:06:36.4254209+05:30||;False|2025-08-08T11:00:02.9537395+05:30||;True|2025-05-21T15:20:01.6810600+05:30||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -22,10 +22,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:17</publishTime>
     </File>
     <File Include="bin/MLSI.dll">
-      <publishTime>12/16/2025 16:26:36</publishTime>
+      <publishTime>12/18/2025 12:39:20</publishTime>
     </File>
     <File Include="bin/MLSI.pdb">
-      <publishTime>12/16/2025 16:26:36</publishTime>
+      <publishTime>12/18/2025 12:39:20</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/14/2025 18:25:19</publishTime>
@@ -688,7 +688,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/Controller.js">
-      <publishTime>12/12/2025 16:52:17</publishTime>
+      <publishTime>12/17/2025 18:44:07</publishTime>
     </File>
     <File Include="Scripts/custum.js">
       <publishTime>04/14/2025 18:25:22</publishTime>
@@ -823,7 +823,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/PhotoGallery.cshtml">
-      <publishTime>12/12/2025 16:52:17</publishTime>
+      <publishTime>12/17/2025 15:24:23</publishTime>
     </File>
     <File Include="Views/Home/PhotoGalleryold.cshtml">
       <publishTime>11/05/2025 16:47:32</publishTime>
@@ -898,13 +898,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/12/2025 12:40:11</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>04/14/2025 18:25:22</publishTime>
+      <publishTime>12/17/2025 14:52:02</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/04/2025 17:43:04</publishTime>
+      <publishTime>12/18/2025 11:27:19</publishTime>
     </File>
   </ItemGroup>
 </Project>
