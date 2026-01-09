@@ -424,6 +424,11 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.TagName = '';
     $scope.PubDate = '';
     $scope.FullContent = true;
+    $scope.itemsPerPage = 8;
+    $scope.visibleCount = 8;
+    $scope.visibleFiles = [];
+    $scope.allFilesFlat = [];
+
     $scope.loading = false;
     $scope.GetNewsAndEventsDetails = function (id) {
         $scope.NewsAndEventsData = [];
@@ -492,17 +497,19 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
         if ($scope.Type != '') {
             $scope.loading = true;
             var objdata = { "Type": $scope.Type, "ProjectId": ProjectId, "TagName": $scope.TagName, "Date": $scope.PubDate };
-            API.Post("/WebRoute/Get_MediaMaster_Web", objdata).then(function (response) {
+           // API.Post("/WebRoute/Get_MediaMaster_Web", objdata).then(function (response) {
+            API.Post("https://kubapi.zeelearn.com/V1/cmsapi/api/cms/GetMediaMasterWeb_mvc", objdata).then(function (response) {
                 $scope.loading = false;
-                if (response.data.length > 0) {
-                    $scope.NewsAndEventsData = $scope.checkundefined(response.data);
-                  if ($scope.NewsAndEventsData[0].allfiles) {
-                      $scope.NewsAndEventsData.forEach(function (item) {
-                        if (item.allfiles) {
-                          item.allfiles= JSON.parse(item.allfiles)
-                        }
-                      });
-                    }
+                if (response.data.data.length > 0) {
+               
+                    $scope.NewsAndEventsData = $scope.checkundefined(response.data.data);
+                  //if ($scope.NewsAndEventsData[0].allfiles) {
+                  //    $scope.NewsAndEventsData.forEach(function (item) {
+                  //      if (item.allfiles) {
+                  //        item.allfiles= JSON.parse(item.allfiles)
+                  //      }
+                  //    });
+                  //  }
                     if ($scope.Type == 'PhotoGallery' || $scope.Type == 'CASGallery') {
                         $scope.categoryNames = $scope.NewsAndEventsData.map(function (cat) {
                             if (cat.categoryName) {
@@ -571,6 +578,10 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.allowedCategories = [
         'Childrens Day Celebration','Investiture Ceremony','Halloween Celebration','First Day of School'
     ];
+    $scope.loadMore = function () {
+        $scope.visibleCount += $scope.itemsPerPage;
+        $scope.visibleFiles = $scope.allFilesFlat.slice(0, $scope.visibleCount);
+    };
 
     $scope.oncategoryselection = function (categoryname) {
         if (!categoryname) {
@@ -621,8 +632,17 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
         } else {
             $scope.groupedFilesByYear = null;
         }
-       
+
     }
+    $scope.filterByYear = function (yearLabel) {
+        return function (file) {
+            if (!file.FromDate) return false;
+            // Extract year from FromDate
+            const fileYear = new Date(file.FromDate).getFullYear();
+            return fileYear == yearLabel;
+        };
+    };
+
 
     $scope.GetTagCount = function () {
         $scope.TagCountData = [];
