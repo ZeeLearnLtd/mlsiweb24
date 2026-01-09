@@ -34,41 +34,90 @@ namespace MLSI.Models
             string pgAction = req.PgAction;
             BussinessLogic obj = new BussinessLogic();
             DataSet ds = new DataSet();
-            string apiUrl =  ConfigurationManager.AppSettings["PageMasterExistingurl"];
-        
-            dynamic response = await CallApiAsync<dynamic>(apiUrl, new
-            {
-                ProjectId = projectId,
-                PgController = pgController,
-                PgAction = pgAction
-            });
-
-            dynamic objdata = response.data;
             CmsPageData myClassList = new CmsPageData();
-            if (objdata != null && objdata.Count > 0)
+            string apiUrl =  ConfigurationManager.AppSettings["PageMasterExistingurl"];
+            try
             {
-                myClassList.PageId = objdata[0]["PageId"].ToString();
-                myClassList.Name = objdata[0]["Name"];
-                myClassList.Description = objdata[0]["Description"];
-                myClassList.LongDescription = objdata[0]["LongDescription"];
-                myClassList.PageUrl = objdata[0]["PageUrl"];
-                myClassList.MainImage = objdata[0]["MainImage"];
-                myClassList.VideoUrl = objdata[0]["VideoUrl"];
-                myClassList.MetaTitle = objdata[0]["MetaTitle"];
-                myClassList.MetaKeyword = objdata[0]["MetaKeyword"];
-                myClassList.MetaDescription = objdata[0]["MetaDescription"];
-                myClassList.MetaAuthor = objdata[0]["MetaAuthor"];
-                myClassList.MetaUrl = objdata[0]["MetaUrl"];
-                myClassList.MetaImagePath = objdata[0]["MetaImagePath"];
-                myClassList.CanonicalTag = objdata[0]["CanonicalTag"];
-                myClassList.CanonicalUrl = objdata[0]["CanonicalUrl"];
-                myClassList.UtmTag = objdata[0]["UtmTag"];
-                myClassList.UtmScript = objdata[0]["UtmScript"];
-                myClassList.AnalyticalCode = objdata[0]["AnalyticalCode"];
-                myClassList.BannerImages = objdata[0]["BannerImages"];
+                dynamic response = await CallApiAsync<dynamic>(apiUrl, new
+                {
+                    ProjectId = projectId,
+                    PgController = pgController,
+                    PgAction = pgAction
+                });
 
-           }
-            return myClassList;
+                dynamic objdata = response.data;
+      
+                if (objdata != null && objdata.Count > 0)
+                {
+                    myClassList.PageId = objdata[0]["PageId"].ToString();
+                    myClassList.Name = objdata[0]["Name"];
+                    myClassList.Description = objdata[0]["Description"];
+                    myClassList.LongDescription = objdata[0]["LongDescription"];
+                    myClassList.PageUrl = objdata[0]["PageUrl"];
+                    myClassList.MainImage = objdata[0]["MainImage"];
+                    myClassList.VideoUrl = objdata[0]["VideoUrl"];
+                    myClassList.MetaTitle = objdata[0]["MetaTitle"];
+                    myClassList.MetaKeyword = objdata[0]["MetaKeyword"];
+                    myClassList.MetaDescription = objdata[0]["MetaDescription"];
+                    myClassList.MetaAuthor = objdata[0]["MetaAuthor"];
+                    myClassList.MetaUrl = objdata[0]["MetaUrl"];
+                    myClassList.MetaImagePath = objdata[0]["MetaImagePath"];
+                    myClassList.CanonicalTag = objdata[0]["CanonicalTag"];
+                    myClassList.CanonicalUrl = objdata[0]["CanonicalUrl"];
+                    myClassList.UtmTag = objdata[0]["UtmTag"];
+                    myClassList.UtmScript = objdata[0]["UtmScript"];
+                    myClassList.AnalyticalCode = objdata[0]["AnalyticalCode"];
+                    myClassList.BannerImages = objdata[0]["BannerImages"];
+
+                }
+                else
+                {
+                    myClassList.PageId = "0";
+                    myClassList.Name = "MLSI";
+                    myClassList.Description = "";
+                    myClassList.LongDescription = "";
+                    myClassList.PageUrl = "";
+                    myClassList.MainImage = "";
+                    myClassList.VideoUrl = "";
+                    myClassList.MetaTitle = "Best International School in Mumbai | Top IB School in Bandra | MLSI";
+                    myClassList.MetaKeyword = "Best ib school in mumbai,best ib school in India,best ib school in Asia,best ib school in bkc bandra";
+                    myClassList.MetaDescription = "Top IB School in Bandra, Mumbai offering PYP, MYP & Diploma Programmes. Mount Litera School International delivers world-class learning. Admissions Open!";
+                    myClassList.MetaAuthor = "MLSI";
+                    myClassList.MetaUrl = "https://www.mlsi.in/";
+                    myClassList.MetaImagePath = "https://mlsi.in/Images/logo-mlsi.png";
+                    myClassList.CanonicalTag = "https://www.mlsi.in/";
+                    myClassList.CanonicalUrl = "https://www.mlsi.in/";
+                    myClassList.UtmTag = "";
+                    myClassList.UtmScript = "";
+                    myClassList.AnalyticalCode = "";
+                    myClassList.BannerImages = "";
+                }
+                return myClassList;
+            }
+            catch(Exception ex)
+            {
+                myClassList.PageId = "0";
+                myClassList.Name = "MLSI";
+                myClassList.Description = "";
+                myClassList.LongDescription = "";
+                myClassList.PageUrl = "";
+                myClassList.MainImage = "";
+                myClassList.VideoUrl = "";
+                myClassList.MetaTitle = "Best International School in Mumbai | Top IB School in Bandra | MLSI";
+                myClassList.MetaKeyword = "Best ib school in mumbai,best ib school in India,best ib school in Asia,best ib school in bkc bandra";
+                myClassList.MetaDescription = "Top IB School in Bandra, Mumbai offering PYP, MYP & Diploma Programmes. Mount Litera School International delivers world-class learning. Admissions Open!";
+                myClassList.MetaAuthor = "MLSI";
+                myClassList.MetaUrl = "https://www.mlsi.in/";
+                myClassList.MetaImagePath = "https://mlsi.in/Images/logo-mlsi.png";
+                myClassList.CanonicalTag = "https://www.mlsi.in/";
+                myClassList.CanonicalUrl = "https://www.mlsi.in/";
+                myClassList.UtmTag = "";
+                myClassList.UtmScript = "";
+                myClassList.AnalyticalCode = "";
+                myClassList.BannerImages = "";
+                return myClassList;
+            }
+            
         }
 
         public CmsPageData _GetPageData(string menu)
@@ -121,80 +170,136 @@ namespace MLSI.Models
             BussinessLogic obj = new BussinessLogic();
             DataSet ds = new DataSet();
             string apiUrl = ConfigurationManager.AppSettings["Getblogdataurl"];
-
-            dynamic response = await CallApiAsync<dynamic>(apiUrl, new
-            {
-                ProjectId = projectId,
-                slug = slug,
-                type = type
-            });
-
-            dynamic val = response.data;
             blogPageData blogPageData2 = new blogPageData();
-            if (val != null)
+            try
             {
-                blogPageData2.Name = ((val[0]["Title"] == null) ? "" : val[0]["Title"]);
-                blogPageData2.Description = ((val[0]["Short"] == null) ? "" : val[0]["Short"]);
-                blogPageData2.LongDescription = ((val[0]["long1"] == null) ? "" : val[0]["long1"]);
-                blogPageData2.PageUrl = ((val[0]["PageUrl"] == null) ? "" : val[0]["PageUrl"]);
-                blogPageData2.MainImage = ((val[0]["MetaImageurl"] == null) ? "" : val[0]["MetaImageurl"]);
-                blogPageData2.VideoUrl = "";
-                blogPageData2.MetaTitle = ((val[0]["MetaTitle"] == null) ? "" : val[0]["MetaTitle"]);
-                blogPageData2.MetaKeyword = ((val[0]["MetaKeyword"] == null) ? "" : val[0]["MetaKeyword"]);
-                blogPageData2.MetaDescription = ((val[0]["MetaDescription"] == null) ? "" : val[0]["MetaDescription"]);
-                blogPageData2.MetaAuthor = ((val[0]["MetaAuthor"] == null) ? "" : val[0]["MetaAuthor"]);
-                blogPageData2.MetaUrl = ((val[0]["MetaUrl"] == null) ? "" : val[0]["MetaUrl"]);
-                blogPageData2.MetaImagePath = ((val[0]["MetaImageurl"] == null) ? "" : val[0]["MetaImageurl"]);
-                blogPageData2.CanonicalTag = ((val[0]["CanonicalTag"] == null) ? "" : val[0]["CanonicalTag"]);
-                blogPageData2.CanonicalUrl = ((val[0]["MetaUrl"] == null) ? "" : val[0]["MetaUrl"]);
-                blogPageData2.UtmTag = ((val[0]["UtmTag"] == null) ? "" : val[0]["UtmTag"]);
-                blogPageData2.UtmScript = ((val[0]["UtmScript"] == null) ? "" : val[0]["UtmScript"]);
-                blogPageData2.AnalyticalCode = ((val[0]["AnalyticalCode"] == null) ? "" : val[0]["AnalyticalCode"]);
-                blogPageData2.BannerImages = "";
-                //if (val[0] != null && val[0]["blog"] != null)
-                //{
-                //    //blogPageData2.blog = ((val[0]["blog"] == null) ? "" : Json.Decode(val[0]["blog"]));
-                //    blogPageData2.blog = val[0]["blog"];
-                //}
-                //else
-                //{
-                //    blogPageData2.blog = new List<JObject>();
-                //}
-                var blogToken = val[0]?["blog"];
-                if (blogToken is JArray blogArray)
+                dynamic response = await CallApiAsync<dynamic>(apiUrl, new
                 {
-                    blogPageData2.blog = blogArray.ToObject<List<JObject>>();
-                }
-                else
-                {
-                    blogPageData2.blog = new List<JObject>();
-                }
-                var dateToken = val[0]?["dateCreated"]; // safe null propagation
+                    ProjectId = projectId,
+                    slug = slug,
+                    type = type
+                });
 
-                if (dateToken != null)
+                dynamic val = response.data;
+                
+                if (val != null)
                 {
-                    // parse to DateTime safely
-                    if (DateTime.TryParse(dateToken.ToString(), out DateTime parsedDate))
+                    blogPageData2.Name = ((val[0]["Title"] == null) ? "" : val[0]["Title"]);
+                    blogPageData2.Description = ((val[0]["Short"] == null) ? "" : val[0]["Short"]);
+                    blogPageData2.LongDescription = ((val[0]["long1"] == null) ? "" : val[0]["long1"]);
+                    blogPageData2.PageUrl = ((val[0]["PageUrl"] == null) ? "" : val[0]["PageUrl"]);
+                    blogPageData2.MainImage = ((val[0]["MetaImageurl"] == null) ? "" : val[0]["MetaImageurl"]);
+                    blogPageData2.VideoUrl = "";
+                    blogPageData2.MetaTitle = ((val[0]["MetaTitle"] == null) ? "" : val[0]["MetaTitle"]);
+                    blogPageData2.MetaKeyword = ((val[0]["MetaKeyword"] == null) ? "" : val[0]["MetaKeyword"]);
+                    blogPageData2.MetaDescription = ((val[0]["MetaDescription"] == null) ? "" : val[0]["MetaDescription"]);
+                    blogPageData2.MetaAuthor = ((val[0]["MetaAuthor"] == null) ? "" : val[0]["MetaAuthor"]);
+                    blogPageData2.MetaUrl = ((val[0]["MetaUrl"] == null) ? "" : val[0]["MetaUrl"]);
+                    blogPageData2.MetaImagePath = ((val[0]["MetaImageurl"] == null) ? "" : val[0]["MetaImageurl"]);
+                    blogPageData2.CanonicalTag = ((val[0]["CanonicalTag"] == null) ? "" : val[0]["CanonicalTag"]);
+                    blogPageData2.CanonicalUrl = ((val[0]["MetaUrl"] == null) ? "" : val[0]["MetaUrl"]);
+                    blogPageData2.UtmTag = ((val[0]["UtmTag"] == null) ? "" : val[0]["UtmTag"]);
+                    blogPageData2.UtmScript = ((val[0]["UtmScript"] == null) ? "" : val[0]["UtmScript"]);
+                    blogPageData2.AnalyticalCode = ((val[0]["AnalyticalCode"] == null) ? "" : val[0]["AnalyticalCode"]);
+                    blogPageData2.BannerImages = "";
+                    //if (val[0] != null && val[0]["blog"] != null)
+                    //{
+                    //    //blogPageData2.blog = ((val[0]["blog"] == null) ? "" : Json.Decode(val[0]["blog"]));
+                    //    blogPageData2.blog = val[0]["blog"];
+                    //}
+                    //else
+                    //{
+                    //    blogPageData2.blog = new List<JObject>();
+                    //}
+                    var blogToken = val[0]?["blog"];
+                    if (blogToken is JArray blogArray)
                     {
-                        // format as yyyy-MM-dd
-                        blogPageData2.dateCreated = parsedDate.ToString("yyyy-MM-dd");
+                        blogPageData2.blog = blogArray.ToObject<List<JObject>>();
                     }
                     else
                     {
-                        blogPageData2.dateCreated = ""; // invalid date fallback
+                        blogPageData2.blog = new List<JObject>();
+                    }
+                    var dateToken = val[0]?["dateCreated"]; // safe null propagation
+
+                    if (dateToken != null)
+                    {
+                        // parse to DateTime safely
+                        if (DateTime.TryParse(dateToken.ToString(), out DateTime parsedDate))
+                        {
+                            // format as yyyy-MM-dd
+                            blogPageData2.dateCreated = parsedDate.ToString("yyyy-MM-dd");
+                        }
+                        else
+                        {
+                            blogPageData2.dateCreated = ""; // invalid date fallback
+                        }
+                    }
+                    var filetoken = (val[0]["files"]);
+                    if (filetoken is JArray fileArray)
+                    {
+                        blogPageData2.files = fileArray.ToObject<List<JObject>>();
+                    }
+                    else
+                    {
+                        blogPageData2.files = new List<JObject>();
                     }
                 }
-                var filetoken = (val[0]["files"]);
-                if (filetoken is JArray fileArray)
-                {
-                    blogPageData2.files = fileArray.ToObject<List<JObject>>();
-                }                
                 else
                 {
+                    blogPageData2.Name = "";
+                    blogPageData2.Description = "";
+                    blogPageData2.LongDescription ="";
+                    blogPageData2.PageUrl ="" ;
+                    blogPageData2.MainImage ="";
+                    blogPageData2.VideoUrl = "";
+                    blogPageData2.MetaTitle = "Best International School in Mumbai | Top IB School in Bandra | MLSI";
+                    blogPageData2.MetaKeyword = "Best ib school in mumbai,best ib school in India,best ib school in Asia,best ib school in bkc bandra";
+                    blogPageData2.MetaDescription = "Top IB School in Bandra, Mumbai offering PYP, MYP & Diploma Programmes. Mount Litera School International delivers world-class learning. Admissions Open!";
+                    blogPageData2.MetaAuthor = "MLSI";
+                    blogPageData2.MetaUrl = "https://www.mlsi.in/";
+                    blogPageData2.MetaImagePath = "https://mlsi.in/Images/logo-mlsi.png";
+                    blogPageData2.CanonicalTag = "https://www.mlsi.in/";
+                    blogPageData2.CanonicalUrl = "https://www.mlsi.in/";
+                    blogPageData2.UtmTag = "";
+                    blogPageData2.UtmScript = "";
+                    blogPageData2.AnalyticalCode = "";
+                    blogPageData2.BannerImages = "";
+                    blogPageData2.blog = new List<JObject>();
+                    blogPageData2.dateCreated = ""; // invalid date fallback
                     blogPageData2.files = new List<JObject>();
+
                 }
+
+                return blogPageData2;
             }
+            catch(Exception ex)
+            {
+                blogPageData2.Name = "";
+                blogPageData2.Description = "";
+                blogPageData2.LongDescription = "";
+                blogPageData2.PageUrl = "";
+                blogPageData2.MainImage = ""; 
+                blogPageData2.VideoUrl = "";
+                blogPageData2.MetaTitle = "Best International School in Mumbai | Top IB School in Bandra | MLSI";
+                blogPageData2.MetaKeyword = "Best ib school in mumbai,best ib school in India,best ib school in Asia,best ib school in bkc bandra";
+                blogPageData2.MetaDescription = "Top IB School in Bandra, Mumbai offering PYP, MYP & Diploma Programmes. Mount Litera School International delivers world-class learning. Admissions Open!";
+                blogPageData2.MetaAuthor = "MLSI";
+                blogPageData2.MetaUrl = "https://www.mlsi.in/";
+                blogPageData2.MetaImagePath = "https://mlsi.in/Images/logo-mlsi.png";
+                blogPageData2.CanonicalTag = "https://www.mlsi.in/";
+                blogPageData2.CanonicalUrl = "https://www.mlsi.in/";
+                blogPageData2.UtmTag = "";
+                blogPageData2.UtmScript = "";
+                blogPageData2.AnalyticalCode = "";
+                blogPageData2.BannerImages = "";
+                blogPageData2.blog = new List<JObject>();
+                blogPageData2.dateCreated = ""; // invalid date fallback
+                blogPageData2.files = new List<JObject>();            
+
             return blogPageData2;
+        }
+            
         }
 
         public blogPageData _GetblogPageData(string menu)
