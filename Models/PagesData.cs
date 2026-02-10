@@ -363,9 +363,6 @@ namespace MLSI.Models
         {
             HttpResponseMessage response;
 
-           
-            
-
             if (requestData == null)
             {
                 response = await _httpClient.GetAsync(url);
@@ -376,13 +373,12 @@ namespace MLSI.Models
                 {
                     var json = JsonConvert.SerializeObject(requestData);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                    response = await _httpClient.PostAsync(url, content);
-                }catch (Exception ex){
+                    response = await _httpClient.PostAsync(url, content);                   
+                }
+                catch (Exception ex){
                     Console.WriteLine("HTTP request error: " + ex.Message);
                     throw; // or handle gracefully
-                }
-               
+                }               
             }
 
             response.EnsureSuccessStatusCode();
@@ -390,7 +386,7 @@ namespace MLSI.Models
             var result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(result);
         }
-
+   
     }
 }
 public class CmsPageData

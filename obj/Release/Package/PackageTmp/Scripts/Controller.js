@@ -211,29 +211,33 @@ App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
 
 
 
-    $scope.GetCountry = function () {
-        $scope.CountryData = [];
-        var objdata = {};
-        API.Post("/WebRoute/GetFranchiseeDetails", objdata).then(function (response) {
-            if (!response.data.root.subroot.error) {
-                $scope.CountryData = $scope.checkundefined(response.data.root.subroot);
+    //$scope.GetCountry = function () {
+    //    $scope.CountryData = [];
+    //    var objdata = {};
+    //    API.Post("/WebRoute/GetFranchiseeDetails", objdata).then(function (response) {
+    //        if (!response.data.root.subroot.error) {
+    //            $scope.CountryData = $scope.checkundefined(response.data.root.subroot);
 
-            }
-        }, function myError(response) {
-        });
-    };
-    $scope.GetCountryFranchisee = function () {
-        $scope.CountryData = [];
-        var objdata = {};
-        API.Post("/WebRoute/GetFranchiseeDetailsCity", objdata).then(function (response) {
-            if (!response.data.root.subroot.error) {
-                $scope.CountryData = $scope.checkundefined(response.data.root.subroot);
+    //        }
+    //    }, function myError(response) {
+    //    });
+    //};
+    //$scope.GetCountryFranchisee = function () {
+    //    $scope.CountryData = [];
+    //    var objdata = {};
+    //    API.Post("/WebRoute/GetFranchiseeDetailsCity", objdata).then(function (response) {
+    //        if (!response.data.root.subroot.error) {
+    //            $scope.CountryData = $scope.checkundefined(response.data.root.subroot);
 
-            }
-        }, function myError(response) {
-        });
-    };
-   
+    //        }
+    //    }, function myError(response) {
+    //    });
+    //};
+
+
+
+
+
     //if ($scope.Enq.Type == 'P') {
     //    $scope.GetCountry();
     //}
@@ -286,9 +290,11 @@ App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
             $scope.loader = true;
             $("#btnSubmit").attr("disabled", "disabled");
             $("#spnSubmit").text('Submitting..');
+            objdata.City = "Mumbai";
+            objdata.Country = "India";
             API.Post("/WebRoute/MLSIEnquiry", objdata).then(function (result) {
                 if (!angular.isUndefined(result.data)) {
-                    if (result.data.length > 0) {
+                    if (result?.data?.data?.recordset.length > 0) {
                         //$scope.postjson();
                         $scope.Enq = {};
                         window.location.href = "/Home/MLSIThankYou";
@@ -311,23 +317,23 @@ App.controller('EnquiryCtrl', function ($scope, $http, $filter, API) {
 
 
 
-    $scope.GetStateCity = function () {
-        var StateCityData = [];
-        var objdata = { PinCode:$scope.Enq.PinCode };
-        API.Post("/WebRoute/GetStateCity", objdata).then(function (result) {
-             StateCityData = $scope.checkundefined(result.data);
-            if (StateCityData.length > 0) {
-                $scope.Enq.State = StateCityData[0].statename;
-                $scope.Enq.City = StateCityData[0].districtname;
-                $scope.Enq.Location = StateCityData[0].taluk;
-            }
-            else {
-                $scope.Enq.State = '';
-                $scope.Enq.City = '';
-            }
-        }, function myError(response) {
-        });
-    }
+    //$scope.GetStateCity = function () {
+    //    var StateCityData = [];
+    //    var objdata = { PinCode:$scope.Enq.PinCode };
+    //    API.Post("/WebRoute/GetStateCity", objdata).then(function (result) {
+    //         StateCityData = $scope.checkundefined(result.data);
+    //        if (StateCityData.length > 0) {
+    //            $scope.Enq.State = StateCityData[0].statename;
+    //            $scope.Enq.City = StateCityData[0].districtname;
+    //            $scope.Enq.Location = StateCityData[0].taluk;
+    //        }
+    //        else {
+    //            $scope.Enq.State = '';
+    //            $scope.Enq.City = '';
+    //        }
+    //    }, function myError(response) {
+    //    });
+    //}
     $scope.checkundefined = function (obj) {
         return API.Setnullarray(obj);
     }
@@ -371,7 +377,7 @@ App.controller('IndexCtrl', function ($scope, $http, $filter, API) {
         }, function myError(response) {
         });
     };
-    $scope.GetTestimonial();
+   // $scope.GetTestimonial();
 
     $scope.GetNewsAndEvents = function () {
         console.log("hi called");
@@ -430,24 +436,24 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     $scope.allFilesFlat = [];
 
     $scope.loading = false;
-    $scope.GetNewsAndEventsDetails = function (id) {
-        $scope.NewsAndEventsData = [];
-        var objdata = { "Id": id};
-        API.Post("/WebRoute/GetMediaMasterId", objdata).then(function (response) {
-            if (!response.data.root.subroot.error) {
-                $scope.NewsAndEventsData = $scope.checkundefined(response.data.root.subroot);
-                $scope.NewsTitle = $scope.NewsAndEventsData[0].Title;
-                $scope.NewsShortDesc = $scope.NewsAndEventsData[0].Short;
-                $scope.NewsLongDesc = $scope.NewsAndEventsData[0].Long;
-                $scope.MainImagePath = $scope.NewsAndEventsData[0].MainImagePath;
-                $scope.PublishedDate = $scope.NewsAndEventsData[0].FromDate;
-                $scope.Tag = $scope.NewsAndEventsData[0].TagString.split('$$')[0];
-                $scope.NewsId = $scope.NewsAndEventsData[0].Id;
+    //$scope.GetNewsAndEventsDetails = function (id) {
+    //    $scope.NewsAndEventsData = [];
+    //    var objdata = { "Id": id};
+    //    API.Post("/WebRoute/GetMediaMasterId", objdata).then(function (response) {
+    //        if (!response.data.root.subroot.error) {
+    //            $scope.NewsAndEventsData = $scope.checkundefined(response.data.root.subroot);
+    //            $scope.NewsTitle = $scope.NewsAndEventsData[0].Title;
+    //            $scope.NewsShortDesc = $scope.NewsAndEventsData[0].Short;
+    //            $scope.NewsLongDesc = $scope.NewsAndEventsData[0].Long;
+    //            $scope.MainImagePath = $scope.NewsAndEventsData[0].MainImagePath;
+    //            $scope.PublishedDate = $scope.NewsAndEventsData[0].FromDate;
+    //            $scope.Tag = $scope.NewsAndEventsData[0].TagString.split('$$')[0];
+    //            $scope.NewsId = $scope.NewsAndEventsData[0].Id;
                 
-            }
-        }, function myError(response) {
-        });
-    };
+    //        }
+    //    }, function myError(response) {
+    //    });
+    //};
     
     $scope.trustedHtml = function (data) {
         return $sce.trustAsHtml(data);
@@ -655,7 +661,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
         }, function myError(response) {
         });
     };
-    $scope.GetTagCount();
+   // $scope.GetTagCount();
 
     $scope.GetMediaDate = function () {
         $scope, MediaDateData = [];
@@ -670,7 +676,7 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
             });
         }
     };
-    $scope.GetMediaDate();
+//    $scope.GetMediaDate();
 
     $scope.GetFilteredNewsAndEvents = function (tagname, publishdate) {
         $scope.TagName = tagname;
@@ -679,20 +685,20 @@ App.controller('NewsAndEventsCtrl', function ($scope, $http, $filter, API, $sce)
     }
 
     $scope.Comment = {};
-    $scope.SaveComments = function (NewsId) {
-        $scope.Comment.NewsId = NewsId;
-        $scope.Comment.ProjectId = ProjectId;
-        var objdata = $scope.Comment;
-        API.Post("/WebRoute/SaveComments", objdata).then(function (result) {
-            if (!angular.isUndefined(result.data)) {
-                if (result.data.length > 0) {
-                    alert('Saved Successfully...');
-                    $scope.Comment = {};
-                }
-            }
-        }, function myError(response) {
-        });
-    }
+    //$scope.SaveComments = function (NewsId) {
+    //    $scope.Comment.NewsId = NewsId;
+    //    $scope.Comment.ProjectId = ProjectId;
+    //    var objdata = $scope.Comment;
+    //    API.Post("/WebRoute/SaveComments", objdata).then(function (result) {
+    //        if (!angular.isUndefined(result.data)) {
+    //            if (result.data.length > 0) {
+    //                alert('Saved Successfully...');
+    //                $scope.Comment = {};
+    //            }
+    //        }
+    //    }, function myError(response) {
+    //    });
+    //}
 
 
 });
@@ -737,7 +743,7 @@ App.controller('ContactUsCtrl', function ($scope, $http, $filter, API, $sce) {
         }, function myError(response) {
         });
     };
-    $scope.GetFranchiseedetailsStateCitywise('India');
+  //  $scope.GetFranchiseedetailsStateCitywise('India');
    
     $scope.GetCountry = function () {
         $scope.CountryData = [];
@@ -750,7 +756,7 @@ App.controller('ContactUsCtrl', function ($scope, $http, $filter, API, $sce) {
         }, function myError(response) {
         });
     };
-    $scope.GetCountry();
+ //   $scope.GetCountry();
     
     $scope.checkundefined = function (obj) {
         return API.Setnullarray(obj);

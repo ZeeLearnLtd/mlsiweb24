@@ -101,17 +101,19 @@
             justify-content: center;
             align-items: center;
         }
+
         .df-btn-text {
             position: fixed;
             bottom: 2rem;
             right: 3rem !important;
-            left:auto !important;
+            left: auto !important;
         }
+
         .df-btn-content {
             position: relative !important;
             bottom: 4rem !important;
         }
-/*        .zsiq_custommain siq_bR {
+        /*        .zsiq_custommain siq_bR {
             width: 80px !important;
             height: 80px !important;
         }
@@ -132,6 +134,7 @@
             }
         }
     </style>
+
     @*<script type="text/javascript"
                 src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
                 id="aisensy-wa-widget"
@@ -164,12 +167,12 @@
                 widget-id="aaak4j">
         </script>*@
     @*
-        09- jan -26
-        <script type="text/javascript"
-            src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
-            id="aisensy-wa-widget"
-            widget-id="aaakrs">
-    </script>*@
+            09- jan -26
+            <script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaakrs">
+        </script>*@
 
 
 
@@ -188,8 +191,102 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
     <!-- End Google Tag Manager -->
+    @{
+        var path = Request.Url?.AbsolutePath.ToLower();
+    }
 
-</head>
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/primary_years_programme"))
+    {
+        <script type="application/ld+json">
+                {
+            {
+              "@@context": "https://schema.org",
+              "@@type": "Course",
+              "name": "IB Primary Years Programme (PYP)",
+              "description": @CmsData.MetaDescription,
+              "educationalLevel": "Primary Education",
+              "provider": {
+                "@@type": "EducationalOrganization",
+                "name": "Mount Litera School International",
+                "url": "https://www.mlsi.in"
+              },
+              "hasCourseInstance": {
+                "@@type": "CourseInstance",
+                "url":@CmsData.CanonicalUrl,
+                "courseMode": "InPerson"
+              }
+            }
+          </script>
+    }
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/middle_years_programme"))
+    {
+        <script type="application/ld+json">
+               {
+              "@@context": "https://schema.org",
+              "@@type": "Course",
+              "name": "IB Middle Years Programme (MYP)",
+              "description": @CmsData.MetaDescription,
+              "educationalLevel": "Middle School",
+              "provider": {
+                "@@type": "EducationalOrganization",
+                "name": "Mount Litera School International",
+                "url": "https://www.mlsi.in"
+              },
+              "hasCourseInstance": {
+                "@@type": "CourseInstance",
+                "url": @CmsData.CanonicalUrl,
+                "courseMode": "InPerson"
+              }
+            }
+
+        </script>
+    }   
+
+        @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/ib_diploma_programme"))
+        {
+            <script type="application/ld+json">
+               {
+                  "@@context": "https://schema.org",
+                  "@@type": "Course",
+                  "name": "IB Diploma Programme (DP)",
+                  "description": @CmsData.MetaDescription,
+                  "educationalLevel": "High School / Pre-University",
+                  "provider": {
+                    "@@type": "EducationalOrganization",
+                    "name": "Mount Litera School International",
+                    "url": "https://www.mlsi.in"
+                  },
+                  "hasCourseInstance": {
+                    "@@type": "CourseInstance",
+                    "url": @CmsData.CanonicalUrl,
+                    "courseMode": "InPerson"
+                  }
+                }
+            </script>
+        }
+        @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/career_programme"))
+        {
+            <script type="application/ld+json">
+               {
+                  "@@context": "https://schema.org",
+                  "@@type": "Course",
+                  "name": "IB Career-related Programme (CP)",
+                  "description":  @CmsData.MetaDescription,
+                  "educationalLevel": "Pre-University / Career-Focused",
+                  "provider": {
+                    "@@type": "EducationalOrganization",
+                    "name": "Mount Litera School International",
+                    "url": "https://www.mlsi.in"
+                  },
+                  "hasCourseInstance": {
+                    "@@type": "CourseInstance",
+                    "url": @CmsData.CanonicalUrl,
+                    "courseMode": "InPerson"
+                  }
+                }
+            </script>
+        }
+    </head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
   <!-- Google Tag Manager (noscript) -->
   <noscript>
