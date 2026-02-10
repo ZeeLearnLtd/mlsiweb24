@@ -1,15 +1,17 @@
+using MLSI.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web.Http;
-using System.IO;
-using System.Xml;
-using MLSI.Models;
-using System.Web;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Xml;
 
 namespace MLSI.Controllers
 {
@@ -19,6 +21,7 @@ namespace MLSI.Controllers
         #region Global Declaration
         BussinessLogic bl = new BussinessLogic();
         XmlDocument doc = new XmlDocument();
+        PagesData pages = new PagesData();
         string result = "";
         #endregion
         protected internal virtual JsonTextActionResult JsonText(string jsonText)
@@ -28,14 +31,15 @@ namespace MLSI.Controllers
 
         [Route("MLSIEnquiry")]
         [HttpPost]
-        public IHttpActionResult MLSIEnquiry([FromBody] JObject objdata)
+        public async Task<IHttpActionResult> MLSIEnquiryAsync([FromBody] JObject objdata)
         {
             dynamic fileobj = new JObject();
             fileobj.xml = "{'root':{'subroot':" + objdata.ToString() + " }}";
-
+            string apiUrl = ConfigurationManager.AppSettings["apiurl"];
             string strJson = "{ProjectId:'" + objdata["ProjectId"].ToString() + "',Mobile:'" + objdata["Mobile"].ToString() + "',Email:'" + objdata["Email"].ToString() + "'}";
-            string srtres = bl.getdatatablejsondata("Proc_CheckIsExist", strJson, "connectionstring");
-            JArray jsonArray = JArray.Parse(srtres);
+            //string srtres = bl.getdatatablejsondata("Proc_CheckIsExist", strJson, "connectionstring");
+           // JArray jsonArray = JArray.Parse(srtres);
+            JArray jsonArray = JArray.Parse("[{ \"IsNew\": \"1\" }]");
             dynamic data = JObject.Parse(jsonArray[0].ToString());
             if (data["IsNew"].ToString() == "1")
             {
@@ -64,14 +68,18 @@ namespace MLSI.Controllers
                         System.Net.ServicePointManager.SecurityProtocol =
     SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
                         var response = client.PostAsJsonAsync("https://mlsi.myschoolone.com/mlsiapi.php", d).Result;
-                        return JsonText(bl.getdatatablejsondata("Proc_SaveEnquiry", fileobj.ToString(), "connectionstring"));
-
+                        // return JsonText(bl.getdatatablejsondata("Proc_SaveEnquiry", fileobj.ToString(), "connectionstring"));
+                       var respstr = await pages.CallApiAsync<dynamic>(apiUrl+ "ZeeEnquirymlsi", objdata);          
+                        return Ok(respstr);
                         //return JsonText(bl.getdatatablejsondata("Proc_SaveEnquiry", fileobj.ToString(), "connectionstring"));
                     }
                 }
                 catch (Exception ex)
                 {
-                    return JsonText(bl.getdatatablejsondata("Proc_SaveEnquiry", fileobj.ToString(), "connectionstring"));
+                    var respstr = await pages.CallApiAsync<dynamic>(apiUrl + "ZeeEnquirymlsi", objdata);
+                    return Ok(respstr);
+                    //return await pages.CallApiAsync<dynamic>(apiUrl + "ZeeEnquirymlsi", objdata);
+                    //return JsonText(bl.getdatatablejsondata("Proc_SaveEnquiry", fileobj.ToString(), "connectionstring"));
                 }
             }
             else

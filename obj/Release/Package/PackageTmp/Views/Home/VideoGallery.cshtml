@@ -2,32 +2,37 @@
 @{
     ViewBag.Title = "VideoGallery";
 }
+<script type="text/javascript"
+        src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+        id="aisensy-wa-widget"
+        widget-id="aaau9i">
+</script>
 
 <section>
-    
+
     <div class="container" ng-cloak id="VideoGallery" ng-controller="NewsAndEventsCtrl" ng-init="Type='VideoGallery';GetNewsAndEvents()">
-        <h1>IB School Video gallery</h1>       
-    <div ng-repeat="category in Videoscategories">
-        
-        <div class="col-12" ng-if="category">
-            <h4 class="text-center" style="text-decoration:underline">{{ category }}</h4>
-        </div>
-        <div class="row">
-            
-            <div class="col-md-6" ng-repeat="video in groupedVideos[category]">
-                <h5>{{ video.Title }}</h5>
-                <a data-fancybox="Videogallery"
-                   href="https://www.youtube.com/embed/{{ video.LinkUrl }}?autoplay=1&rel=0"
-                   data-transition-effect="tube">
+        <h1>IB School Video gallery</h1>
+        <div ng-repeat="category in Videoscategories">
 
-                    <i class="fa fa-play"></i>
-                    <img ng-src="https://img.youtube.com/vi/{{ video.LinkUrl }}/hqdefault.jpg"
-                         alt="{{ video.Title }}" />
+            <div class="col-12" ng-if="category">
+                <h4 class="text-center" style="text-decoration:underline">{{ category }}</h4>
+            </div>
+            <div class="row">
 
-                </a>
+                <div class="col-md-6" ng-repeat="video in groupedVideos[category]">
+                    <h5>{{ video.Title }}</h5>
+                    <a data-fancybox="Videogallery"
+                       href="https://www.youtube.com/embed/{{ video.LinkUrl }}?autoplay=1&rel=0"
+                       data-transition-effect="tube">
+
+                        <i class="fa fa-play"></i>
+                        <img ng-src="https://img.youtube.com/vi/{{ video.LinkUrl }}/hqdefault.jpg"
+                             alt="{{ video.Title }}" />
+
+                    </a>
+                </div>
             </div>
         </div>
-        </div>
-        
+
     </div>
 </section>
