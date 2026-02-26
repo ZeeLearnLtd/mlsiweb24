@@ -183,6 +183,7 @@
     <Content Include="Images\Banner\Banner-3.jpg" />
     <Content Include="Images\Banner\Banner-4.jpg" />
     <Content Include="Images\Banner\banner_video.mp4" />
+    <Content Include="Images\Banner\dist_school.jpg" />
     <Content Include="Images\Banner\DP-school-popup.jpg" />
     <Content Include="Images\Banner\ib-school-results-2025_webpage.jpg" />
     <Content Include="Images\Banner\Mask-group-banner.png" />
@@ -253,6 +254,7 @@
     <Content Include="Images\logo-mlsi.png" />
     <Content Include="Images\Madhushree-Rathi.jpg" />
     <Content Include="Images\MLSI_Building.JPEG" />
+    <Content Include="Images\MLSI_Building.jpg" />
     <Content Include="Images\MLSI_Daycarecreative.jpg" />
     <Content Include="Images\navyata.jpg" />
     <Content Include="Images\Photogallery\Activity.jpg" />
