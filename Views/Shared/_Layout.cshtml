@@ -192,18 +192,18 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
     <!-- End Google Tag Manager -->
     @{
+        
         var path = Request.Url?.AbsolutePath.ToLower();
     }
 
     @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/primary_years_programme"))
     {
         <script type="application/ld+json">
-                {
             {
               "@@context": "https://schema.org",
               "@@type": "Course",
               "name": "IB Primary Years Programme (PYP)",
-              "description": @CmsData.MetaDescription,
+              "description": "IB PYP at Mount Litera School International is one of the best IB PYP Schools in Bandra, Mumbai aims at promoting an international perspectivefor kids between Classes 1st to 5th.   Contact us now!",
               "educationalLevel": "Primary Education",
               "provider": {
                 "@@type": "EducationalOrganization",
@@ -212,11 +212,11 @@
               },
               "hasCourseInstance": {
                 "@@type": "CourseInstance",
-                "url":@CmsData.CanonicalUrl,
+                "url":"https://www.mlsi.in/ib_programmes/primary_years_programme",
                 "courseMode": "InPerson"
               }
             }
-          </script>
+        </script>
     }
     @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/middle_years_programme"))
     {
@@ -225,7 +225,7 @@
               "@@context": "https://schema.org",
               "@@type": "Course",
               "name": "IB Middle Years Programme (MYP)",
-              "description": @CmsData.MetaDescription,
+              "description": "IB Middle Years Programme (MYP) at MLSI aims to assist students in developing their sense of self &amp; community responsibility. It aims at promoting International studies between Classes 6th to 10th. Contact us now!",
               "educationalLevel": "Middle School",
               "provider": {
                 "@@type": "EducationalOrganization",
@@ -234,59 +234,59 @@
               },
               "hasCourseInstance": {
                 "@@type": "CourseInstance",
-                "url": @CmsData.CanonicalUrl,
+                "url":"https://www.mlsi.in/ib_programmes/middle_years_programme",
                 "courseMode": "InPerson"
               }
             }
 
         </script>
-    }   
+    }
 
-        @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/ib_diploma_programme"))
-        {
-            <script type="application/ld+json">
-               {
-                  "@@context": "https://schema.org",
-                  "@@type": "Course",
-                  "name": "IB Diploma Programme (DP)",
-                  "description": @CmsData.MetaDescription,
-                  "educationalLevel": "High School / Pre-University",
-                  "provider": {
-                    "@@type": "EducationalOrganization",
-                    "name": "Mount Litera School International",
-                    "url": "https://www.mlsi.in"
-                  },
-                  "hasCourseInstance": {
-                    "@@type": "CourseInstance",
-                    "url": @CmsData.CanonicalUrl,
-                    "courseMode": "InPerson"
-                  }
-                }
-            </script>
-        }
-        @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/career_programme"))
-        {
-            <script type="application/ld+json">
-               {
-                  "@@context": "https://schema.org",
-                  "@@type": "Course",
-                  "name": "IB Career-related Programme (CP)",
-                  "description":  @CmsData.MetaDescription,
-                  "educationalLevel": "Pre-University / Career-Focused",
-                  "provider": {
-                    "@@type": "EducationalOrganization",
-                    "name": "Mount Litera School International",
-                    "url": "https://www.mlsi.in"
-                  },
-                  "hasCourseInstance": {
-                    "@@type": "CourseInstance",
-                    "url": @CmsData.CanonicalUrl,
-                    "courseMode": "InPerson"
-                  }
-                }
-            </script>
-        }
-    </head>
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/ib_diploma_programme"))
+    {
+        <script type="application/ld+json">
+            {
+               "@@context": "https://schema.org",
+               "@@type": "Course",
+               "name": "IB Diploma Programme (DP)",
+               "description":"MLSI offers the International Baccalaureate (IB) Diploma Programme for students who seeking a global coverage. Our IB Schools in Badra, Mumbai encourages students to become compassionate &amp; active. Contact us now!",
+               "educationalLevel": "High School / Pre-University",
+               "provider": {
+                 "@@type": "EducationalOrganization",
+                 "name": "Mount Litera School International",
+                 "url": "https://www.mlsi.in"
+               },
+               "hasCourseInstance": {
+                 "@@type": "CourseInstance",
+                 "url": "https://www.mlsi.in/ib_programmes/ib_diploma_programme",
+                 "courseMode": "InPerson"
+               }
+             }
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/career_programme"))
+    {
+        <script type="application/ld+json">
+            {
+               "@@context": "https://schema.org",
+               "@@type": "Course",
+               "name": "IB Career-related Programme (CP)",
+               "description":"The International Baccalaureate Career-related Programme (CP) at MLSI blends academic study with career-related learning for students seeking practical, real-world pathways.",
+               "educationalLevel": "Pre-University / Career-Focused",
+               "provider": {
+                 "@@type": "EducationalOrganization",
+                 "name": "Mount Litera School International",
+                 "url": "https://www.mlsi.in"
+               },
+               "hasCourseInstance": {
+                 "@@type": "CourseInstance",
+                 "url": "https://www.mlsi.in/ib_programmes/career_programme",
+                 "courseMode": "InPerson"
+               }
+             }
+        </script>
+    }
+</head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
   <!-- Google Tag Manager (noscript) -->
   <noscript>
