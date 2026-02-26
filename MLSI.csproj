@@ -35,6 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -185,6 +186,7 @@
     <Content Include="Images\Banner\DP-school-popup.jpg" />
     <Content Include="Images\Banner\ib-school-results-2025_webpage.jpg" />
     <Content Include="Images\Banner\Mask-group-banner.png" />
+    <Content Include="Images\Banner\MLSI_Admission-25-26.jpg" />
     <Content Include="Images\Banner\prereciver.jpg" />
     <Content Include="Images\Bushra-Khan.jpg" />
     <Content Include="Images\career_related.png" />
