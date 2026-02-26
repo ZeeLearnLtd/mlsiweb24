@@ -5,258 +5,261 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\projects\MLSIRelease18.02</_PublishTargetUrl>
-    <History>False|2025-08-08T05:41:10.4221796Z||;False|2025-08-08T11:06:36.4254209+05:30||;False|2025-08-08T11:00:02.9537395+05:30||;True|2025-05-21T15:20:01.6810600+05:30||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
+    <History>True|2026-02-10T08:50:28.8632343Z||;True|2026-02-10T11:35:39.8908065+05:30||;True|2026-02-10T11:35:25.0750412+05:30||;True|2026-02-09T12:44:03.5635852+05:30||;True|2025-12-18T12:39:38.0281622+05:30||;True|2025-12-18T12:39:22.9556199+05:30||;True|2025-12-18T11:27:55.4039131+05:30||;True|2025-12-18T11:27:20.9485424+05:30||;True|2025-12-16T16:26:38.2713986+05:30||;True|2025-12-16T15:07:02.5160572+05:30||;True|2025-12-16T15:00:59.5622127+05:30||;False|2025-12-16T14:59:25.1891943+05:30||;False|2025-12-12T14:42:32.5943440+05:30||;True|2025-11-05T10:55:39.6388066+05:30||;True|2025-11-04T17:44:13.9554954+05:30||;True|2025-11-04T17:43:58.8852600+05:30||;True|2025-11-04T17:43:07.1764682+05:30||;False|2025-08-08T11:11:10.4221796+05:30||;False|2025-08-08T11:06:36.4254209+05:30||;False|2025-08-08T11:00:02.9537395+05:30||;True|2025-05-21T15:20:01.6810600+05:30||;False|2025-05-21T15:19:30.1230941+05:30||;False|2025-05-21T15:19:23.3392095+05:30||;False|2025-05-21T15:12:01.7562418+05:30||;False|2025-05-21T15:10:19.3854780+05:30||;False|2025-05-21T15:09:53.3454384+05:30||;False|2025-05-20T13:04:51.3730919+05:30||;False|2025-05-20T13:03:54.8232384+05:30||;False|2025-05-20T13:03:16.1651171+05:30||;False|2025-05-20T13:03:09.2282937+05:30||;False|2025-05-20T13:00:16.1344570+05:30||;False|2025-05-20T12:45:18.2046726+05:30||;False|2025-05-20T12:44:36.8865109+05:30||;True|2025-02-18T17:14:15.0051114+05:30||;True|2024-12-19T06:28:48.2150006+05:30||;True|2024-09-05T12:00:18.6398495+05:30||;False|2024-09-05T11:43:48.3069292+05:30||;False|2024-09-05T11:35:22.4420322+05:30||;False|2024-09-05T11:33:28.9250084+05:30||;False|2022-07-11T20:18:22.3256450+05:30||;False|2022-06-10T13:22:11.8764422+05:30||;True|2022-06-05T22:13:00.5629105+05:30||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:24:58</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:24:58</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:09</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:17</publishTime>
     </File>
     <File Include="bin/MLSI.dll">
-      <publishTime>08/08/2025 11:13:06</publishTime>
+      <publishTime>02/10/2026 14:20:26</publishTime>
     </File>
     <File Include="bin/MLSI.pdb">
-      <publishTime>08/08/2025 11:13:06</publishTime>
+      <publishTime>02/10/2026 14:20:26</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:19</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe.config">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/csc.rsp">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/csi.rsp">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:10</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:11</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe.config">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.rsp">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>02/18/2025 17:24:26</publishTime>
+      <publishTime>04/14/2025 18:25:12</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:05</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:06</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:06</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:06</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:03</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:04</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:07</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:07</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>02/18/2025 17:24:25</publishTime>
+      <publishTime>04/14/2025 18:25:07</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>02/18/2025 17:24:27</publishTime>
+      <publishTime>04/14/2025 18:25:21</publishTime>
     </File>
     <File Include="Content/animate.min.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/font-awesome.min.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/jquery.fancybox.3.4.1.min.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/mixin.scss">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/owl.carousel.min.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:39</publishTime>
     </File>
     <File Include="Content/style.css">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>12/12/2025 16:52:17</publishTime>
     </File>
     <File Include="Content/style.min.css">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>12/12/2025 15:08:36</publishTime>
     </File>
     <File Include="Content/style.scss">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>12/12/2025 15:08:57</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:04</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.eot">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.svg">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.ttf">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff2">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:04</publishTime>
     </File>
     <File Include="Images/10_years_LOGO_H60.svg">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
+    </File>
+    <File Include="Images/11-Years-MLSI_Aug_25_Final-Logo.png">
+      <publishTime>10/30/2025 13:07:40</publishTime>
     </File>
     <File Include="Images/404.png">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="Images/aboutus.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:40</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Fees.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Fees_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Interaction.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Interaction_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Offer-Letter.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Offer-Letter_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Parent.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Parent_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Registration.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Registration_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Tour.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/Tour_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/welcome-Note.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Admission_Procedure/welcome-Note_hover.png">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/award/award_banner.png">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/award/award_sub_banner.png">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/award/cr_1.png">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/award/cr_2.png">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/award/cr_3.png">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/Banner/21st-Feb_IBDP-Admissions_Banner.jpg">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:47</publishTime>
     </File>
     <File Include="Images/Banner/Banner-01.jpg">
       <publishTime>06/05/2022 14:20:07</publishTime>
@@ -265,625 +268,646 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/05/2022 14:46:22</publishTime>
     </File>
     <File Include="Images/Banner/Banner-1.jpg">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:48</publishTime>
     </File>
     <File Include="Images/Banner/Banner-2.jpg">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:48</publishTime>
     </File>
     <File Include="Images/Banner/Banner-3.jpg">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:48</publishTime>
     </File>
     <File Include="Images/Banner/Banner-4.jpg">
-      <publishTime>02/18/2025 17:24:14</publishTime>
+      <publishTime>04/14/2025 18:22:49</publishTime>
     </File>
     <File Include="Images/Banner/banner_video.mp4">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:52</publishTime>
     </File>
     <File Include="Images/Banner/DP-school-popup.jpg">
-      <publishTime>07/09/2025 14:30:47</publishTime>
+      <publishTime>07/11/2025 17:56:22</publishTime>
     </File>
     <File Include="Images/Banner/ib-school-results-2025_webpage.jpg">
-      <publishTime>08/06/2025 12:06:13</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/Banner/Mask-group-banner.png">
-      <publishTime>08/07/2025 15:24:40</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/Banner/prereciver.jpg">
-      <publishTime>08/06/2025 12:06:29</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/Bushra-Khan.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:41</publishTime>
     </File>
     <File Include="Images/career_related.png">
-      <publishTime>08/07/2025 15:32:52</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/dp_model_en.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:41</publishTime>
     </File>
     <File Include="Images/dp_programme_logo_en.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:41</publishTime>
     </File>
     <File Include="Images/Dr.-Subhash-Chandra.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:41</publishTime>
     </File>
     <File Include="Images/drama.jpg">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>04/22/2025 12:04:23</publishTime>
     </File>
     <File Include="Images/extra-curricular-activities.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:42</publishTime>
     </File>
     <File Include="Images/extra-curricular-activities_hover.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:42</publishTime>
     </File>
     <File Include="Images/ib-continuum-logo.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:42</publishTime>
     </File>
     <File Include="Images/ib-continuum-logo_back.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:42</publishTime>
     </File>
     <File Include="Images/ib-myp.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/ib-primary.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/Ib_dp.png">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/ig-carrer.png">
-      <publishTime>08/07/2025 15:35:12</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/Infrastructure.png">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/InnsideBanner/AboutUs/Message_from_the_Advisor.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/AboutUs/Message_from_the_Chairman.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/AboutUs/Mission.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/AboutUs/School_Leadership_Team.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/AboutUs/Vision.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/Admission-Procedure_Hand-Filling-Form.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/eligibility.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/Enquiry-now.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/FAQ.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/Fees.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission/Why-choose-MLSI.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Admission_Procedure.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Contact.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Contact/contact.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Eligibility.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/FAQs.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/IB_Diploma_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/InnsideBanner.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Learning_at_MLSI.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Learning_at_MLSI/Clubs-and-Extra-Curricular-Activities.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Learning_at_MLSI/Community-Outreach.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Learning_at_MLSI/Learning-at_MLSI.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Learning_at_MLSI/The-Art.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Middle_Years_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Primary_Years_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:53</publishTime>
     </File>
     <File Include="Images/InnsideBanner/PrivacyPolicy.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Programmes/IB-Diploma-Programme-%28DP%29.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:55</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Programmes/Middle_Years_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Programmes/Primary_Years_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Programmes/The_IB_Programme.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/career-counselling.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Facilities.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Learning-Space.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/MLSIcalender-old.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/MLSIcalender25-26.jpg">
-      <publishTime>07/30/2025 18:31:45</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Pastoral-Care.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:56</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Safety-Health-and-Security.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/School-Calendar.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Sports-Infra.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Student_Life/Transport.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/InnsideBanner/the-ib-programmes.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/InnsideBanner/Why_Choose_MLSI.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:54</publishTime>
     </File>
     <File Include="Images/logo-mlsi.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/Madhushree-Rathi.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:43</publishTime>
     </File>
     <File Include="Images/MLSI_Building.JPEG">
-      <publishTime>08/06/2025 10:14:49</publishTime>
+      <publishTime>08/11/2025 11:53:47</publishTime>
     </File>
     <File Include="Images/MLSI_Daycarecreative.jpg">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>04/22/2025 17:12:37</publishTime>
     </File>
     <File Include="Images/navyata.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:44</publishTime>
     </File>
     <File Include="Images/Photogallery/Activity.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/1.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/1_thumb.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/2.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/2_thumb.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/3.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/3_thumb.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/4.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/4_thumb.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/5.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Annual_Day/5_thumb.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:58</publishTime>
     </File>
     <File Include="Images/Photogallery/Events.jpg">
-      <publishTime>02/18/2025 17:24:15</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/1.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/1_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/2.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/2_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/3.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/3_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/4.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:04</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/4_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:05</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/5.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:05</publishTime>
     </File>
     <File Include="Images/Photogallery/Fit_for_Life/5_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:05</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/1.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/1_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/2.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/2_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/3.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/3_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/4.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/4_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/5.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:07</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/5_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:08</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/6.JPG">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:08</publishTime>
     </File>
     <File Include="Images/Photogallery/Graduation_Ceremony/6_thumb.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:23:08</publishTime>
     </File>
     <File Include="Images/Photogallery/Infrastructure.jpg">
-      <publishTime>02/18/2025 17:24:16</publishTime>
+      <publishTime>04/14/2025 18:22:57</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/1.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/1_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/2.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/2_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/3.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/3_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/4.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/4_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/5.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:21</publishTime>
     </File>
     <File Include="Images/Photogallery/Republic_Day/5_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/1.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/1_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/2.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/2_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/3.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/3_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/4.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/4_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/5.JPG">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/Photogallery/SAIBSA_Event/5_thumb.jpg">
-      <publishTime>02/18/2025 17:24:18</publishTime>
+      <publishTime>04/14/2025 18:23:22</publishTime>
     </File>
     <File Include="Images/popup.jpg">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>04/14/2025 18:22:44</publishTime>
     </File>
     <File Include="Images/Priya-Anand.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:44</publishTime>
     </File>
     <File Include="Images/Sheetal-Bathija.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:45</publishTime>
     </File>
     <File Include="Images/support-staff.png">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:45</publishTime>
     </File>
     <File Include="Images/Table_Tennis.jpg">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>04/22/2025 12:04:29</publishTime>
     </File>
     <File Include="Images/Vishnu-Sharma.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:45</publishTime>
+    </File>
+    <File Include="Images/Wall_Climbing.jpg">
+      <publishTime>01/19/2026 14:51:49</publishTime>
     </File>
     <File Include="Images/WhatsApp.jpg">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:45</publishTime>
     </File>
     <File Include="Images/Why_Choose_MLSI_1.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Why_Choose_MLSI_2.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Why_Choose_MLSI_3.jpg">
-      <publishTime>02/18/2025 17:24:51</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Images/Why_Choose_MLSI_4.jpg">
-      <publishTime>02/18/2025 17:24:19</publishTime>
+      <publishTime>04/14/2025 18:22:46</publishTime>
     </File>
     <File Include="Scripts/angular.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:21</publishTime>
     </File>
     <File Include="Scripts/App.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:21</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/Controller.js">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>02/09/2026 18:38:42</publishTime>
     </File>
     <File Include="Scripts/custum.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/jquery-2.1.4.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/jquery.fancybox.3.4.1.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/owl.carousel.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/popper.min.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Scripts/Service.js">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Views/Home/AboutUs.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 15:57:17</publishTime>
     </File>
     <File Include="Views/Home/Admission_Procedure.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 15:57:06</publishTime>
     </File>
     <File Include="Views/Home/Award.cshtml">
-      <publishTime>02/18/2025 17:27:06</publishTime>
+      <publishTime>01/09/2026 12:29:55</publishTime>
     </File>
     <File Include="Views/Home/Blog.cshtml">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>01/09/2026 15:57:30</publishTime>
     </File>
     <File Include="Views/Home/Career_Counselling.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 15:57:34</publishTime>
     </File>
     <File Include="Views/Home/Career_programme.cshtml">
-      <publishTime>08/08/2025 10:44:42</publishTime>
+      <publishTime>01/09/2026 15:57:37</publishTime>
+    </File>
+    <File Include="Views/Home/CASGallery - Copy.cshtml">
+      <publishTime>04/14/2025 18:25:23</publishTime>
     </File>
     <File Include="Views/Home/CASGallery.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 15:57:46</publishTime>
     </File>
     <File Include="Views/Home/Clubs_and_Extra_Curricular_Activities.cshtml">
-      <publishTime>07/04/2025 12:39:01</publishTime>
+      <publishTime>01/21/2026 11:55:05</publishTime>
     </File>
     <File Include="Views/Home/Community_Outreach.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:00:21</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 15:56:45</publishTime>
     </File>
     <File Include="Views/Home/Eligibility.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:00:28</publishTime>
     </File>
     <File Include="Views/Home/Enquire_Now - Copy.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:23</publishTime>
     </File>
     <File Include="Views/Home/Enquire_Now.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:00:31</publishTime>
     </File>
     <File Include="Views/Home/Events.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:00:35</publishTime>
     </File>
     <File Include="Views/Home/ExhibitionGallery.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:23</publishTime>
     </File>
     <File Include="Views/Home/FAQs.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 15:56:58</publishTime>
     </File>
     <File Include="Views/Home/Fees.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 15:56:53</publishTime>
     </File>
     <File Include="Views/Home/IB_Diploma_Programme.cshtml">
-      <publishTime>06/25/2025 13:00:13</publishTime>
+      <publishTime>01/09/2026 16:00:45</publishTime>
     </File>
     <File Include="Views/Home/Index - Copy.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/06/2025 14:22:36</publishTime>
+      <publishTime>01/09/2026 15:56:34</publishTime>
     </File>
     <File Include="Views/Home/IndexOLD.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/Learning_at_MLSI.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:00:50</publishTime>
     </File>
     <File Include="Views/Home/Learning_Spaces.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:00:53</publishTime>
     </File>
     <File Include="Views/Home/MainAward.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:01:06</publishTime>
     </File>
     <File Include="Views/Home/Message_from_the_Advisor.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:01:10</publishTime>
     </File>
     <File Include="Views/Home/Message_from_the_Chairman.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:13</publishTime>
     </File>
     <File Include="Views/Home/Middle_Years_Programme.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:17</publishTime>
     </File>
     <File Include="Views/Home/Mission.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:01:21</publishTime>
     </File>
     <File Include="Views/Home/MLSIFaculty.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:01:25</publishTime>
     </File>
     <File Include="Views/Home/MLSIThankYou.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:24</publishTime>
     </File>
     <File Include="Views/Home/News.cshtml">
-      <publishTime>02/18/2025 17:27:06</publishTime>
+      <publishTime>12/18/2025 15:13:08</publishTime>
+    </File>
+    <File Include="Views/Home/News_old.cshtml">
+      <publishTime>04/14/2025 18:25:24</publishTime>
+    </File>
+    <File Include="Views/Home/ParentSpeak - Copy.cshtml">
+      <publishTime>12/12/2025 16:52:17</publishTime>
     </File>
     <File Include="Views/Home/ParentSpeak.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:33</publishTime>
     </File>
     <File Include="Views/Home/Pastoral_Care.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:01:36</publishTime>
     </File>
     <File Include="Views/Home/PhotoGallery.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:42</publishTime>
+    </File>
+    <File Include="Views/Home/PhotoGalleryold.cshtml">
+      <publishTime>11/05/2025 16:47:32</publishTime>
     </File>
     <File Include="Views/Home/Primary_Years_Programme.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>02/05/2026 14:53:07</publishTime>
     </File>
     <File Include="Views/Home/PrivacyPolicy.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:51</publishTime>
     </File>
     <File Include="Views/Home/Safety_Health_and_Security.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:01:55</publishTime>
     </File>
     <File Include="Views/Home/School_Calendar.cshtml">
-      <publishTime>07/30/2025 18:48:16</publishTime>
+      <publishTime>01/09/2026 16:02:01</publishTime>
     </File>
     <File Include="Views/Home/School_Leadership_Team.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:04</publishTime>
     </File>
     <File Include="Views/Home/SiteMap.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:25</publishTime>
     </File>
     <File Include="Views/Home/Sports_Infrastructure.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:02:10</publishTime>
+    </File>
+    <File Include="Views/Home/StudentsSpeak - Copy.cshtml">
+      <publishTime>12/12/2025 16:52:17</publishTime>
     </File>
     <File Include="Views/Home/StudentsSpeak.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>12/12/2025 16:52:17</publishTime>
     </File>
     <File Include="Views/Home/The_Arts.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:16</publishTime>
     </File>
     <File Include="Views/Home/The_IB_Programmes.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:02:19</publishTime>
     </File>
     <File Include="Views/Home/The_Management.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:22</publishTime>
     </File>
     <File Include="Views/Home/Transport.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:25</publishTime>
+    </File>
+    <File Include="Views/Home/VideoGallery - Copy.cshtml">
+      <publishTime>04/14/2025 18:25:25</publishTime>
     </File>
     <File Include="Views/Home/VideoGallery.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>01/09/2026 16:02:28</publishTime>
     </File>
     <File Include="Views/Home/Vision.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:32</publishTime>
     </File>
     <File Include="Views/Home/Why_Choose_MLSI.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>01/09/2026 16:02:35</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>04/14/2025 18:25:26</publishTime>
     </File>
     <File Include="Views/Shared/Errorold.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>04/14/2025 18:25:26</publishTime>
     </File>
     <File Include="Views/Shared/Footer.cshtml">
-      <publishTime>07/16/2025 12:05:17</publishTime>
+      <publishTime>08/11/2025 12:03:28</publishTime>
     </File>
     <File Include="Views/Shared/Header.cshtml">
-      <publishTime>08/07/2025 12:52:31</publishTime>
+      <publishTime>12/16/2025 12:37:56</publishTime>
     </File>
     <File Include="Views/Shared/HeaderN.cshtml">
-      <publishTime>02/18/2025 17:24:52</publishTime>
+      <publishTime>10/30/2025 14:15:07</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/16/2025 12:05:17</publishTime>
+      <publishTime>02/05/2026 16:02:25</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>12/17/2025 14:52:02</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>02/18/2025 17:24:20</publishTime>
+      <publishTime>04/14/2025 18:25:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/08/2025 11:00:02</publishTime>
+      <publishTime>02/10/2026 14:20:27</publishTime>
     </File>
   </ItemGroup>
 </Project>

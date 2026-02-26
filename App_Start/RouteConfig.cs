@@ -179,8 +179,8 @@ namespace MLSI
             defaults: new { controller = "Home", action = "StudentsSpeak", id = UrlParameter.Optional }
         );
       routes.MapRoute(
-            name: "news",
-            url: "news",
+            name: "news-events",
+            url: "news-events",
             defaults: new { controller = "Home", action = "News", id = UrlParameter.Optional }
         );
       routes.MapRoute(
@@ -209,8 +209,13 @@ namespace MLSI
           url: "Blog/{location}",
           defaults: new { controller = "Home", action = "Blog", location = UrlParameter.Optional }
        );
+      routes.MapRoute(
+          name: "newsRoute",
+          url: "news-events/{newsslug}",
+          defaults: new { controller = "Home", action = "News", location = UrlParameter.Optional }
+       );
 
-    routes.MapRoute(
+            routes.MapRoute(
                name: "Default",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

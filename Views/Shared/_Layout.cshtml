@@ -73,7 +73,7 @@
 
         .popup {
             position: absolute;
-            width:40%;
+            width: 40%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -84,7 +84,7 @@
         }
 
             .popup img {
-                max-width:100%;
+                max-width: 100%;
                 height: auto;
                 display: block;
                 margin: 0 auto;
@@ -102,7 +102,18 @@
             align-items: center;
         }
 
-        .zsiq_custommain siq_bR {
+        .df-btn-text {
+            position: fixed;
+            bottom: 2rem;
+            right: 3rem !important;
+            left: auto !important;
+        }
+
+        .df-btn-content {
+            position: relative !important;
+            bottom: 4rem !important;
+        }
+        /*        .zsiq_custommain siq_bR {
             width: 80px !important;
             height: 80px !important;
         }
@@ -112,7 +123,7 @@
             max-width: 80px !important;
             height: auto;
             width: auto;
-        }
+        }*/
 
         @@media only screen and (max-width: 600px) {
             .popup img {
@@ -123,12 +134,13 @@
             }
         }
     </style>
-    @*<script type="text/javascript"
-            src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
-            id="aisensy-wa-widget"
-            widget-id="a5SZ1y">
 
-    </script>*@
+    @*<script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="a5SZ1y">
+
+        </script>*@
     @*<script type="text/javascript"
                 src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
                 id="aisensy-wa-widget"
@@ -137,14 +149,34 @@
 
 
     @*
-        latest code
-        <script type="text/javascript"
-            src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-            id="aisensy-wa-widget"
-            widget-id="aaa0e4">
+            latest code
+            <script type="text/javascript"
+                src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+                id="aisensy-wa-widget"
+                widget-id="aaa0e4">
 
-    </script>*@
-    <script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
+        </script>*@
+    @*<script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaaj2r">
+        </script>*@
+    @*<script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaak4j">
+        </script>*@
+    @*
+            09- jan -26
+            <script type="text/javascript"
+                src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+                id="aisensy-wa-widget"
+                widget-id="aaakrs">
+        </script>*@
+
+
+
+    @*<script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq05307169f8f4cf35337c850bf6263f05503d28b2145de0ef9859de6a99c595e3", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zohopublic.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>*@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P14570M6R"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-2P14570M6R');</script>
@@ -159,6 +191,101 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PGDJNLK');</script>
     <!-- End Google Tag Manager -->
+    @{
+        
+        var path = Request.Url?.AbsolutePath.ToLower();
+    }
+
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/primary_years_programme"))
+    {
+        <script type="application/ld+json">
+            {
+              "@@context": "https://schema.org",
+              "@@type": "Course",
+              "name": "IB Primary Years Programme (PYP)",
+              "description": "IB PYP at Mount Litera School International is one of the best IB PYP Schools in Bandra, Mumbai aims at promoting an international perspectivefor kids between Classes 1st to 5th.   Contact us now!",
+              "educationalLevel": "Primary Education",
+              "provider": {
+                "@@type": "EducationalOrganization",
+                "name": "Mount Litera School International",
+                "url": "https://www.mlsi.in"
+              },
+              "hasCourseInstance": {
+                "@@type": "CourseInstance",
+                "url":"https://www.mlsi.in/ib_programmes/primary_years_programme",
+                "courseMode": "InPerson"
+              }
+            }
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/middle_years_programme"))
+    {
+        <script type="application/ld+json">
+               {
+              "@@context": "https://schema.org",
+              "@@type": "Course",
+              "name": "IB Middle Years Programme (MYP)",
+              "description": "IB Middle Years Programme (MYP) at MLSI aims to assist students in developing their sense of self &amp; community responsibility. It aims at promoting International studies between Classes 6th to 10th. Contact us now!",
+              "educationalLevel": "Middle School",
+              "provider": {
+                "@@type": "EducationalOrganization",
+                "name": "Mount Litera School International",
+                "url": "https://www.mlsi.in"
+              },
+              "hasCourseInstance": {
+                "@@type": "CourseInstance",
+                "url":"https://www.mlsi.in/ib_programmes/middle_years_programme",
+                "courseMode": "InPerson"
+              }
+            }
+
+        </script>
+    }
+
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/ib_diploma_programme"))
+    {
+        <script type="application/ld+json">
+            {
+               "@@context": "https://schema.org",
+               "@@type": "Course",
+               "name": "IB Diploma Programme (DP)",
+               "description":"MLSI offers the International Baccalaureate (IB) Diploma Programme for students who seeking a global coverage. Our IB Schools in Badra, Mumbai encourages students to become compassionate &amp; active. Contact us now!",
+               "educationalLevel": "High School / Pre-University",
+               "provider": {
+                 "@@type": "EducationalOrganization",
+                 "name": "Mount Litera School International",
+                 "url": "https://www.mlsi.in"
+               },
+               "hasCourseInstance": {
+                 "@@type": "CourseInstance",
+                 "url": "https://www.mlsi.in/ib_programmes/ib_diploma_programme",
+                 "courseMode": "InPerson"
+               }
+             }
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(path) && path.Contains("/ib_programmes/career_programme"))
+    {
+        <script type="application/ld+json">
+            {
+               "@@context": "https://schema.org",
+               "@@type": "Course",
+               "name": "IB Career-related Programme (CP)",
+               "description":"The International Baccalaureate Career-related Programme (CP) at MLSI blends academic study with career-related learning for students seeking practical, real-world pathways.",
+               "educationalLevel": "Pre-University / Career-Focused",
+               "provider": {
+                 "@@type": "EducationalOrganization",
+                 "name": "Mount Litera School International",
+                 "url": "https://www.mlsi.in"
+               },
+               "hasCourseInstance": {
+                 "@@type": "CourseInstance",
+                 "url": "https://www.mlsi.in/ib_programmes/career_programme",
+                 "courseMode": "InPerson"
+               }
+             }
+        </script>
+    }
 </head>
 <body ng-app="WebApp" class="@(@ViewBag.Title == "Index" ? "Index" : "") @(@ViewBag.Title == "PhotoGallery" ? "PhotoGallery" : "")">
   <!-- Google Tag Manager (noscript) -->
@@ -167,12 +294,12 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="popup-overlay">
+  @*<div class="popup-overlay">
       <div class="popup">
           <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
           <button class="close-btn">&times;</button>
       </div>
-  </div>
+  </div>*@
   @{Html.RenderPartial("Header");}
   <main>
     @RenderBody()

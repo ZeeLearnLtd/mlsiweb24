@@ -163,6 +163,7 @@
     <Content Include="Content\mixin.scss" />
     <Content Include="Content\style.scss" />
     <Content Include="Images\10_years_LOGO_H60.svg" />
+    <Content Include="Images\11-Years-MLSI_Aug_25_Final-Logo.png" />
     <Content Include="Images\404.png" />
     <Content Include="Images\aboutus.jpg" />
     <Content Include="Images\Admission_Procedure\Fees_hover.png" />
@@ -318,6 +319,7 @@
     <Content Include="Images\Table_Tennis.jpg" />
     <Content Include="Images\Vishnu-Sharma.jpg" />
     <Content Include="Images\InnsideBanner\Why_Choose_MLSI.jpg" />
+    <Content Include="Images\Wall_Climbing.jpg" />
     <Content Include="Images\WhatsApp.jpg" />
     <Content Include="Images\Why_Choose_MLSI_1.jpg" />
     <Content Include="Images\Why_Choose_MLSI_2.jpg" />
@@ -414,6 +416,12 @@
     <Content Include="Views\Home\Award.cshtml" />
     <Content Include="Views\Home\MainAward.cshtml" />
     <Content Include="Views\Home\Career_programme.cshtml" />
+    <Content Include="Views\Home\CASGallery - Copy.cshtml" />
+    <Content Include="Views\Home\VideoGallery - Copy.cshtml" />
+    <Content Include="Views\Home\PhotoGalleryold.cshtml" />
+    <Content Include="Views\Home\ParentSpeak - Copy.cshtml" />
+    <Content Include="Views\Home\News_old.cshtml" />
+    <Content Include="Views\Home\StudentsSpeak - Copy.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

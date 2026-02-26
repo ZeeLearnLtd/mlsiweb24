@@ -2,85 +2,120 @@
 @{
     ViewBag.Title = "PhotoGallery";
 }
-<div id="" class="">
-    
+
+<style>
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gallery-thumb {
+        width: 23%; /* roughly 4 per row with small gaps */
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
+        /*        height:500px;*/
+        z-index: 10;
+    }
+
+    @@media screen and (max-width: 600px) {
+        .ul_list {
+            height: auto !important;
+            overflow-y: scroll !important;
+            overflow-x: hidden !important;
+        }
+
+        .nav-tabs-left .nav-tabs {
+            overflow-x: scroll !important;
+        }
+    }
+</style>
+<script type="text/javascript"
+        src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+        id="aisensy-wa-widget"
+        widget-id="aaau9i">
+</script>
+
+<div id="" class="" ng-cloak id="PhotoGallery" ng-controller="NewsAndEventsCtrl" ng-init="Type='PhotoGallery';GetNewsAndEvents()">
+    @*Childrens Day Celebration,Investiture Ceremony,Halloween Celebration,First Day of School*@
     <div class="nav-tabs-left">
         <ul class="nav nav-tabs ul_list">
-            <li class="nav-item">
-                <a class="nav-link waves-effect active" data-toggle="tab" href="#Annual_Production">Annual Production</a>
+            <li class="nav-item" ng-repeat="category in categoryNames">
+                <a class="nav-link waves-effect" ng-class="{'active': selectedCategory === category}" data-toggle="tab" ng-click="oncategoryselection(category)">{{category}}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Graduation">Graduation Day</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Children_s_Day_Celebration">Childrens Day Celebration</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Investiture_Ceremony">Investiture Ceremony</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Halloween_Celebration">Halloween Celebration</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#First">First Day of School</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Meraki">Meraki</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#SAIBSA_Event">SAIBSA Event</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Republic_Day">Republic Day</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Sport_Day">Sport's Day</a>
-            </li>
-            @*<li class="nav-item">
-            <a class="nav-link waves-effect" data-toggle="tab" href="#Graduation_Ceremony">Graduation Ceremony</a>
-        </li>*@
-            <li class="nav-item">
-                <a class="nav-link waves-effect" data-toggle="tab" href="#Fit_for_Life">Fit for Life</a>
-            </li>
-            @*<li class="nav-item">
-            <a class="nav-link waves-effect" data-toggle="tab" href="#Annual_Day">Annual Day</a>
-        </li>*@
-
-
-
         </ul>
+
         <div class="nav-tabs-left-container">
+            <div class="loader" ng-if="loading"></div>
             <div class="tab-content Gallery">
-                <div class="tab-pane fade " id="SAIBSA_Event">
-                    <div class="row">
-                        @*<div class="col-6 col-md-4 col-lg-3">
-                    <a href="~/Images/Photogallery/SAIBSA_Event/1.jpg" data-fancybox="SAIBSA_Event" data-transition-effect="tube">
-                        <img src="~/Images/Photogallery/SAIBSA_Event/1_thumb.jpg" class="img-fluid" alt="" />
-                    </a>
-                </div>*@
-                        <div class="col-6 col-md-4 col-lg-3">
-                            <a href="~/Images/Photogallery/SAIBSA_Event/2.jpg" data-fancybox="SAIBSA_Event" data-transition-effect="tube">
-                                <img src="~/Images/Photogallery/SAIBSA_Event/2_thumb.jpg" class="img-fluid" alt="" />
+                @*<div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-3" ng-repeat="photo in filteredData">*@
+                @*<div ng-if="!photo.FromDate">
+                        <div ng-repeat="dat in photo.allfiles">
+                            <a href="{{dat.url}}" data-fancybox="{{photo.categoryName}}" data-transition-effect="tube">
+                                <img ng-src="{{dat.url}}" class="img-fluid rounded shadow-sm mb-2" alt="" />
                             </a>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                            <a href="~/Images/Photogallery/SAIBSA_Event/3.jpg" data-fancybox="SAIBSA_Event" data-transition-effect="tube">
-                                <img src="~/Images/Photogallery/SAIBSA_Event/3_thumb.jpg" class="img-fluid" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                            <a href="~/Images/Photogallery/SAIBSA_Event/4.jpg" data-fancybox="SAIBSA_Event" data-transition-effect="tube">
-                                <img src="~/Images/Photogallery/SAIBSA_Event/4_thumb.jpg" class="img-fluid" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3">
-                            <a href="~/Images/Photogallery/SAIBSA_Event/5.jpg" data-fancybox="SAIBSA_Event" data-transition-effect="tube">
-                                <img src="~/Images/Photogallery/SAIBSA_Event/5_thumb.jpg" class="img-fluid" alt="" />
-                            </a>
+                    </div>*@
+                @*!groupedFilesByYear &&*@
+                <div ng-if="!groupedFilesByYear">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-3" ng-repeat="photo in filteredData">
+                            <div ng-repeat="dat in photo.allfiles">
+                                <a href="{{dat.url}}" data-fancybox="{{photo.categoryName}}" data-transition-effect="tube">
+                                    <img ng-src="{{dat.url}}" class="img-fluid rounded shadow-sm mb-2" alt="" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="Republic_Day">
+                <div ng-if="groupedFilesByYear">
+                    <div ng-repeat="yearGroup in groupedFilesByYear">
+                        <h4 class="text-center" style="text-decoration:underline">{{yearGroup.yearLabel}}</h4>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-3" ng-repeat="dat in yearGroup.files">
+                                <a href="{{dat.url}}" data-fancybox="{{dat.categoryName}}" data-transition-effect="tube">
+                                    <img ng-src="{{dat.url}}" class="img-fluid rounded shadow-sm mb-2" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3"
+                         ng-if="visibleCount < allFilesFlat.length">
+                        <button class="btn btn-primary" ng-click="loadMore()">
+                            Load More
+                        </button>
+                    </div>
+                </div>
+                @*<div ng-repeat="(year, files) in groupedFilesByYear">
+                        <h4 class="text-center" style="text-decoration:underline">{{year}}</h4>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-3" ng-repeat="file in visibleFiles" ng-if="file.year == year">
+                                <a href="{{file.url}}" data-fancybox="{{file.categoryName}}">
+                                    <img ng-src="{{file.url}}" class="img-fluid rounded shadow-sm mb-2" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3" ng-if="visibleCount < allFilesFlat.length">
+                        <button class="btn btn-primary" ng-click="loadMore()">Load More</button>
+                    </div>*@
+
+
+                @*</div>
+                    </div>*@
+
+                <!--<div class="tab-pane fade" id="Republic_Day">
                     <div class="row">
 
                         <div class="col-6 col-md-4 col-lg-3">
@@ -584,19 +619,19 @@
                             <a href="~/Images/Photogallery/Halloween_Celebration/img_5.jpg" data-fancybox="Halloween_Celebration" data-transition-effect="tube">
                                 <img src="~/Images/Photogallery/Halloween_Celebration/img_5.jpg" class="img-fluid" alt="" />
                             </a>
-                        </div>
-                        @*<div class="col-6 col-md-4 col-lg-3">
-                    <a href="~/Images/Photogallery/Halloween_Celebration/img_6.jpg" data-fancybox="Halloween_Celebration" data-transition-effect="tube">
-                        <img src="~/Images/Photogallery/Halloween_Celebration/img_6.jpg" class="img-fluid" alt="" />
-                    </a>
-                </div>*@
-                        @*<div class="col-6 col-md-4 col-lg-3">
-                    <a href="~/Images/Photogallery/Halloween_Celebration/img_7.jpg" data-fancybox="Halloween_Celebration" data-transition-effect="tube">
-                        <img src="~/Images/Photogallery/Halloween_Celebration/img7.jpg" class="img-fluid" alt="" />
-                    </a>
-                </div>*@
+                        </div>-->
+                @*<div class="col-6 col-md-4 col-lg-3">
+                        <a href="~/Images/Photogallery/Halloween_Celebration/img_6.jpg" data-fancybox="Halloween_Celebration" data-transition-effect="tube">
+                            <img src="~/Images/Photogallery/Halloween_Celebration/img_6.jpg" class="img-fluid" alt="" />
+                        </a>
+                    </div>*@
+                @*<div class="col-6 col-md-4 col-lg-3">
+                        <a href="~/Images/Photogallery/Halloween_Celebration/img_7.jpg" data-fancybox="Halloween_Celebration" data-transition-effect="tube">
+                            <img src="~/Images/Photogallery/Halloween_Celebration/img7.jpg" class="img-fluid" alt="" />
+                        </a>
+                    </div>*@
 
-                    </div>
+                <!--</div>
 
 
                     <div class="row">
@@ -895,7 +930,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -907,33 +942,33 @@
 
 
 
-    @*<div id="PhotoGallery">
-            <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
-            </a>
-            <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
-                <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
-            </a>
-        </div>*@
+@*<div id="PhotoGallery">
+        <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Events.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Events.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Activity.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Activity.jpg"class="img-fluid" alt="" />
+        </a>
+        <a href="~/Images/Photogallery/Infrastructure.jpg" data-fancybox="PhotoGallery" data-transition-effect="tube">
+            <img src="~/Images/Photogallery/Infrastructure.jpg"class="img-fluid" alt="" />
+        </a>
+    </div>*@
 

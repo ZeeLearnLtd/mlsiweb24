@@ -2133,7 +2133,7 @@ fieldset {
     display: none; }
   .Index .InContentFull {
     padding: 0; }
-  .Index .social-icons-bottom {
+      .Index .social-icons-bottom {
     position: fixed;
     right: 0;
     top: 50%;

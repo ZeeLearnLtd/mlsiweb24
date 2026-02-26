@@ -15,13 +15,19 @@ namespace MLSI.Models
 
             if (connstr == "connectionstring")
             {
-                strUserId = "prodbIzftgD5379";
-                strPassword = "zygft@7389";
-                //strServerName = @"103.11.155.105,14343";
-                strServerName = "10.112.0.105,14343";//@"103.11.155.110,14343"; //"10.112.0.105,14343";//@ 
+                //strUserId = "prodbIzftgD5379";
+                //strPassword = "zygft@7389";
+                ////strServerName = @"103.11.155.105,14343";
+                //strServerName = "103.11.155.110,14343"; // "10.112.0.105,14343";//@ "103.11.155.110,14343"; //"10.112.0.105,14343";//@
 
-                strDBName = "db_CMS";
-      }
+                //strDBName = "db_CMS";
+                strUserId = "";
+                strPassword = "";
+                //strServerName = @"103.11.155.105,14343";
+                strServerName = ""; // "10.112.0.105,14343";//@ "103.11.155.110,14343"; //"10.112.0.105,14343";//@
+
+                strDBName = "";
+            }
             else if (connstr == "connectionstring1")
             {
                 //strUserId = "prdzllbiz";

@@ -13,7 +13,7 @@
         width: 100%;
         height: 100%;
         background: #fff url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
-/*        height:500px;*/
+        /*        height:500px;*/
         z-index: 10;
     }
 
@@ -22,43 +22,45 @@
         height: auto;
         display: block;
     }
+
     .video_content_img {
         height: 450px;
     }
+
     .aboutus .abtusimg:nth-child(1) {
         margin-right: 0px !important;
     }
 
     @@media only screen and (max-width: 600px) {
-    .video_content_img {
-        height: auto !important;
+        .video_content_img {
+            height: auto !important;
+        }
     }
-                       }
 </style>
 <div class="video_content_img">
-<div id="Banners" class="owl-carousel main_banner_content">
-    <div class="item">
-        @*<video controls="controls" autoplay muted loop style="width:100%; height:100%; object-fit:cover;">
-            <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/ZllCelibration/mll_intro.mp4" type="video/mp4" />
+    <div id="Banners" class="owl-carousel main_banner_content">
+        <div class="item">
+            @*<video controls="controls" autoplay muted loop style="width:100%; height:100%; object-fit:cover;">
+                    <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/ZllCelibration/mll_intro.mp4" type="video/mp4" />
 
-        </video>*@
-        @*<iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>*@
-        @*<iframe src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" frameborder="0"></iframe>*@
+                </video>*@
+            @*<iframe src="https://www.youtube.com/embed/VihmL_bprwg?autoplay=1&mute=1&loop=1&playlist=VihmL_bprwg" frameborder="0"></iframe>*@
+            @*<iframe src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" frameborder="0"></iframe>*@
 
-        @*<video autoplay muted loop controls width="100%">
-            <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>*@
+            @*<video autoplay muted loop controls width="100%">
+                    <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>*@
 
-        <div class="video-wrapper">
-            <!-- Loader shown initially -->
-            <div id="video-loader" class="loader"></div>
-            <!-- Video -->
-            <video id="myVideo" autoplay muted loop controls>
-                <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
+            <div class="video-wrapper">
+                <!-- Loader shown initially -->
+                <div id="video-loader" class="loader"></div>
+                <!-- Video -->
+                <video id="myVideo" autoplay muted loop controls>
+                    <source src="https://s3.ap-south-1.amazonaws.com/content.pentemind.com/Web+Banner+Graduation+day.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
         <div class="caption">
             <div class="container">
@@ -170,11 +172,11 @@
             </a>
         </div>*@
     @*<div class="popup-overlay">
-        <div class="popup">
-            <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
-            <button class="close-btn">&times;</button>
-        </div>
-    </div>*@
+            <div class="popup">
+                <img src="~/Images/Banner/DP-school-popup.jpg" width="100%" />
+                <button class="close-btn">&times;</button>
+            </div>
+        </div>*@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -192,21 +194,26 @@
         loader.innerText = "Error loading video.";
     });
 </script>
+<script type="text/javascript"
+        src=https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js
+        id="aisensy-wa-widget"
+        widget-id="aaakrs">
+</script>
 @*<script>
-    $(document).ready(function () {
-        console.log('CALL PPUP')
-        if (!localStorage.getItem('popupPreviouslyShown') || true) {
-            setTimeout(function () {
-                $('.popup-overlay').fadeIn();
-                localStorage.setItem('popupPreviouslyShown', true);
-            }, 3000);
-        }
-    });
+        $(document).ready(function () {
+            console.log('CALL PPUP')
+            if (!localStorage.getItem('popupPreviouslyShown') || true) {
+                setTimeout(function () {
+                    $('.popup-overlay').fadeIn();
+                    localStorage.setItem('popupPreviouslyShown', true);
+                }, 3000);
+            }
+        });
 
-    $('.close-btn').click(function () {
-        $('.popup-overlay').fadeOut();
-    });
-</script>*@
+        $('.close-btn').click(function () {
+            $('.popup-overlay').fadeOut();
+        });
+    </script>*@
 @*<a class="OpenAnnouncement CloseAnnouncement OpenTwitterPopup" data-target="#TwitterPopup" rel="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
     <a class="OpenAnnouncement CloseAnnouncement OpenFacebookPopup" data-target="#FacebookPopup" rel="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
     <a class="OpenAnnouncement OpenAnnouncementPopup" data-target="#AnnouncementPopup" rel="tooltip" title="Announcement"><i class="fa fa-bullhorn"></i></a>
@@ -343,24 +350,24 @@
     /*#footer > .container, #footer #copy {
         display: none !important;
     }*/
-    #footer {
+    /*    #footer {
         padding: 0;
-    }
+    }*/
 
-        #footer > .container {
-            /*padding: 15px;
+    #footer > .container {
+        /*padding: 15px;
         background: rgba(0, 0, 0, 0.38) !important;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 100;*/
-            display: none !important;
-        }
+        /*            display: none !important;*/
+    }
 
-        #footer .social-icons-bottom {
+    /*        #footer .social-icons-bottom {
             margin: 0 !important;
-        }
+        }*/
 
     .wp_icon_content {
         width: 77px;
@@ -378,7 +385,7 @@
         display: block;
     }
 
-/*    .main_banner_content {
+    /*    .main_banner_content {
         height: 490px;
     }*/
 
@@ -439,8 +446,9 @@
 
     @@media only screen and (max-width: 600px) {
         .video_content_img {
-            height:auto;
+            height: auto;
         }
+
         .popup img {
             max-width: 100%;
             height: auto;

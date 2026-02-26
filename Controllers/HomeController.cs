@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MLSI.Models;
 using System.Configuration;
+using System.Threading.Tasks;
 
 namespace MLSI.Controllers
 {
@@ -13,362 +14,354 @@ namespace MLSI.Controllers
     BussinessLogic bl = new BussinessLogic();
     string PgController = "Home";
     string ProjectId = ConfigurationManager.AppSettings["ProjectId"].ToString();
-    public ActionResult Index()
+    public async Task<ActionResult> Index()
     {
       PagesData pd = new PagesData();
       string PgAction = "Index";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult IndexOLD()
+    public async Task<ActionResult> IndexOLD()
     {
       PagesData pd = new PagesData();
       string PgAction = "IndexOLD";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult MLSIFaculty()
+    public async Task<ActionResult> MLSIFaculty()
     {
       PagesData pd = new PagesData();
       string PgAction = "MLSIFaculty";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
-    public ActionResult Mission()
+    public async Task<ActionResult> Mission()
     {
       PagesData pd = new PagesData();
       string PgAction = "Mission";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Vision()
+    public async Task<ActionResult> Vision()
     {
       PagesData pd = new PagesData();
       string PgAction = "Vision";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Message_from_the_Chairman()
+    public async Task<ActionResult> Message_from_the_Chairman()
     {
       PagesData pd = new PagesData();
       string PgAction = "Message_from_the_Chairman";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Message_from_the_Advisor()
+    public async Task<ActionResult> Message_from_the_Advisor()
     {
       PagesData pd = new PagesData();
       string PgAction = "Message_from_the_Advisor";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult School_Leadership_Team()
+    public async Task<ActionResult> School_Leadership_Team()
     {
       PagesData pd = new PagesData();
       string PgAction = "School_Leadership_Team";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult The_Management()
+    public async Task<ActionResult> The_Management()
     {
       PagesData pd = new PagesData();
       string PgAction = "The_Management";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Why_Choose_MLSI()
+    public async Task<ActionResult> Why_Choose_MLSI()
     {
       PagesData pd = new PagesData();
       string PgAction = "Why_Choose_MLSI";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Eligibility()
+    public async Task<ActionResult> Eligibility()
     {
       PagesData pd = new PagesData();
       string PgAction = "Eligibility";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Enquire_Now()
+    public async Task<ActionResult> Enquire_Now()
     {
       PagesData pd = new PagesData();
       string PgAction = "Enquire_Now";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       if (PageObj.MetaTitle == null)
       {
-        PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'Index'}");
+        PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'Index'}");
       }
       ViewBag.PageData = PageObj;
       ViewBag.CaptchaStr = bl.RandomString(6);
       return View();
     }
-    public ActionResult Admission_Procedure()
+    public async Task<ActionResult> Admission_Procedure()
     {
       PagesData pd = new PagesData();
       string PgAction = "Admission_Procedure";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Fees()
+    public async Task<ActionResult> Fees()
     {
       PagesData pd = new PagesData();
       string PgAction = "Fees";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult FAQs()
+    public async Task<ActionResult> FAQs()
     {
       PagesData pd = new PagesData();
       string PgAction = "FAQs";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
 
-    public ActionResult Learning_at_MLSI()
+    public async Task<ActionResult> Learning_at_MLSI()
     {
       PagesData pd = new PagesData();
       string PgAction = "Learning_at_MLSI";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult The_IB_Programmes()
+    public async Task<ActionResult> The_IB_Programmes()
     {
       PagesData pd = new PagesData();
       string PgAction = "The_IB_Programmes";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Primary_Years_Programme()
+    public async Task<ActionResult> Primary_Years_Programme()
     {
       PagesData pd = new PagesData();
       string PgAction = "Primary_Years_Programme";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Middle_Years_Programme()
+    public async Task<ActionResult> Middle_Years_Programme()
     {
       PagesData pd = new PagesData();
       string PgAction = "Middle_Years_Programme";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult IB_Diploma_Programme()
+    public async Task<ActionResult> IB_Diploma_Programme()
     {
       PagesData pd = new PagesData();
       string PgAction = "IB_Diploma_Programme";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
-        public ActionResult Career_programme()
+        public async Task<ActionResult> Career_programme()
         {
             PagesData pd = new PagesData();
             string PgAction = "Career_programme";
             CmsPageData PageObj = new CmsPageData();
-            PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+            PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
             ViewBag.PageData = PageObj;
             return View();
         }
-        public ActionResult Clubs_and_Extra_Curricular_Activities()
+        public async Task<ActionResult> Clubs_and_Extra_Curricular_Activities()
     {
       PagesData pd = new PagesData();
       string PgAction = "Clubs_and_Extra_Curricular_Activities";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult The_Arts()
+    public async Task<ActionResult> The_Arts()
     {
       PagesData pd = new PagesData();
       string PgAction = "The_Arts";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Community_Outreach()
+    public async Task<ActionResult> Community_Outreach()
     {
       PagesData pd = new PagesData();
       string PgAction = "Community_Outreach";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Learning_Spaces()
+    public async Task<ActionResult> Learning_Spaces()
     {
       PagesData pd = new PagesData();
       string PgAction = "Learning_Spaces";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Sports_Infrastructure()
+    public async Task<ActionResult> Sports_Infrastructure()
     {
       PagesData pd = new PagesData();
       string PgAction = "Sports_Infrastructure";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Transport()
+    public async Task<ActionResult> Transport()
     {
       PagesData pd = new PagesData();
       string PgAction = "Transport";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Pastoral_Care()
+    public async Task<ActionResult> Pastoral_Care()
     {
       PagesData pd = new PagesData();
       string PgAction = "Pastoral_Care";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Safety_Health_and_Security()
+    public async Task<ActionResult> Safety_Health_and_Security()
     {
       PagesData pd = new PagesData();
       string PgAction = "Safety_Health_and_Security";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult School_Calendar()
+    public async Task<ActionResult> School_Calendar()
     {
       PagesData pd = new PagesData();
       string PgAction = "School_Calendar";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Career_Counselling()
+    public async Task<ActionResult> Career_Counselling()
     {
       PagesData pd = new PagesData();
       string PgAction = "Career_Counselling";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
 
 
-    public ActionResult PhotoGallery()
+    public async Task<ActionResult> PhotoGallery()
     {
       PagesData pd = new PagesData();
       string PgAction = "PhotoGallery";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult VideoGallery()
+    public async Task<ActionResult> VideoGallery()
     {
       PagesData pd = new PagesData();
       string PgAction = "VideoGallery";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult CASGallery()
+    public async Task<ActionResult> CASGallery()
     {
       PagesData pd = new PagesData();
       string PgAction = "CASGallery";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult ExhibitionGallery()
+    public async Task<ActionResult> ExhibitionGallery()
     {
       PagesData pd = new PagesData();
       string PgAction = "ExhibitionGallery";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult ParentSpeak()
+    public async Task<ActionResult> ParentSpeak()
     {
       PagesData pd = new PagesData();
       string PgAction = "ParentSpeak";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj =  await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
-    public ActionResult StudentsSpeak()
+    public async Task<ActionResult> StudentsSpeak()
     {
       PagesData pd = new PagesData();
       string PgAction = "StudentsSpeak";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
 
-    public ActionResult News()
-    {
-      PagesData pd = new PagesData();
-      string PgAction = "News";
-      CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
-      ViewBag.PageData = PageObj;
-      return View();
-    }
+    
 
 
         //public ActionResult MainAward(string str)
@@ -381,23 +374,23 @@ namespace MLSI.Controllers
         //    return View();
         //}
 
-        public ActionResult Events()
+        public async Task<ActionResult> Events()
     {
       PagesData pd = new PagesData();
       string PgAction = "Events";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Blog(string location)
-    {
+   public async Task<ActionResult> Blog(string location)
+        {
       PagesData pd = new PagesData();
       if (location == null)
       {
         CmsPageData PageObj = new CmsPageData();
         string PgAction = "Blog";      
-        PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+        PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
         ViewBag.PageData = PageObj;
         ViewBag.blogtitle = null;
       }
@@ -405,21 +398,43 @@ namespace MLSI.Controllers
       {
         blogPageData blogdata = new blogPageData();
         string PgAction = location;
-        blogdata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "'}");
+        blogdata = await pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'blog'}");
         ViewBag.PageData = blogdata;
         ViewBag.blogtitle = location;
       }           
       return View();
     }
+        public async Task<ActionResult> News(string newsslug)
+        {
+            PagesData pd = new PagesData();
 
-    public ActionResult Award(string str)
+            if (newsslug == null)
+            {
+                string PgAction = "news-events";
+                CmsPageData PageObj = new CmsPageData();
+                PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+                ViewBag.PageData = PageObj;
+                ViewBag.blogtitle = null;
+            }
+            else
+            {
+                blogPageData blogdata = new blogPageData();
+                string PgAction = newsslug;
+                blogdata = await pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'news'}");
+                ViewBag.PageData = blogdata;
+                ViewBag.blogtitle = newsslug;
+            }
+            return View();
+        }
+
+        public async Task<ActionResult> Award(string str)
         {
             PagesData pd = new PagesData();
             if (str == null)
             {
                 CmsPageData PageObj = new CmsPageData();
                 string PgAction = "Award";
-                PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+                PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
                 ViewBag.PageData = PageObj;
                 ViewBag.Awardtitle = null;
             }
@@ -427,37 +442,37 @@ namespace MLSI.Controllers
             {
                 blogPageData Awarddata = new blogPageData();
                 string PgAction = str;
-                Awarddata = pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'Award'}");
+                Awarddata = await pd.GetblogPageData("{Projectid:'" + ProjectId + "',slug:'" + PgAction + "',type:'Award'}");
                 ViewBag.PageData = Awarddata;
                 ViewBag.Awardtitle = str;
             }
             return View();
         }
 
-        public ActionResult Contact()
+        public async Task<ActionResult> Contact()
     {
       PagesData pd = new PagesData();
       string PgAction = "Contact";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult PrivacyPolicy()
+    public async Task<ActionResult> PrivacyPolicy()
     {
       PagesData pd = new PagesData();
       string PgAction = "PrivacyPolicy";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult SiteMap()
+    public async Task<ActionResult> SiteMap()
     {
       PagesData pd = new PagesData();
       string PgAction = "SiteMap";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
@@ -468,30 +483,30 @@ namespace MLSI.Controllers
     //    return View();
     //}
 
-    public ActionResult MLSIThankYou()
+    public async Task<ActionResult> MLSIThankYou()
     {
       PagesData pd = new PagesData();
       string PgAction = "MLSIThankYou";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Details()
+    public async Task<ActionResult> Details()
     {
       PagesData pd = new PagesData();
       string PgAction = "Details";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
-    public ActionResult Error()
+    public async Task<ActionResult> Error()
     {
       PagesData pd = new PagesData();
       string PgAction = "error";
       CmsPageData PageObj = new CmsPageData();
-      PageObj = pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
+      PageObj = await pd.GetPageData("{ProjectId:'" + ProjectId + "',PgController:'" + PgController + "',PgAction:'" + PgAction + "'}");
       ViewBag.PageData = PageObj;
       return View();
     }
